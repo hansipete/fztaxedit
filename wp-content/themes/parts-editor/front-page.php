@@ -1,102 +1,84 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
-<pre>
 <?php
-
-// loop through all -lbr files in /assets
-foreach( glob('/Users/Hansi/Sites/fz-parts/assets/{*.lbr}', GLOB_BRACE) as $lib_file) 
-{ 
-	// load xml
-	$lbr = simplexml_load_file( $lib_file );
-
-	// packages branch
-	//$packages = $lbr->drawing->library->packages->package; 
-	$devicesets = $lbr->drawing->library->devicesets->deviceset;
-
-/*
-<deviceset name="ACS712">
-		<description>Hall-effect-based isolated linear current sensor</description>
-		<gates>
-			<gate name="G$1" symbol="ACS712" x="0" y="0"/>
-		</gates>
-		<devices>
-			<device name="" package="SO08">
-				<connects>
-					<connect gate="G$1" pin="FILT" pad="6"/>
-					<connect gate="G$1" pin="GND" pad="5"/>
-					<connect gate="G$1" pin="IP+@1" pad="1"/>
-					<connect gate="G$1" pin="IP+@2" pad="2"/>
-					<connect gate="G$1" pin="IP-@3" pad="3"/>
-					<connect gate="G$1" pin="IP-@4" pad="4"/>
-					<connect gate="G$1" pin="VCC" pad="8"/>
-					<connect gate="G$1" pin="VOUT" pad="7"/>
-				</connects>
-				<technologies>
-					<technology name=""/>
-				</technologies>
-			</device>
-		</devices>
-	</deviceset>
-*/
-
-	// loop packages
-	foreach( $devicesets as $deviceset )
-	{
-
-		// store variables
-		$partName = $deviceset['name'];
-		$partDescription = $deviceset->description;
-		$partLbrFile = basename($lib_file); // remove path - just filename.lbr
-
-
-		// check if a post with the given title already exists
-		$query = $wpdb->prepare(
-	        'SELECT ID FROM ' . $wpdb->posts . '
-	        WHERE post_title = %s
-	        AND post_type = \'fz_part\'',
-	        $partName
-	    );
-
-	    $wpdb->query( $query );
-
-	    if ( $wpdb->num_rows ) {
-	        printf("Part already exists: <b>%s</b>", $partName);
-	    } 
-	    else {
-	        
-			// create post object
-			$fz_part = array(
-				'post_type' => 'fz_part',
-				'post_title' => $partName,
-				'post_content' => $partDescription,
-				'post_status' => 'publish',
-				'post_author' => 1
-			);
-
-			// insert the post into the database
-	  		$post_id = wp_insert_post( $fz_part );
-
-			// apply the lbr-file category
-			wp_set_post_terms( $post_id, $partLbrFile, 'fz_lbr', false);
-
-			printf("Part inserted: <b>%s</b>", $partName);
-		}
-
-		//echo $partName . "<br>";
-
-		// packages
-		$partPackage = $deviceset->devices->device;
-		foreach( $deviceset->devices->device as $device)
-			echo " - " . $device['name'] . " / " . $device['package'] . "<br>";
-		echo "<hr>";
-
-		//exit;
-
-	}
-
-	// next file
-	echo "<h1>$lib_file done.</h1> next<br>";
-}
-
-
+	// modify query
+	query_posts( 'post_type=fz_part' );
 ?>
+
+<table border="1" width="100%">
+	<tr>
+		<th>Part</th>
+		<th>.lbr pack</th>
+		<th>Standard Package</th>
+		<th>Attributes</th>
+		<th>Tags</th>
+		<!-- <th>Library</th> -->
+	</tr>
+
+<?php 	$i=0; 
+
+		while ( have_posts() ) : the_post(); 
+		
+		$class = ($i++ == 0) ? ' class="selected-row"' : '';
+		?>
+		
+		<tr<?php echo $class; ?>>
+  			<td><?php the_title(); ?></td>
+  			<td>Power supply / management > Mkrocontrollers > Sensor networks</td>
+  			<td>Sparkfun-AnalogIC.lbr</td>
+
+
+
+
+
+  			
+    		<td class="lbr_packages">
+    			<?php 
+    				$packages = wp_get_object_terms( $post->ID, 'fz_lbr_packages' );
+
+    				foreach($packages as $package){
+    					printf('<span style="font-size:0.7em"class=".tag-link-%s">%s</span><br>', $package->term_id, $package->name);
+    				}
+    			?>
+    		</td>
+    		<td>
+    			<?php 
+    			
+						$fz_gcode_svn_baseurl = "http://fritzing.googlecode.com/svn/trunk/fritzing/parts/svg/user/pcb/";
+
+    					$lbr_name = wp_get_post_terms( $post->ID, 'fz_lbr', array("fields" => "names"));
+    					$lbr_name = str_replace('.lbr', '', strtolower($lbr_name[0]));
+    					$lbr_package = $packages[0]->name;
+
+    					$svg_file = $lbr_name . '_' . strtolower($lbr_package) . '_' . 'pcb' . '.svg';
+
+    			?>
+
+    			<!-- <img src="assets/svg.php?url=<?php echo $fz_gcode_svn_baseurl.$svg_file; ?>"> -->
+    			<!-- <object data="assets/svg.php?url=<?php echo $fz_gcode_svn_baseurl.$svg_file; ?>" type="image/svg+xml"> -->
+
+    			<?php
+
+    				$delete_shit = array('GND', 'PAD', 'GROUND');
+    				$std_pack_prefix = array('DIL', 'DIP', 'TSSOP', 'SOIC', 'SO', 'SOP', 'SOT', );
+
+    				foreach($packages as $package){
+
+    					// output only until first occurance of another character than A-Z
+	 					//$name = preg_replace('/[^A-Za-z]+/','', $package->name);
+	 					$name = preg_replace('/[^A-Za-z]/','', $package->name);
+
+	 					printf('<span style="font-size:0.9em">%s</span><br>', $name);
+	 				}
+    			?>
+    		</td>
+    		<td>-</td>
+    		<td>-</td>
+    		<!-- <td><?php echo get_the_term_list( $post->ID, 'fz_lbr'); ?></td> -->
+  		</tr>
+
+<?php endwhile; ?>
+
+</table>
+
+<?php wp_pagenavi(); ?>

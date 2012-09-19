@@ -1,11 +1,11 @@
 <div class="page-header">
-  <h1>
+  <h3>
     <?php
       if (is_home()) {
         if (get_option('page_for_posts', true)) {
           echo get_the_title(get_option('page_for_posts', true));
         } else {
-          _e('Latest Posts', 'roots');
+          _e('Parts', 'roots');
         }
       } elseif (is_archive()) {
         $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -34,5 +34,5 @@
         the_title();
       }
     ?>
-  </h1>
+  </h3>
 </div>

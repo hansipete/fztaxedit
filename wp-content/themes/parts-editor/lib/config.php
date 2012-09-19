@@ -19,7 +19,7 @@ function roots_sidebar() {
 // #main CSS classes
 function roots_main_class() {
   if (roots_sidebar()) {
-    echo 'span8';
+    echo 'span6';
   } else {
     echo 'span12';
   }
@@ -27,7 +27,7 @@ function roots_main_class() {
 
 // #sidebar CSS classes
 function roots_sidebar_class() {
-  echo 'span4';
+  echo 'span3';
 }
 
 $get_theme_name = explode('/themes/', get_template_directory());
@@ -41,4 +41,4 @@ define('RELATIVE_CONTENT_PATH',     str_replace(site_url() . '/', '', content_ur
 define('THEME_PATH',                RELATIVE_CONTENT_PATH . '/themes/' . THEME_NAME);
 
 // Set the content width based on the theme's design and stylesheet
-if (!isset($content_width)) { $content_width = 940; }
+if (!isset($content_width)) { $content_width = 1400; }

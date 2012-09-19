@@ -13,7 +13,7 @@ body { }
 #banner { }
 
 /* Fixed Topbar Navigation */
-body.top-navbar { padding-top: 60px; }
+body.top-navbar { padding-top: 0px; }
 body.admin-bar .navbar-fixed-top { top: 28px; }
 
 
@@ -24,7 +24,9 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 
 #content { }
 
-
+.selected-row, .selected-tag {
+  background: yellow;
+}
 
 /* ==========================================================================
    Primary Content
@@ -38,7 +40,26 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
    Sidebar
    ========================================================================== */
 
-#sidebar { }
+#sidebar { 
+}
+
+ul.children ul {
+    list-style: none;
+    margin: 0;
+}
+
+ul.children ul li {
+  float: left;
+  margin-right: 10px;
+}
+
+ul.children ul:after {
+clear: both;
+content: ".";
+display: block;
+height: 0;
+visibility: hidden
+}
 
 
 
