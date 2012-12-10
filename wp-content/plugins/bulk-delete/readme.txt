@@ -2,9 +2,9 @@
 Contributors: sudar 
 Tags: post, comment, delete, bulk, draft, revision, page
 Requires at least: 2.0
-Tested up to: 3.4.1
+Tested up to: 3.4.2
 Donate Link: http://sudarmuthu.com/if-you-wanna-thank-me
-Stable tag: 2.2
+Stable tag: 2.2.1
 	
 Bulk delete posts from selected categories or tags
 
@@ -28,6 +28,7 @@ If you looking for just moving posts, instead of deleting, then use [Bulk Move P
 *   Russian (Thanks Maxim Pesteev, [Weblancer.net profile][12])
 *   Lithuanian (Thanks Vincent G from [http://www.host1free.com][13])
 *   Hindi (Thanks Love Chandel)
+*   Serbian (Thanks Diana)
 
 ### Support
 
@@ -155,9 +156,12 @@ Additional FAQ and troubleshooting guide can be found in the [Plugins homepage](
 *   Fixed CSS issues in IE
 *   Added Lithuanian translations
 
-### v2.2 (2012-07-11) (Dev time: 1 hour)
+### v2.2 (2012-07-11) (Dev time: 0.5 hour)
 *   Added Hindi translations
 *   Added checks to see if elements are present in the array before accessing them.
+
+### v2.2.1 (2012-10-28) (Dev time: 0.5 hour)
+* Added Serbian translations
 
 ==Readme Generator== 
 

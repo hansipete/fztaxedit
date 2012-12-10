@@ -3,7 +3,7 @@
 Plugin Name: Portable phpMyAdmin
 Plugin URI: http://getbutterfly.com/wordpress-plugins/portable-phpmyadmin/
 Description: Portable phpMyAdmin allows a user to access the phpMyAdmin section straight from the Dashboard.
-Version: 1.3-alpha
+Version: 1.3.1
 Author: Ciprian Popescu
 Author URI: http://getbutterfly.com/
 License: GNU General Public License v3.0
@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 phpMyAdmin is licensed under the terms of the GNU General Public License
 version 2, as published by the Free Software Foundation.
 */
-define('PORTABLE_PHPMYADMIN_VERSION', '1.3-alpha');
+define('PORTABLE_PHPMYADMIN_VERSION', '1.3.1');
 define('ALERTLEVEL', 8); // Alert level. Database size is shown in red if greater than this value (in MB), else in green.
 
 //

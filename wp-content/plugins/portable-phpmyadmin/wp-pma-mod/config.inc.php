@@ -7,6 +7,8 @@ $wp_root = '../../../..';
 //else
 //	require_once($wp_root.'/wp-config.php');
 
+if ( ! current_user_can( 'manage_options' ) )
+	wp_die('You do not have permission to access that.');
 
 $cfg['PmaAbsoluteUri'] = '';
 

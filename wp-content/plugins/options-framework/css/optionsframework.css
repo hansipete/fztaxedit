@@ -1,6 +1,4 @@
-/*-------------------------------------------------------------------------------------------*/
 /* Options Framework Admin Styles */
-/*-------------------------------------------------------------------------------------------*/
 
 .updated {
 	max-width:764px;
@@ -170,10 +168,8 @@
 }
 #optionsframework .controls input.upload_button {
 	float:right;
-	width:45px;
 	border-color:#BBBBBB;
 	cursor:pointer;
-	height:16px;
 }
 #optionsframework .controls input.upload_button:hover {
 	border-color:#666666;
@@ -231,10 +227,7 @@
 #optionsframework .button-primary {
 	float:right;
 }
-
-/* Bottom Section */
-
-#optionsframework .section:before, #optionsframework .section:after {
+#optionsframework .section:after {
 	content: "";
 	display: table;
 }

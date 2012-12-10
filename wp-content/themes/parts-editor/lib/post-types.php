@@ -8,17 +8,51 @@ add_action( 'init', 'fz_register_post_types' );
 
 function fz_register_post_types() {
 
-	register_post_type( 'fz_part',
-		array(
-			'labels' => array(
-				'name' => __( 'Parts' ),
-				'singular_name' => __( 'Part' )
-			),
-		'supports' => array('title', 'editor', 'custom-fields', 'revisions', 'post-formats', 'thumbnail', 'comments'),
-		'public' => true,
-		'has_archive' => true,
-		)
-	);
+  $labels = array(
+	'name' => __( 'Original .fzp' ),
+	'singular_name' => __( 'Original .fzp' )
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'fzp' ),
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array('title', 'editor', 'custom-fields', 'revisions')
+  );
+
+  register_post_type('fz_fzp', $args); // this is the post type for the imported packages
+
+
+  $labels = array(
+	'name' => __( 'Parts' ),
+	'singular_name' => __( 'Part' )
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'show_in_menu' => true, 
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'part' ),
+    'capability_type' => 'post',
+    'has_archive' => true, 
+    'hierarchical' => false,
+    'menu_position' => null,
+    'supports' => array('title', 'editor', 'custom-fields', 'revisions'),
+    'taxonomies' => array('post_tag')
+  );
+
+  register_post_type('fz_part', $args);
 
 }
 
@@ -26,35 +60,45 @@ function fz_register_post_types() {
 	ADMIN VIEW
 */
 
-add_filter( 'manage_edit-fz_part_columns', 'fz_edit_part_columns' ) ;
+add_filter( 'manage_edit-fz_fzp_columns', 'fz_edit_fzp_columns' ) ;
 
-function fz_edit_part_columns( $columns ) {
+function fz_edit_fzp_columns( $columns ) {
 
 	$columns = array(
 		'cb' => '<input type="checkbox" />',
-		'title' => __( 'Part name' ),
-		'lbr' => __( 'Library' ),
-		'lbr_packages' => __( 'Packages' ),
-		'date' => __( 'Date' )
+		'title' => __( 'Package Title' ),
+		'fz_original_bin' => __( 'Original Bin' ),
+		'fz_original_family' => __( 'Original Family' ),
+		'fz_moduleId' => __( 'Module ID' ),		
+		'fz_original_tags' => __( 'Original Tags' ),
+		'date' => __( 'Import Date' )
 	);
 
 	return $columns;
 }
 
-add_action( 'manage_fz_part_posts_custom_column', 'fz_manage_part_columns', 10, 2 );
+add_action( 'manage_fz_fzp_posts_custom_column', 'fz_manage_fzp_columns', 10, 2 );
 
-function fz_manage_part_columns( $column, $post_id ) {
+function fz_manage_fzp_columns( $column, $post_id ) {
 	global $post;
 
 	switch( $column ) {
 
-		case 'lbr' :
-			echo get_the_term_list( $post_id, 'fz_lbr');
+		case 'fz_original_family' :
+			echo get_the_term_list( $post_id, 'fz_original_family');
 			break;
 
-		case 'lbr_packages' :
-			echo get_the_term_list( $post_id, 'fz_lbr_packages', null, ', ');
-			break;	
+		case 'fz_original_bin' :
+			echo get_the_term_list( $post_id, 'fz_original_bin');
+			break;
+
+		case 'fz_moduleId' : 	
+			echo get_post_meta( $post_id, 'fzpModuleId', true); 
+			break;
+
+		case 'fz_original_tags' :
+		echo get_the_term_list( $post_id, 'fz_original_tags', null, ", ");
+		break;	
 
 		/* Just break out of the switch statement for everything else. */
 		default :
@@ -70,48 +114,38 @@ function fz_register_taxonomies() {
 	
 	// old taxonomies
 	register_taxonomy(
-		'fz_lbr',
-		'fz_part',
+		'fz_original_bin',
+		'fz_fzp',
 		array(
-			'label' => __( '.lbr' ),
-			'rewrite' => array( 'slug' => 'lbr' )
+			'label' => __( 'Original bin' ),
+			'rewrite' => array( 'slug' => 'fzb' )
 		)
 	);
 	register_taxonomy(
-		'fz_lbr_packages',
-		'fz_part',
+		'fz_original_tags',
+		'fz_fzp',
 		array(
-			'label' => __( '.lbr package' ),
-			'rewrite' => array( 'slug' => 'lbr-package' )
+			'label' => __( 'Original tags' ),
+			'rewrite' => array( 'slug' => 'fzp-tag' )
 		)
 	);
-
 	register_taxonomy(
-		'fz_packages',
-		'fz_part',
+		'fz_original_family',
+		'fz_fzp',
 		array(
-			'label' => __( 'Package' ),
-			'rewrite' => array( 'slug' => 'package' ),
-			'hierarchical' => true
-		)
-	);
-
-	register_taxonomy(
-		'fz_bins',
-		'fz_part',
-		array(
-			'label' => __( 'Bins' ),
-			'rewrite' => array( 'slug' => 'bins' ),
-			'hierarchical' => true
+			'label' => __( 'Original family' ),
+			'rewrite' => array( 'slug' => 'fzp-family' )
 		)
 	);
 
+
+
 	register_taxonomy(
-		'fz_attributes',
+		'fz_taxonomy',
 		'fz_part',
 		array(
-			'label' => __( 'Attributes' ),
-			'rewrite' => array( 'slug' => 'attributes' ),
+			'label' => __( 'Taxonomy' ),
+			'rewrite' => array( 'slug' => 'fzp-tax' ),
 			'hierarchical' => true
 		)
 	);

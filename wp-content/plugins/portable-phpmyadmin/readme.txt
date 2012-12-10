@@ -3,7 +3,7 @@ Contributors: butterflymedia, getbutterfly
 Tags: phpmyadmin, php, portable, database, mysql, sql, admin
 Requires at least: 3.0
 Tested up to: 3.5-alpha
-Stable tag: 1.3-alpha
+Stable tag: trunk
 
 == Description ==
 
@@ -18,6 +18,9 @@ phpMyAdmin is a free software tool written in PHP, intended to handle the admini
 Upload the Portable phpMyAdmin plugin to your blog, activate it, then go to Tools | Portable PMA to use it.
 
 == Changelog ==
+
+= 1.3.1 =
+* Fix security vulnerability.
 
 = 1.3-alpha =
 * FIX: Incremental alpha patch

@@ -24,9 +24,41 @@ body.admin-bar .navbar-fixed-top { top: 28px; }
 
 #content { }
 
-.selected-row, .selected-tag {
-  background: yellow;
+#sidebar, #sidebar-l { position: relative; }
+
+.wp-pagenavi {
+  margin-top: 20px;
+  float: left;
+  border: none;
 }
+
+.part {
+  background: #F0F0F0;
+}
+
+.selected, .selected-tag {
+  background: #FFFF99;
+}
+
+em.lab { float: left; width: 100px; font-size: 11px;}
+
+.part-tax, .part-pkg, .cat-item a {
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 4px;
+  font-size: 12px;
+  background: #f0f0f0;
+}
+
+.part-tax {
+  background: #99FF99;
+}
+
+.part-pkg {
+  background: #FF9933;
+}
+
 
 /* ==========================================================================
    Primary Content
@@ -59,6 +91,14 @@ content: ".";
 display: block;
 height: 0;
 visibility: hidden
+}
+
+.ca:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden
 }
 
 
