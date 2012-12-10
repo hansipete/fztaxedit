@@ -1,4 +1,4 @@
-<div style="position: fixed;">
+<div id="bins-sidebar" style="position: fixed;">
 <h3>Bins</h3>
 
 	<?php
@@ -16,38 +16,50 @@
 		<?php wp_list_categories( $args ); ?>
 	</ul>
 
+	<form id="new-tag-form" action="<?php echo admin_url('edit-tags.php'); ?>" method="post">
+		<input type="hidden" name="action" value="add-tag">
+		<input type="hidden" name="screen" value="edit-fz_taxonomy">
+		<input type="hidden" name="taxonomy" value="fz_taxonomy">
+		<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
+		<input type="hidden" name="post_type" value="fz_part">
+		<input type="hidden" id="_wpnonce_add-tag" name="_wpnonce_add-tag" value="<?php echo wp_create_nonce('add-tag'); ?>">
+		<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
+
+		<?php 
+
+			$args = array(	'hide_empty' => 0, 
+							'hide_if_empty' => false, 
+							'parent' => 0,
+							'name' => 'parent', 
+							'orderby' => 'name', 
+							'taxonomy' => 'fz_taxonomy', 
+							'hierarchical' => true
+			);
+
+			wp_dropdown_categories(	$args );
+
+		?>
+
+		<input name="tag-name" type="text" value="" size="40" aria-required="true">
+		<input type="submit" id="submit" style="display:none;">
+	</form>
+
 	<script>
-		
-		// get every last child li
-		jQuery('ul#fz_bins ul li:last-child').each( function() {
 
-			// store element
-			var li_last_child = jQuery(this);
+		jQuery('#new-tag-form').live('submit', function(e){
 
-			// navigate to te parent <li> and extract cat-id
-			var parent_class 	= li_last_child.parent('ul.children').parent('li').attr('class');
-			var parent_cat_id 	= parent_class.substr(18);
+			// do not standard submit 
+			e.preventDefault();
 
-			// append a new li with a new-tag-form field
-			var new_tag_form = li_last_child.append('<li><form action="<?php echo admin_url('edit-tags.php'); ?>" method="post"><input type="hidden" name="action" value="add-tag"><input type="hidden" name="screen" value="edit-fz_taxonomy"><input type="hidden" name="taxonomy" value="fz_taxonomy"><input type="hidden" name="_wp_http_referer" value="'+window.location+'"><input type="hidden" name="post_type" value="fz_part"><input type="hidden" id="_wpnonce_add-tag" name="_wpnonce_add-tag" value="<?php echo wp_create_nonce('add-tag'); ?>"><input type="hidden" name="_wp_http_referer" value="'+window.location+'"><input name="tag-name" type="text" value="" size="40" aria-required="true"><input type="hidden" name="parent" value="'+parent_cat_id+'"><input type="submit" style="display:none;"></form></li>')
-
-			// wp will end up in the admin area after submission – do some ajax
-			new_tag_form.find('form').submit( function(e){
-
-				// do not standard submit 
-				e.preventDefault();
-
-				// serialize form data
-				form_data = jQuery(this).serialize();
-     
-     			// ajax request
-				jQuery.post("<?php echo admin_url('edit-tags.php'); ?>", form_data)
-				.complete( function(data){
-					jQuery('#fz_bins').load(window.location + ' #fz_bins > *')
-				});
-                
-
+			// serialize form data
+			form_data = jQuery(this).serialize();
+ 
+ 			// ajax request
+			jQuery.post("<?php echo admin_url('edit-tags.php'); ?>", form_data)
+			.complete( function(data){
+				jQuery('#bins-sidebar').load(window.location + ' #bins-sidebar > *');
 			});
+            
 
 		});
 
