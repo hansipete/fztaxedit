@@ -1,5 +1,5 @@
 <?php
-	Template Name: Home page
+	/* Template Name: Home page */
 
 	echo "nix";
 ?>

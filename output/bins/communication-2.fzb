@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
+<title>Communication</title>
+<instances>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Ethernet">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="WIZ820io" modelIndex="0" path="core/WIZ820io.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RJ45_TRXCOM_1" modelIndex="0" path="core/RJ45_TRXCOM.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="IR">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="2d505f861194750183f944ba86c13b44_28" modelIndex="0" path="core/tsop312.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Bus">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="canbus_shield-v12" modelIndex="0" path="core/canbus_shield-v12.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="OBD-II-UART-v13" modelIndex="0" path="core/OBD-II-UART-v13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="USB">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="5e3b9f7a14a1627168e700bfc9a03b3c" modelIndex="0" path="core/USB connector.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="USBHostShield-v13" modelIndex="0" path="core/USBHostShield-v13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Radio">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="Si470x-Eval-v11" modelIndex="0" path="core/Si470x-Eval-v11.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="SI4735 Shield-v13" modelIndex="0" path="core/SI4735 Shield-v13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="6d07f5eae4523283f5da4171f9c54e25" modelIndex="0" path="core/Antenna.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="WiFi">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="xbeeshield-v13" modelIndex="0" path="core/xbeeshield-v13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="1a4bfb87a0f0fd2c59be43f3497d72e6" modelIndex="0" path="core/xbee.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="gs1011_breakout-v11" modelIndex="0" path="core/gs1011_breakout-v11.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="XBee-Regulated-v12" modelIndex="0" path="core/XBee-Regulated-v12.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="arduinoXbeere" modelIndex="0" path="core/arduinoXbeere.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="WiFly_Shield-v17" modelIndex="0" path="core/WiFly_Shield-v17.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="Wireless_SD_v3" modelIndex="0" path="core/Wireless_SD_v3.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RN41-v14" modelIndex="0" path="core/RN41-v14.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="Proto_shield_REV3" modelIndex="0" path="core/Proto_shield_REV3.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="LilyPad-XBee-v15" modelIndex="0" path="core/LilyPad-XBee-v15.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="7658504bdcb62998a7281b0d1baaac37" modelIndex="0" path="core/Arduino Ethernet Shield.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="ArduinoBluetoothMatev13" modelIndex="0" path="core/ArduinoBluetoothMatev13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Cellular">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="cellular shield-v12" modelIndex="0" path="core/cellular shield-v12.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Nearfield">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="a975d1270bd55d6fc3916947793f1a57" modelIndex="0" path="core/rfid-reader.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RFID_USB_Reader-v14" modelIndex="0" path="core/RFID_USB_Reader-v14.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="Data Storage">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="microSD_Shield-v13" modelIndex="0" path="core/microSD_Shield-v13.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="afdgarRevEd_24LC01" modelIndex="0" path="core/SMD_24LC01.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="OpenLog" modelIndex="0" path="core/OpenLog.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="Memoire-1.0" modelIndex="0" path="core/Memoire-1.0.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC640" modelIndex="0" path="core/25LC640.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC16" modelIndex="0" path="core/24LC16.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC160" modelIndex="0" path="core/25LC160.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC256" modelIndex="0" path="core/24LC256.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC256" modelIndex="0" path="core/25LC256.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_11LC040" modelIndex="0" path="core/11LC040.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC32" modelIndex="0" path="core/24LC32.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC320" modelIndex="0" path="core/25LC320.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_11LC080" modelIndex="0" path="core/11LC080.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC512" modelIndex="0" path="core/24LC512.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC512" modelIndex="0" path="core/25LC512.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_11LC160" modelIndex="0" path="core/11LC160.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC64" modelIndex="0" path="core/24LC64.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC01" modelIndex="0" path="core/24LC01.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC010" modelIndex="0" path="core/25LC010.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC02" modelIndex="0" path="core/24LC02.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC020" modelIndex="0" path="core/25LC020.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC04" modelIndex="0" path="core/24LC04.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC040" modelIndex="0" path="core/25LC040.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC08" modelIndex="0" path="core/24LC08.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC080" modelIndex="0" path="core/25LC080.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC1025" modelIndex="0" path="core/24LC1025.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC1024" modelIndex="0" path="core/25LC1024.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_24LC128" modelIndex="0" path="core/24LC128.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_25LC128" modelIndex="0" path="core/25LC128.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_11LC010" modelIndex="0" path="core/11LC010.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="RevEd_11LC020" modelIndex="0" path="core/11LC020.fzp">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+</instances>

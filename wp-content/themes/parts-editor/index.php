@@ -12,7 +12,7 @@
     while ( $loop->have_posts() ) : $loop->the_post();
 
 ?>
-		
+		s
 <div class="part <?php if($i++ == 0) echo 'selected'; ?> part-<?php the_ID(); ?>" style="padding: 4px 8px; margin-bottom: 2px; float: left; width: 100%;">
     
     <h5><?php the_title(); ?></h5>

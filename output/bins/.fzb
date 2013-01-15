@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
+<title></title>
+<instances>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+  <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+    <views>
+      <iconView layer="icon">
+        <geometry z="-1" x="-1" y="-1"/>
+      </iconView>
+    </views>
+  </instance>
+</instances>

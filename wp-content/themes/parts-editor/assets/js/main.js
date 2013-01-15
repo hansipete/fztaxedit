@@ -1,17 +1,4 @@
-/* Author:
 
-*/
-
-function selectTags( $selected_part ){
-    var packages = [];
-
-    jQuery($selected_part).find('td.lbr_packages span').each( function(){
-       packages.push( jQuery(this).attr('class') );
-    });
-
-    jQuery('.tagcloud a').removeClass('selected-tag');
-    jQuery('.tagcloud').find( packages.join(',') ).addClass('selected-tag');
-}
 
 function moveDown(){
 
@@ -59,9 +46,20 @@ jQuery(document).keydown( function(event){
 
 jQuery(document).ready( function(){
 
-    // click auf taxonomy item in sidebar
 
-    jQuery('ul#fz_bins li a').click( function(e){
+    // click auf FZP soll direct den cursor (yellow background) da hinspringen lassen
+    jQuery('div.part').click(function(e){
+
+        jQuery('div.selected').removeClass('selected');
+
+        jQuery(this).addClass('selected');
+    });
+
+
+    // click auf taxonomy item in sidebar
+    // mit live, damit neu dazugekommene (ajax) auch erfasst werden
+
+    jQuery('ul#fz_bins li a').live('click', function(e){
         
         var bin_id = jQuery(this).parent('li.cat-item').attr('class').substr(18); // class="cat-item cat-item-142"
         var post_id = jQuery('.selected span.part-id').text();
