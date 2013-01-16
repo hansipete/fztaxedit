@@ -1,6 +1,31 @@
 <?php
 
-// Custom functions
+$colors = array('#ffad46', '#42d692', '#4986E7', '#fb4c2f', '#A81F5E','#F03826','#F2811D','#44A143','#3A5A64');
+
+function getPartIdsByFamilyId( $_family_id ){
+    
+    //get the parts of the group
+    $args = array(
+                'post_type' => 'fz_fzp',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'fz_original_family',
+                        'field' => 'id',
+                        'terms' => $_family_id
+                    )
+                )
+            );
+    $query = new WP_Query( $args );
+
+    //store all ids in an array
+    $part_ids = array();
+    foreach($query->posts as $part)
+        array_push($part_ids, $part->ID);
+
+    return $part_ids;
+}
+
+
 
 function createBinInstanceNode($_dom, $_moduleId, $_modelIndex, $_path){
     

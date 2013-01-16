@@ -1,52 +1,40 @@
 /* ==========================================================================
    Base
    ========================================================================== */
-
-body { }
-
-
-
+.family-selected {
+  background: yellow;
+}
 /* =============================================================================
    Header
    ========================================================================== */
-
-#banner { }
-
 /* Fixed Topbar Navigation */
-body.top-navbar { padding-top: 0px; }
-body.admin-bar .navbar-fixed-top { top: 28px; }
-
-
-
+body.top-navbar {
+  padding-top: 0px;
+}
+body.admin-bar .navbar-fixed-top {
+  top: 28px;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
-
-#content { }
-
-#sidebar, #sidebar-l { position: relative; }
-
-.wp-pagenavi {
-  margin-top: 20px;
-  float: left;
-  border: none;
-}
-
 .part {
   background: #F0F0F0;
 }
-
 .part .success {
   background: #f9c9f9;
 }
-
-.selected, .selected-tag {
+.selected,
+.selected-tag {
   background: #FFFF99;
 }
-
-em.lab { float: left; width: 100px; font-size: 11px;}
-
-.part-tax, .part-pkg, .cat-item a {
+em.lab {
+  float: left;
+  width: 100px;
+  font-size: 11px;
+}
+.part-tax,
+.part-pkg,
+.cat-item a {
   -moz-border-radius: 2px;
   border-radius: 2px;
   padding: 2px 4px;
@@ -54,107 +42,45 @@ em.lab { float: left; width: 100px; font-size: 11px;}
   font-size: 12px;
   background: #f0f0f0;
 }
-
 .part-tax {
   background: #99FF99;
 }
-
 .part-pkg {
   background: #FF9933;
 }
-
-
 /* ==========================================================================
    Primary Content
    ========================================================================== */
-
-#main { }
-
-
-
 /* ==========================================================================
    Sidebar
    ========================================================================== */
-
-#sidebar { 
-}
-
-
-ul#fz_bins{
-  width:460px;
-  margin: 0 0 20px 0;
-  overflow:hidden;
-}
-ul#fz_bins li {
-  line-height:1.5em;
-  float:left;
-  display:inline;
-}
-
-
-ul.children {
-    list-style: none;
-    margin: 0;
-}
-
-ul.children ul li {
-  float: left;
-  margin-right: 10px;
-}
-
-ul.children ul:after {
-clear: both;
-content: ".";
-display: block;
-height: 0;
-visibility: hidden
-}
-
-.ca:after{
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  visibility: hidden
-}
-
-
 /* ==========================================================================
    Posts
    ========================================================================== */
-
-.hentry header { }
-.hentry time { }
-.hentry p.byline { }
-.hentry .entry-content { }
-.hentry footer { }
-
-
-
 /* ==========================================================================
    Footer
    ========================================================================== */
-
-#content-info { }
-
-
-
 /* ==========================================================================
    WordPress Generated Classes
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
    ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { float: left; }
-.alignright { float: right; }
-figure.alignnone { margin-left: 0; margin-right: 0; }
-
-
-
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+figure.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
 @media (max-width: 979px) {
   /* Fix top padding when using the responsive grid with the fixed topbar */
   body.top-navbar {

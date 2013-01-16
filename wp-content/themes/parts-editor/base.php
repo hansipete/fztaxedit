@@ -8,21 +8,20 @@
     } else {
       get_template_part('templates/header');
     }
-  ?>
+?>
 
-  <div id="wrap" class="container" role="document">
-    <div id="content" class="row">
-
-      <div id="main" class="<?php roots_main_class(); ?>" role="main">
-        <?php include roots_template_path(); ?>
-      </div>
-      <?php if (roots_sidebar() && !is_page( 'show-properties' ) ) : ?>
+<div class="container">
+  <div class="row">
+    <div class="span6">
+      <?php include roots_template_path(); ?>
+    </div>
+    <?php if (roots_sidebar() && !is_page( 'show-properties' ) ) : ?>
       <aside id="sidebar" class="<?php roots_sidebar_class(); ?>" role="complementary">
-        <?php get_template_part('templates/sidebar'); ?>
+          <?php get_template_part('templates/sidebar'); ?>
       </aside>
-      <?php endif; ?>
-    </div><!-- /#content -->
-  </div><!-- /#wrap -->
+    <?php endif; ?>
+  </div>
+</div>
 
   <?php wp_footer(); ?>
 

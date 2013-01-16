@@ -1,65 +1,49 @@
 <?php
 
-function fz_add_tax_to_post() {
+function fz_apply_tax_to_family() {
 
-	if( isset($_POST['post_id']) && isset($_POST['tax_id'])){
+	if( isset($_POST['family_id']) && isset($_POST['term_id'])){
 
 		$taxonomy = 'fz_taxonomy2';
-		$post_id = $_POST['post_id'];
-		$tax_id = $_POST['tax_id'];
+		$family_id = $_POST['family_id'];
+		$term_id = $_POST['term_id'];
 
-		// get all existing terms from post
-		$terms = wp_get_post_terms( $post_id, $taxonomy, array("fields" => "ids") );
+		// get parts linked to family
+		$part_ids = getPartIdsByFamilyId($family_id);
 
-		// if $tax_id is in $terms
-		if( has_term( $tax_id, $taxonomy, $post_id ) )
-    		$terms = array_diff($terms, array($tax_id)); //term löschen
-    	else
-    		array_push($terms, $tax_id);
+		// update tax in every part
+		foreach($part_ids as $part_id){
 
-  		wp_set_post_terms( $post_id, $terms, $taxonomy, false ); //false = replace tags
+			// get all existing terms from part
+			$terms = wp_get_post_terms( $part_id, $taxonomy, array("fields" => "ids") );
 
-  		// update tags of fzps with the samel _family_
-  		
-  		//1. query the taxonomy of the current fzp
-  		$family = wp_get_post_terms( $post_id, 'fz_original_family', array("fields" => "ids") );
+			// if $term_id is in $terms
+			if( has_term( $term_id, $taxonomy, $part_id ) )
+	    		$terms = array_diff($terms, array($term_id)); //term löschen
+	    	else
+	    		array_push($terms, $term_id);
 
-  		//2. get all other posts linked to that family
-		$args = array(
-			'tax_query' => array(
-				array(
-					'taxonomy' => 'fz_original_family',
-					'field' => 'id',
-					'terms' => $family
-				)
-			)
-		);
-		$query = new WP_Query( $args );
-
-		// set their tags too!
-		foreach( $query->posts as $member){
-			wp_set_post_terms( $member->ID, $terms, $taxonomy, false ); 
+	    	// update post
+	  		wp_set_post_terms( $part_id, $terms, $taxonomy, false ); //false = replace tags
 		}
-
-		echo hey_top_parents('fz_taxonomy2', $post_id);
-		 
-		die(); //important?
+		
+		die();
 
 	} // end if
 }
-add_action('wp_ajax_fz_add_tax_to_post', 'fz_add_tax_to_post');
+add_action('wp_ajax_fz_apply_tax_to_family', 'fz_apply_tax_to_family');
 
-function fz_remove_tax_from_post() {
+function fz_remove_tax_from_family() {
 
-	if( isset($_POST['post_id']) && isset($_POST['tax_id'])){
+	if( isset($_POST['family_id']) && isset($_POST['term_id'])){
 
-		$post_id = $_POST['post_id'];
-		$tax_id = $_POST['tax_id'];
+		$family_id = $_POST['family_id'];
+		$term_id = $_POST['term_id'];
 
-  		wp_set_post_terms( $post_id, $tax_id, 'fz_taxonomy2', false ); //true = append taxs instead of overwrite
+  		wp_set_post_terms( $family_id, $term_id, 'fz_taxonomy2', false ); //true = append taxs instead of overwrite
 
   		//return updated terms
-  		$taxonomy = wp_get_post_terms( $post_id, 'fz_taxonomy2' ); 
+  		$taxonomy = wp_get_post_terms( $family_id, 'fz_taxonomy2' ); 
 
                 foreach( $taxonomy as $tax ){
                     echo "<span class='part-tax'>".$tax->name."</span>";    
@@ -69,6 +53,6 @@ function fz_remove_tax_from_post() {
 
 	} // end if
 }
-add_action('wp_ajax_fz_remove_tax_from_post', 'fz_remove_tax_from_post');
+add_action('wp_ajax_fz_remove_tax_from_family', 'fz_remove_tax_from_family');
 
 ?>

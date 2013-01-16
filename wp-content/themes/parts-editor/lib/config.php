@@ -27,7 +27,7 @@ function roots_main_class() {
 
 // #sidebar CSS classes
 function roots_sidebar_class() {
-  echo 'span3';
+  echo 'span6';
 }
 
 $get_theme_name = explode('/themes/', get_template_directory());

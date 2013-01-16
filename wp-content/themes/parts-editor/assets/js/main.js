@@ -1,86 +1,13 @@
+function getId($dom){
 
+    var classes = $dom.attr('class'),
+        matches = classes.match("-\\d+"), //matches every score followed by a number
+        id;
 
-function moveDown(){
-
-	var $selected_part = jQuery('.selected')
-                		.removeClass('selected')
-                		.next()
-                		.addClass('selected');
-
-    jQuery('html, body').animate({
-         scrollTop: jQuery(".selected").offset().top - 170
-     }, 100);                    
-                        
-
-    selectTags( $selected_part );
-
-}
-
-function moveUp(){
-
-	var $selected_part = jQuery('.selected')
-		                  .removeClass('selected')
-		                  .prev()
-		                  .addClass('selected');
-
-    jQuery('html, body').animate({
-         scrollTop: jQuery(".selected").offset().top - 170
-     }, 100); 
-
-    selectTags( $selected_part );    
-
-}
-
-
-jQuery(document).keydown( function(event){
-    
-    switch (event.keyCode) {
-            case 38:
-                moveUp();
-                break;
-            case 40:
-                moveDown();
-                break;
+    if(matches){
+        id = matches[0];
+        id = id.substr(1); // remove the prepending score
     }
-});
 
-jQuery(document).ready( function(){
-
-
-    // click auf FZP soll direct den cursor (yellow background) da hinspringen lassen
-    jQuery('div.part').click(function(e){
-
-        jQuery('div.selected').removeClass('selected');
-
-        jQuery(this).addClass('selected');
-    });
-
-
-    // click auf taxonomy item in sidebar
-    // mit live, damit neu dazugekommene (ajax) auch erfasst werden
-
-    jQuery('ul#fz_bins li a').live('click', function(e){
-        
-        var bin_id = jQuery(this).parent('li.cat-item').attr('class').substr(18); // class="cat-item cat-item-142"
-        var post_id = jQuery('.selected span.part-id').text();
-
-        jQuery.ajax({
-            url: wpajax.url,
-            type: 'POST',
-            data: 'action=fz_add_tax_to_post&post_id=' + post_id + '&tax_id=' + bin_id,
-
-            success: function(data) {
-                jQuery('.selected .part-taxonomies').html(data);
-            }
-        });
-
-        
-        
-        return false;
-    } );
-
-
-});
-
-
-
+    return id;
+}

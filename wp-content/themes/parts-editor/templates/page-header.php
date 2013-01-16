@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h3>
+  <!-- <h3>
     <?php
       if (is_home()) {
         if (get_option('page_for_posts', true)) {
@@ -34,5 +34,5 @@
         the_title();
       }
     ?>
-  </h3>
+  </h3> -->
 </div>

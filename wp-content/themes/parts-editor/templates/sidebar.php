@@ -1,60 +1,77 @@
-<div id="bins-sidebar" style="position: fixed;">
+<div id="bins-sidebar" data-spy="affix" data-offset-top="0">
+	<h3>Taxonomy</h3>
 
-	<ul id="fz_bins">
+<div id="bins" class="row">
 <?php 
 
 	$parent_terms = get_terms('fz_taxonomy2', 'hide_empty=0&parent=0');
  
+	global $colors;
+
+ 	$i = 0;
  	foreach ( $parent_terms as $term ){
 
- 		echo "<li><h4>"  .$term->name . "</h4>";
+ 		echo "<div class='span2 bin bin-{$term->term_id}'>
+ 				<h4 style='color: {$colors[$i++]};'>{$term->name}</h4>
+
+ 				<table>";
 
  		$child_terms = get_terms('fz_taxonomy2', 'hide_empty=0&parent='.$term->term_id);
- 		echo "<ul class=\"children\">";
  		foreach ( $child_terms as $term ){
 
  			$term_id = $term->term_id;
 
- 			echo "<li class='cat-item cat-item-$term_id'><a href='#'>"  .$term->name . " (".$term->count.")</a></li>";
+ 			echo "<tr>
+ 					<td><a href='#' class='group group-{$term->term_id}' style='color: #555;'>"  .$term->name . " (".$term->count.")</a></td>
+ 				  </tr>";
 
  		}
- 		echo "</ul></li>";
+ 		echo "	</table>
+ 			  </div>";
 
  	}
 ?>
-	</ul>
+</div>
 
-	<form id="new-tag-form" action="<?php echo admin_url('edit-tags.php'); ?>" method="post">
-		<input type="hidden" name="action" value="add-tag">
-		<input type="hidden" name="screen" value="edit-fz_taxonomy2">
-		<input type="hidden" name="taxonomy" value="fz_taxonomy2">
-		<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
-		<input type="hidden" name="post_type" value="fz_part">
-		<input type="hidden" id="_wpnonce_add-tag" name="_wpnonce_add-tag" value="<?php echo wp_create_nonce('add-tag'); ?>">
-		<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
+<script>
+	jQuery('#groups').masonry({
+  		itemSelector: '.group'
+	});
+</script>
 
-		<em class="info">New Subcategory</em>
-		<p>
-		<?php 
+<div class="row">
+	<div class="span6">
+		<h4>Add Group to Bin</h4>
 
-			$args = array(	'hide_empty' => 0, 
-							'hide_if_empty' => false, 
-							'parent' => 0,
-							'name' => 'parent', 
-							'orderby' => 'name', 
-							'taxonomy' => 'fz_taxonomy2', 
-							'hierarchical' => true
-			);
+		<form id="new-tag-form" action="<?php echo admin_url('edit-tags.php'); ?>" method="post">
+			<input type="hidden" name="action" value="add-tag">
+			<input type="hidden" name="screen" value="edit-fz_taxonomy2">
+			<input type="hidden" name="taxonomy" value="fz_taxonomy2">
+			<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
+			<input type="hidden" name="post_type" value="fz_part">
+			<input type="hidden" id="_wpnonce_add-tag" name="_wpnonce_add-tag" value="<?php echo wp_create_nonce('add-tag'); ?>">
+			<input type="hidden" name="_wp_http_referer" value="'+window.location+'">
 
-			wp_dropdown_categories(	$args );
+			<?php 
 
-		?>
-		<br>
-		<input name="tag-name" id="tag-name" type="text" value="" size="40" aria-required="true">
-		<input type="submit" id="submit" style="display:none;">
-		</p>
-	</form>
+				$args = array(	'hide_empty' => 0, 
+								'hide_if_empty' => false, 
+								'parent' => 0,
+								'name' => 'parent', 
+								'orderby' => 'name', 
+								'taxonomy' => 'fz_taxonomy2', 
+								'hierarchical' => true,
+								'class' => 'span2'
+				);
 
+				wp_dropdown_categories(	$args );
+
+			?>
+			<input class="span2" name="tag-name" id="tag-name" type="text" value="" size="40" aria-required="true">
+			<input type="submit" id="submit" style="display:none;">
+		</form>
+	</div>
+</div>	
 	<script>
 
 		jQuery('#new-tag-form').live('submit', function(e){
@@ -69,7 +86,7 @@
 			jQuery.post("<?php echo admin_url('edit-tags.php'); ?>", form_data)
 			.complete( function(data){
 				//update list
-				jQuery('#fz_bins').load(window.location + ' #fz_bins > *');
+				jQuery('#groups').load(window.location + ' #groups > *');
 
 				//reset input field
 				jQuery('input#tag-name').val('').focus();

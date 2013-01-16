@@ -37,6 +37,11 @@ function roots_scripts() {
     wp_enqueue_script('comment-reply');
   }
 
+  //hansis imports
+  wp_register_script('masonry', get_template_directory_uri() . '/assets/js/vendor/jquery.masonry.js', false, null, false);
+  wp_enqueue_script('masonry');
+
+
   wp_register_script('roots_plugins', get_template_directory_uri() . '/assets/js/plugins.js', false, null, false);
   wp_register_script('roots_main', get_template_directory_uri() . '/assets/js/main.js', false, null, false);
   wp_enqueue_script('roots_plugins');
