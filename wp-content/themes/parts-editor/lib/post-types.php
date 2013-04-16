@@ -117,7 +117,7 @@ function fz_register_taxonomies() {
 		'fz_original_bin',
 		'fz_fzp',
 		array(
-			'label' => __( 'Original bin' ),
+			'label' => __( 'Bin' ),
 			'rewrite' => array( 'slug' => 'fzb' )
 		)
 	);
@@ -125,7 +125,7 @@ function fz_register_taxonomies() {
 		'fz_original_tags',
 		'fz_fzp',
 		array(
-			'label' => __( 'Original tags' ),
+			'label' => __( 'Tags' ),
 			'rewrite' => array( 'slug' => 'fzp-tag' )
 		)
 	);
@@ -133,7 +133,7 @@ function fz_register_taxonomies() {
 		'fz_original_family',
 		'fz_fzp',
 		array(
-			'label' => __( 'Original family' ),
+			'label' => __( 'Family' ),
 			'rewrite' => array( 'slug' => 'fzp-family' )
 		)
 	);
@@ -141,21 +141,11 @@ function fz_register_taxonomies() {
 
 	//new taxonomies 
 	register_taxonomy(
-		'fz_taxonomy',
+		'fz_taxonomy_2013',
 		'fz_fzp',
 		array(
 			'label' => __( 'Taxonomy' ),
-			'rewrite' => array( 'slug' => 'fzp-tax' ),
-			'hierarchical' => true
-		)
-	);
-
-	register_taxonomy(
-		'fz_taxonomy2',
-		'fz_fzp',
-		array(
-			'label' => __( 'Taxonomy2' ),
-			'rewrite' => array( 'slug' => 'fzp-tax2' ),
+			'rewrite' => array( 'slug' => 'fzp-tax2013' ),
 			'hierarchical' => true
 		)
 	);

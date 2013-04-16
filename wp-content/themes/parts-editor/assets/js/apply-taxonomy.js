@@ -14,7 +14,7 @@ $('#sidebar a.group').live('click', function(e){
             data: 'action=fz_apply_tax_to_family&family_id='+family_id+'&term_id='+group_id,
 
             success: function(data) {
-                //$('.family-selected').html(window.location + ' #groups > *);
+                $('.family-selected .applied-taxonomies').html(data);
             }
         });
         

@@ -1,138 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
-<title>Tools</title>
-<instances>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Prototyping">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="screwshield-v15" modelIndex="0" path="core/screwshield-v15.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="TinyBreadboardModuleID" modelIndex="0" path="core/tinyBreadboard.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="proto_shield_v6MEGA" modelIndex="0" path="core/proto_shield_v6MEGA.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="MiniBreadboardModuleID" modelIndex="0" path="core/miniBreadboard.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="HalfBreadboardModuleID" modelIndex="0" path="core/halfBreadboard.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="BreadboardModuleID" modelIndex="0" path="core/breadboard.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Breadboard-RSR03MB102-ModuleID" modelIndex="0" path="core/breadboard2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="one_layer_Arduino_Mega_R3_PCB" modelIndex="0" path="core/arduino-mega-r3-shield_one_layer.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Arduino_Mega_R3_PCB" modelIndex="0" path="core/arduino-mega-r3-shield_two_layer.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="423120090505" modelIndex="0" path="core/arduino-shield.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="423120090505_2" modelIndex="0" path="core/arduino-shield_two_layer.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Power Screwshield 1.0a" modelIndex="0" path="core/Power Screwshield 1.0a.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ProtoShield-Mini-v12" modelIndex="0" path="core/ProtoShield-Mini-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ProtoShield-v25" modelIndex="0" path="core/ProtoShield-v25.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Mega_Shield-v13" modelIndex="0" path="core/Mega_Shield-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="13f88e58b86d08d73d112f0fb05e6968" modelIndex="0" path="core/Half_breadboard.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Header">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="e3afbdaad7b1e3e1408df3c505763145" modelIndex="0" path="core/avr_isp_10_pin.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-</instances>
+<module blabla="whuaaat">
+  <title>Tools</title>
+  <instances>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Prototyping">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="screwshield-v15" modelIndex="0" path="core/screwshield-v15.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="TinyBreadboardModuleID" modelIndex="0" path="core/tinyBreadboard.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="proto_shield_v6MEGA" modelIndex="0" path="core/proto_shield_v6MEGA.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="MiniBreadboardModuleID" modelIndex="0" path="core/miniBreadboard.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="HalfBreadboardModuleID" modelIndex="0" path="core/halfBreadboard.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="BreadboardModuleID" modelIndex="0" path="core/breadboard.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Breadboard-RSR03MB102-ModuleID" modelIndex="0" path="core/breadboard2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="one_layer_Arduino_Mega_R3_PCB" modelIndex="0" path="core/arduino-mega-r3-shield_one_layer.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Arduino_Mega_R3_PCB" modelIndex="0" path="core/arduino-mega-r3-shield_two_layer.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="423120090505" modelIndex="0" path="core/arduino-shield.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="423120090505_2" modelIndex="0" path="core/arduino-shield_two_layer.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Power Screwshield 1.0a" modelIndex="0" path="core/Power Screwshield 1.0a.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ProtoShield-Mini-v12" modelIndex="0" path="core/ProtoShield-Mini-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ProtoShield-v25" modelIndex="0" path="core/ProtoShield-v25.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Mega_Shield-v13" modelIndex="0" path="core/Mega_Shield-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="13f88e58b86d08d73d112f0fb05e6968" modelIndex="0" path="core/Half_breadboard.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Header">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="e3afbdaad7b1e3e1408df3c505763145" modelIndex="0" path="core/avr_isp_10_pin.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+  </instances>
+</module>

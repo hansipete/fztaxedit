@@ -4,13 +4,11 @@
 
 <?php
 
-	$taxonomy = 'fz_taxonomy2';
+	$taxonomy = 'fz_taxonomy_2013';
 	$familyTaxonomy = 'fz_original_family';
 
 	//get bins (= first level in taxonomy)
 	$bins = get_terms_by_parent($taxonomy, 0);
-
-	print_r($bins);
 
 	//for every bin
 	foreach ( $bins as $bin ) {
@@ -27,6 +25,8 @@
 			
 			//init group term values
 			$group = get_term_by( 'id', $group, $taxonomy );
+
+			if(!empty($group)){
 
 			// output group title
 			echo "<h4>{$group->name}</h4>";
@@ -59,6 +59,8 @@
 				
 				echo "<span class=\"label label-info\">{$family->name} <small>{$family->count}</small></span> ";
 			}
+
+			} //endif
 
 		}
 

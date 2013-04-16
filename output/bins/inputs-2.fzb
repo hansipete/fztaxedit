@@ -1,194 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
-<title>Inputs</title>
-<instances>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Touch">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Touch_Shield-v11" modelIndex="0" path="core/Touch_Shield-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Potentiometer">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3234DBDC00PotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_12mm.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="4244TPM6MMPotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_6mm.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3234DFDC00PotentiometerModuleID" modelIndex="0" path="core/pot_big.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3b1a8578c21940dfe27253a7b57c81f5PotentiometerModuleID" modelIndex="0" path="core/pot-slider.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="cee49c7a6b94e1759bb995959b72f50cPotentiometerModuleID" modelIndex="0" path="core/pot-small.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c7acdd26ccb2e7e05c0ayxcva975c0afdsaPotentiometerModuleID" modelIndex="0" path="core/SMD_AD5206.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ALPS_STEC12E07" modelIndex="0" path="core/Rotary_Encoder.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c7acdd26c5e6355cb2e7e05c0aa975c0PotentiometerModuleID" modelIndex="0" path="core/AD5206 Digital Potentiometer.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Switches &amp;amp; Buttons">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c0e65b2d0c9003507cf4a3222e995a45" modelIndex="0" path="core/reedSwitch_500mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="20A9BBEE34_ST-2leadbutton-horizon" modelIndex="0" path="core/pushbutton_2_horizontal.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="20A9BBEE34_ST" modelIndex="0" path="core/pushbutton_4_horizontal.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1238DBDC00-toggle-switch" modelIndex="0" path="core/basic-toggle-switch.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="d206ca0d70364191f0b3fd30d5e53c5d" modelIndex="0" path="core/Tilt switch.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="20A9BBasdfEEasdf34_ST" modelIndex="0" path="core/SMD_pushbutton.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-slide-switch13" modelIndex="0" path="core/LilyPad-slide-switch13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Misc">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Trackballer-v12" modelIndex="0" path="core/Trackballer-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ISD1932 Breakout-v11" modelIndex="0" path="core/ISD1932 Breakout-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Joystick-Breakout-v11" modelIndex="0" path="core/Joystick-Breakout-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Joystick_Shield-v14" modelIndex="0" path="core/Joystick_Shield-v14.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8ca227160f651d06d5d89a6e8ed3a35f" modelIndex="0" path="core/EDGY_Analog_In.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-</instances>
+<module blabla="whuaaat">
+  <title>Inputs</title>
+  <instances>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Touch">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Touch_Shield-v11" modelIndex="0" path="core/Touch_Shield-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Potentiometer">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3234DBDC00PotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_12mm.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="4244TPM6MMPotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_6mm.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3234DFDC00PotentiometerModuleID" modelIndex="0" path="core/pot_big.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3b1a8578c21940dfe27253a7b57c81f5PotentiometerModuleID" modelIndex="0" path="core/pot-slider.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="cee49c7a6b94e1759bb995959b72f50cPotentiometerModuleID" modelIndex="0" path="core/pot-small.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c7acdd26ccb2e7e05c0ayxcva975c0afdsaPotentiometerModuleID" modelIndex="0" path="core/SMD_AD5206.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ALPS_STEC12E07" modelIndex="0" path="core/Rotary_Encoder.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c7acdd26c5e6355cb2e7e05c0aa975c0PotentiometerModuleID" modelIndex="0" path="core/AD5206 Digital Potentiometer.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Switches &amp;amp; Buttons">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c0e65b2d0c9003507cf4a3222e995a45" modelIndex="0" path="core/reedSwitch_500mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="20A9BBEE34_ST-2leadbutton-horizon" modelIndex="0" path="core/pushbutton_2_horizontal.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="20A9BBEE34_ST" modelIndex="0" path="core/pushbutton_4_horizontal.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1238DBDC00-toggle-switch" modelIndex="0" path="core/basic-toggle-switch.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="d206ca0d70364191f0b3fd30d5e53c5d" modelIndex="0" path="core/Tilt switch.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="20A9BBasdfEEasdf34_ST" modelIndex="0" path="core/SMD_pushbutton.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-slide-switch13" modelIndex="0" path="core/LilyPad-slide-switch13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Misc">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Trackballer-v12" modelIndex="0" path="core/Trackballer-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ISD1932 Breakout-v11" modelIndex="0" path="core/ISD1932 Breakout-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Joystick-Breakout-v11" modelIndex="0" path="core/Joystick-Breakout-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Joystick_Shield-v14" modelIndex="0" path="core/Joystick_Shield-v14.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8ca227160f651d06d5d89a6e8ed3a35f" modelIndex="0" path="core/EDGY_Analog_In.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+  </instances>
+</module>

@@ -1,58 +1,146 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php 
 
-<?php
+    //get_template_part('templates/page', 'header');
 
-    $paged = 1;
-    if ( get_query_var('paged') ) $paged = get_query_var('paged');
-    if ( get_query_var('page') ) $paged = get_query_var('page');
-    $i = 0;
-    $loop = new WP_Query( array( 'post_type' => 'fz_fzp', 'paged' => $paged) );
-    while ( $loop->have_posts() ) : $loop->the_post();
-   
-    $terms = wp_get_object_terms( $post->ID, 'fz_taxonomy2' );
+    // BINS
+    $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
+    foreach ( $bins as $i => $bin) {
+        echo "<div class='span8 bin' data-term-id='{$bin->term_id}' id='bin-{$bin->term_id}'>
+                <h4>{$bin->name}</h4>
+                <div class='row'>";        
 
-?>
+        // BINS > CATEGORIES
+        $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
+        foreach ($categories as $category) {
+            echo "<div class='span8 category' data-term-id='{$category->term_id}' style='background: {$bin->description};'>
+                  <h5>{$category->name} <a href='#delete-category'><small>Delete</small></a></h5>
+                  <div class='row'>";
 
-<div class="part <?php if($i++ == 0) echo 'selected'; ?> part-<?php the_ID(); ?> <?php if( !empty($terms) ) echo "success"; ?>" style="padding: 4px 8px; margin-bottom: 2px; float: left; width: 100%;">
-    
-    <h5><?php the_title(); ?></h5>
+            // BINS > CATEGORIES > PART
+            $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
+            foreach ($parts as $part) {
+                echo "<div class='span2 part'>
+                       <i class='icon-book'></i> {$part->name} <small>({$part->count})</small>";
+                
+                // BINS > CATEGORIES > PART > VARIANTS
+                $variants = new WP_Query( array(
+                                              'post_type' => 'fz_fzp', 
+                                              'tax_query' => array(
+                                                array(
+                                                                    'taxonomy' => 'fz_taxonomy_2013',
+                                                                    'terms' => $part->term_id,
+                                                                    'field' => 'term_id'
+                                                )
+                )));
 
-    <?php echo '<a href="'.get_edit_post_link().'"">Edit</a>'; ?>
-    
-    <div class="info">
-    	<?php the_excerpt(); ?>
-    </div>
+                echo "<ul class='fzp-list unstyled' data-part-term-id='{$part->term_id}'>";
+                while ( $variants->have_posts() ) : $variants->the_post();
+                    echo "<li><a href='{$post->guid}' data-fzp-id='{$post->ID}' data-toggle='tooltip' data-placement='top' data-original-title='{$post->post_content}'>{$post->post_title}</a></li>";
+                endwhile;
+                echo "</ul>";
+                echo "</div>"; //part
+            }
 
-    <em class="lab">#</em>
-    <div style="font-size: 11px;">
-        <span class="part-id"><?php the_ID(); ?></span>
-    </div>
-
-    <em class="lab">Original bin:</em>
-    <div style="font-size: 11px;">
-        <?php echo get_the_term_list( $post->ID, 'fz_original_bin', null, ', '); ?>
-    </div>
-    
-    <em class="lab">Original family:</em>
-    <div style="font-size: 11px;">
-        <?php echo get_the_term_list( $post->ID, 'fz_original_family'); ?>
-    </div>
-    
-    <div class="part-taxonomies">
-        <?php echo hey_top_parents('fz_taxonomy2', $post->ID); ?>
-    </div>
-</div>
-
-<?php
-    endwhile; ?>
-    
-<div class="navigation">
-    <?php
-    if ( function_exists( 'wp_pagenavi' ) ) {
-       
-        wp_pagenavi( array( 'query' => $loop ) );
-        wp_reset_postdata();
+            echo "</div></div>"; //category
+        }   
         
+        echo "</div></div>"; // bin row
     }
-    ?>
-</div>
+ ?>
+
+ <script>
+
+
+    $(document).ready( function(){
+
+        
+        $fzplists = $(".fzp-list");
+
+        // sortable for drag and drop to dock
+        $fzplists.sortable({
+          connectWith: ".fzp-list"
+        }).disableSelection();
+
+        /*
+            ELEMENT DRAGGED OUT OF PART EVENT
+        */
+        $fzplists.on("sortremove", function( event, ui ) {
+            
+            $fzp_a = $(event.srcElement);
+            $part_ul = $(event.target);
+            part_term_id = $part_ul.data('part-term-id');
+            
+            // do nothing when the dock is left (no ajax)
+            if( part_term_id ){
+                
+                $.ajax({ url: wpajax.url, type: 'POST',
+                    data: {
+                            action:         'fz_remove_fzp_from_part',
+                            part_term_id:   part_term_id,
+                            fzp_id:         $fzp_a.data('fzp-id')
+                    },
+                    success: function(data) {
+                        //console.log(data);
+                    }
+                });               
+
+            }
+
+        });
+
+        /*
+            ELEMENT DRAGGED IN PART EVENT
+        */
+        $fzplists.on("sortreceive", function( event, ui ) {
+            
+            $fzp_a = $(event.srcElement);
+            $part_ul = $(event.target);
+            part_term_id = $part_ul.data('part-term-id');
+            
+            // do nothing when the dock is left (no ajax)
+            if( part_term_id ){
+                
+                $.ajax({ url: wpajax.url, type: 'POST',
+                    data: {
+                            action:         'fz_add_fzp_to_part',
+                            part_term_id:   part_term_id,
+                            fzp_id:         $fzp_a.data('fzp-id')
+                    },
+                    success: function(data) {
+                        //console.log(data);
+                    }
+                });               
+
+            }
+
+        });        
+
+    });
+
+
+    
+
+    
+    // tool tips
+    var $tooltips = $("*[data-toggle]");
+    $tooltips.tooltip();
+
+   
+
+    $('.category2part').click(function(){
+
+        var term_id = $(this).data('term-id');
+
+        $.ajax({
+            url: wpajax.url,
+            type: 'POST',
+            data: 'action=fz_create_part_from_category&term_id='+term_id,
+
+            success: function(data) {
+                console.log(data);
+            }
+        });
+        
+        return false;
+    });
+</script>

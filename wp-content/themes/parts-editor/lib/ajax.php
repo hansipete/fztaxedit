@@ -1,10 +1,140 @@
 <?php
 
+function fz_new_part(){
+
+	/*
+		cat:1010
+		new-part-title:asfasasf
+		fzp_ids[]:3159
+	*/
+
+	$taxonomy = 'fz_taxonomy_2013';		
+
+	// create new part form category name
+	$part = wp_insert_term(
+        $_POST['new-part-title'],
+        $taxonomy, // the taxonomy
+        array( 'parent'=> (int) $_POST['cat'] )
+    );
+
+    //need to have this (bug in wp?)
+    delete_option("fz_taxonomy_2013_children");
+
+	//loop through fzps and apply term
+	foreach ($_POST['fzp_ids'] as $fzp_id) {
+		echo $fzp_id . "<br>\n";
+	  	wp_set_post_terms( $fzp_id, $part['term_id'], $taxonomy);
+	}	
+
+	die();
+};
+add_action('wp_ajax_fz_new_part', 'fz_new_part');	
+
+
+function fz_remove_fzp_from_part(){
+
+	/*
+		part_term_id:   $part_ul.data('part-term-id'),
+        fzp_id:         $fzp_a.data('fzp-id')
+    */
+	
+	$taxonomy = 'fz_taxonomy_2013';
+	$part_term_id = $_POST['part_term_id'];
+	$fzp_id = $_POST['fzp_id'];
+
+	my_remove_post_term( $fzp_id, (int) $part_term_id, $taxonomy );
+
+    die();
+}
+add_action('wp_ajax_fz_remove_fzp_from_part', 'fz_remove_fzp_from_part');	
+
+function fz_add_fzp_to_part(){
+
+	/*
+		part_term_id:   $part_ul.data('part-term-id'),
+        fzp_id:         $fzp_a.data('fzp-id')
+    */
+	
+	$taxonomy = 'fz_taxonomy_2013';
+	$part_term_id = $_POST['part_term_id'];
+	$fzp_id = $_POST['fzp_id'];
+
+	wp_set_object_terms( $fzp_id, (int) $part_term_id, $taxonomy, true); // append terms (when a part has multiple occurances)
+
+    die();
+}
+add_action('wp_ajax_fz_add_fzp_to_part', 'fz_add_fzp_to_part');	
+
+
+/*
+	Called from edit interface. Create new categpory in bin.
+*/
+function fz_new_category_in_bin(){
+	$taxonomy = 'fz_taxonomy_2013';
+	$term_id = $_POST['term_id'];
+	$category_name = $_POST['category_name'];
+
+	$category_id = wp_insert_term(
+        $category_name, // the term 
+        $taxonomy, // the taxonomy
+        array( 'parent'=> $term_id )
+    );
+
+    //need to have this (bug in wp?)
+    delete_option("fz_taxonomy_2013_children");
+
+    die();
+}
+add_action('wp_ajax_fz_new_category_in_bin', 'fz_new_category_in_bin');	
+
+function fz_create_part_from_category(){
+
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$term_id = $_POST['term_id'];
+	$term = get_term( $term_id, $taxonomy );
+
+	// create new part form category name
+	$part_id = wp_insert_term(
+        $term->name, // the term 
+        $taxonomy, // the taxonomy
+        array( 'parent'=> $term_id )
+    );
+
+	// query all parts linked to this term
+    $my_query = new WP_Query( array(
+                                     'post_type' => 'fz_fzp', 
+                                     'tax_query' => array(
+                                       array(
+                                                           'taxonomy' => 'fz_taxonomy_2013',
+                                                           'terms' => $term_id,
+                                                           'field' => 'term_id'
+                                       )
+    )));
+
+    while ( $my_query->have_posts() ){ $my_query->the_post();
+
+    	//change taxonomy for every fzp
+    	wp_set_object_terms( $my_query->post->ID, $part_id, $taxonomy);            	
+
+    }
+
+    //need to have this (bug in wp?)
+    delete_option("fz_taxonomy_2013_children");
+
+    die();
+}
+add_action('wp_ajax_fz_create_part_from_category', 'fz_create_part_from_category');
+
+
+
 function fz_apply_tax_to_family() {
+
+	$taxonomy = 'fz_taxonomy_2013';
 
 	if( isset($_POST['family_id']) && isset($_POST['term_id'])){
 
-		$taxonomy = 'fz_taxonomy2';
+		
 		$family_id = $_POST['family_id'];
 		$term_id = $_POST['term_id'];
 
@@ -26,10 +156,13 @@ function fz_apply_tax_to_family() {
 	    	// update post
 	  		wp_set_post_terms( $part_id, $terms, $taxonomy, false ); //false = replace tags
 		}
-		
-		die();
+
+		// echo updated taxonomy DOM
+		the_applied_taxononmies($part_id, true);
 
 	} // end if
+
+	die();
 }
 add_action('wp_ajax_fz_apply_tax_to_family', 'fz_apply_tax_to_family');
 
@@ -40,10 +173,10 @@ function fz_remove_tax_from_family() {
 		$family_id = $_POST['family_id'];
 		$term_id = $_POST['term_id'];
 
-  		wp_set_post_terms( $family_id, $term_id, 'fz_taxonomy2', false ); //true = append taxs instead of overwrite
+  		wp_set_post_terms( $family_id, $term_id, 'fz_taxonomy_2013', false ); //true = append taxs instead of overwrite
 
   		//return updated terms
-  		$taxonomy = wp_get_post_terms( $family_id, 'fz_taxonomy2' ); 
+  		$taxonomy = wp_get_post_terms( $family_id, 'fz_taxonomy_2013' ); 
 
                 foreach( $taxonomy as $tax ){
                     echo "<span class='part-tax'>".$tax->name."</span>";    

@@ -1,593 +1,594 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
-<title>Plattforms &amp; Processors</title>
-<instances>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Propeller">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="d30f97b6fbe1asdad59ea7f0d636a7a" modelIndex="0" path="core/controller_propeller_D40.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Atmel">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8e4b4f3e54f56b3f712afc6a8e6a8a71" modelIndex="0" path="core/atmega168_8e4b4f3e54f56b3f712afc6a8e6a8a71.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8e4b4f3e54f56b3f712afc6a8e6a8a71328" modelIndex="0" path="core/atmega328_8e4b4f3e54f56b3f712afc6a8e6a8a71.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="C74DAFDC-B12B-4759-AC52-27344fdgsfA2C2209" modelIndex="0" path="core/SMD_atmega168.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="mega2560" modelIndex="0" path="core/SMD_mega2560.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="0169a1437c0125d6d12452c99a8c3cc3" modelIndex="0" path="core/Atmega_168_TQFP32.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8606aaeac6ae43adf3f4ee2ce89b9d0b" modelIndex="0" path="core/ATmega644.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="91c6fc103d5e4575e7164fa1230d1621" modelIndex="0" path="core/ATtiny85.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Arduino">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="0d68adbdf34156383180850897173015" modelIndex="0" path="core/controller_pico.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2f57d05254229664aaef3aa9f7ac693d" modelIndex="0" path="core/arduino_mega.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="4321DEAB24_ST" modelIndex="0" path="core/arduino.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Mainboard-v18" modelIndex="0" path="core/Mainboard-v18.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-Simple-v22" modelIndex="0" path="core/LilyPad-Simple-v22.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ArduinoUnoR3" modelIndex="0" path="core/Arduino_UNO_R3.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3661e4bbb7d863e04ccf7a9994dc65ff" modelIndex="0" path="core/Arduino Fio.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="6afb899bc94444e19eac0acf1c625a12" modelIndex="0" path="core/Arduino LilyPad.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="371230f4269dfda53ae3cc123cd5fdb4" modelIndex="0" path="core/Arduino Mini.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c46f1ec52c4917dd6e7aa12d7b7d66ea" modelIndex="0" path="core/Arduino Nano.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c46f1ec52c491712345aa12d7b7d66ea" modelIndex="0" path="core/Arduino Nano_v30.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Arduino-Ethernet-v11" modelIndex="0" path="core/Arduino-Ethernet-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Arduino-Pro-Mini-v11" modelIndex="0" path="core/Arduino-Pro-Mini-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="LilyPad">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="PowerSupply-Lipo-v14" modelIndex="0" path="core/PowerSupply-Lipo-v14.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="NCP1400_5V_Step-Up_v11" modelIndex="0" path="core/NCP1400_5V_Step-Up_v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Lilypad_PowerSupply-v16" modelIndex="0" path="core/Lilypad_PowerSupply-v16.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad SimplePower-v13" modelIndex="0" path="core/LilyPad SimplePower-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-Accelerometer-v17" modelIndex="0" path="core/LilyPad-Accelerometer-v17.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-Button-v12" modelIndex="0" path="core/LilyPad-Button-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad Battery-Connect-v11" modelIndex="0" path="core/LilyPad Battery-Connect-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad Coincell-Battery-v17" modelIndex="0" path="core/LilyPad Coincell-Battery-v17.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="FTDI Basic-v13" modelIndex="0" path="core/FTDI Basic-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="FTDI Basic-v13_3.3v" modelIndex="0" path="core/FTDI Basic-v13_3.3v.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="FTDI Basic-v13_lily" modelIndex="0" path="core/FTDI Basic-v13_lily.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Breadboard Power Supply - SMD v12" modelIndex="0" path="core/Breadboard Power Supply - SMD v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Buzzer-v15" modelIndex="0" path="core/Buzzer-v15.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ADXL345-BreakoutBoard-v13" modelIndex="0" path="core/ADXL345-BreakoutBoard-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="PIC">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="83fdcaa81d3a1b40d252954136f96f24" modelIndex="0" path="core/PIC_16F877A.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_08" modelIndex="0" path="core/PICAXE_08.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28X" modelIndex="0" path="core/PICAXE_28X.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_08M" modelIndex="0" path="core/PICAXE_08M.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28X1" modelIndex="0" path="core/PICAXE_28X1.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_14M" modelIndex="0" path="core/PICAXE_14M.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28X2" modelIndex="0" path="core/PICAXE_28X2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_18" modelIndex="0" path="core/PICAXE_18.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28X2_3V" modelIndex="0" path="core/PICAXE_28X2_3V.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_18A" modelIndex="0" path="core/PICAXE_18A.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_40X" modelIndex="0" path="core/PICAXE_40X.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_18M" modelIndex="0" path="core/PICAXE_18M.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_40X1" modelIndex="0" path="core/PICAXE_40X1.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_18X" modelIndex="0" path="core/PICAXE_18X.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_40X2" modelIndex="0" path="core/PICAXE_40X2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_20M" modelIndex="0" path="core/PICAXE_20M.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_40X2_3V" modelIndex="0" path="core/PICAXE_40X2_3V.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_20X2" modelIndex="0" path="core/PICAXE_20X2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28" modelIndex="0" path="core/PICAXE_28.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_PICAXE_28A" modelIndex="0" path="core/PICAXE_28A.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Others">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="jlpcb-089" modelIndex="0" path="core/jlpcb-089.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="jlpcb-104" modelIndex="0" path="core/jlpcb-104.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c4256c251d53ee723058f86aa6d016a2" modelIndex="0" path="core/gogoboard 4.0.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="346b613c666d64fc5ac622407ace7130" modelIndex="0" path="core/controller_mbed.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="288ea56ea458fbe4774256402d9b0e34" modelIndex="0" path="core/Teensy 2.0 ++.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="a0bc75e3536cc51ac28b344cead00745" modelIndex="0" path="core/Teensy 2.0.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="710CCDDF9B0340C2977584EE6F1F98F7" modelIndex="0" path="core/NetduinoPlus.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="42D46DE18C0F4AD2B55547E24C93125A" modelIndex="0" path="core/Netduino.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="37E5C8D507334A9E94A6DE1EBB3D272F" modelIndex="0" path="core/NetduinoMini.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c624c0ff7a2eb1ca7994123ee87f58fb" modelIndex="0" path="core/BASIC_Stamp_1.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="760832bc79fe1f34e99f420ad872a0b8" modelIndex="0" path="core/BASIC_Stamp_2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2d3cbb853835749c51cc0d6e4bfd2c90" modelIndex="0" path="core/BASIC_Stamp_2e.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="4d5dcc6408079f54cbda4d35e4d0b8fa" modelIndex="0" path="core/BASIC_Stamp_2p24.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="5f7b51547fafb902305f5b3cbb81bb74" modelIndex="0" path="core/BASIC_Stamp_2p40.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="f0d627984e1614e5c1c797471f529619" modelIndex="0" path="core/BASIC_Stamp_2pe.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="5cc9de9cdfa593d8e073514cde1c7c77" modelIndex="0" path="core/BASIC_Stamp_2px24.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="145b5412a0ffbe91a876166139419e15" modelIndex="0" path="core/BASIC_Stamp_2sx.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Adafruit_Atmega32u4_Breakout" modelIndex="0" path="core/Adafruit_Atmega32u4_Breakout.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Arduino Shields">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Wiring">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2c9d427b475ef8d07dc752a4362af0ae" modelIndex="0" path="core/controller_wiring.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="9801da71ed31be24b64d311bc9a1b0b0" modelIndex="0" path="core/controller_wiring_mini.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="b7c86ac27f1d86eafa64253206dff603" modelIndex="0" path="core/Wiring_S.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-</instances>
+<module blabla="whuaaat">
+  <title>Plattforms &amp; Processors</title>
+  <instances>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Propeller">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="d30f97b6fbe1asdad59ea7f0d636a7a" modelIndex="0" path="core/controller_propeller_D40.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Atmel">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8e4b4f3e54f56b3f712afc6a8e6a8a71" modelIndex="0" path="core/atmega168_8e4b4f3e54f56b3f712afc6a8e6a8a71.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8e4b4f3e54f56b3f712afc6a8e6a8a71328" modelIndex="0" path="core/atmega328_8e4b4f3e54f56b3f712afc6a8e6a8a71.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="C74DAFDC-B12B-4759-AC52-27344fdgsfA2C2209" modelIndex="0" path="core/SMD_atmega168.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="mega2560" modelIndex="0" path="core/SMD_mega2560.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="0169a1437c0125d6d12452c99a8c3cc3" modelIndex="0" path="core/Atmega_168_TQFP32.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8606aaeac6ae43adf3f4ee2ce89b9d0b" modelIndex="0" path="core/ATmega644.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="91c6fc103d5e4575e7164fa1230d1621" modelIndex="0" path="core/ATtiny85.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Arduino">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="0d68adbdf34156383180850897173015" modelIndex="0" path="core/controller_pico.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2f57d05254229664aaef3aa9f7ac693d" modelIndex="0" path="core/arduino_mega.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="4321DEAB24_ST" modelIndex="0" path="core/arduino.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Mainboard-v18" modelIndex="0" path="core/Mainboard-v18.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-Simple-v22" modelIndex="0" path="core/LilyPad-Simple-v22.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ArduinoUnoR3" modelIndex="0" path="core/Arduino_UNO_R3.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3661e4bbb7d863e04ccf7a9994dc65ff" modelIndex="0" path="core/Arduino Fio.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="6afb899bc94444e19eac0acf1c625a12" modelIndex="0" path="core/Arduino LilyPad.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="371230f4269dfda53ae3cc123cd5fdb4" modelIndex="0" path="core/Arduino Mini.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c46f1ec52c4917dd6e7aa12d7b7d66ea" modelIndex="0" path="core/Arduino Nano.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c46f1ec52c491712345aa12d7b7d66ea" modelIndex="0" path="core/Arduino Nano_v30.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Arduino-Ethernet-v11" modelIndex="0" path="core/Arduino-Ethernet-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Arduino-Pro-Mini-v11" modelIndex="0" path="core/Arduino-Pro-Mini-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="LilyPad">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="PowerSupply-Lipo-v14" modelIndex="0" path="core/PowerSupply-Lipo-v14.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="NCP1400_5V_Step-Up_v11" modelIndex="0" path="core/NCP1400_5V_Step-Up_v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Lilypad_PowerSupply-v16" modelIndex="0" path="core/Lilypad_PowerSupply-v16.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad SimplePower-v13" modelIndex="0" path="core/LilyPad SimplePower-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-Accelerometer-v17" modelIndex="0" path="core/LilyPad-Accelerometer-v17.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-Button-v12" modelIndex="0" path="core/LilyPad-Button-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad Battery-Connect-v11" modelIndex="0" path="core/LilyPad Battery-Connect-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad Coincell-Battery-v17" modelIndex="0" path="core/LilyPad Coincell-Battery-v17.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="FTDI Basic-v13" modelIndex="0" path="core/FTDI Basic-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="FTDI Basic-v13_3.3v" modelIndex="0" path="core/FTDI Basic-v13_3.3v.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="FTDI Basic-v13_lily" modelIndex="0" path="core/FTDI Basic-v13_lily.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Breadboard Power Supply - SMD v12" modelIndex="0" path="core/Breadboard Power Supply - SMD v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Buzzer-v15" modelIndex="0" path="core/Buzzer-v15.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ADXL345-BreakoutBoard-v13" modelIndex="0" path="core/ADXL345-BreakoutBoard-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="PIC">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="83fdcaa81d3a1b40d252954136f96f24" modelIndex="0" path="core/PIC_16F877A.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_08" modelIndex="0" path="core/PICAXE_08.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28X" modelIndex="0" path="core/PICAXE_28X.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_08M" modelIndex="0" path="core/PICAXE_08M.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28X1" modelIndex="0" path="core/PICAXE_28X1.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_14M" modelIndex="0" path="core/PICAXE_14M.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28X2" modelIndex="0" path="core/PICAXE_28X2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_18" modelIndex="0" path="core/PICAXE_18.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28X2_3V" modelIndex="0" path="core/PICAXE_28X2_3V.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_18A" modelIndex="0" path="core/PICAXE_18A.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_40X" modelIndex="0" path="core/PICAXE_40X.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_18M" modelIndex="0" path="core/PICAXE_18M.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_40X1" modelIndex="0" path="core/PICAXE_40X1.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_18X" modelIndex="0" path="core/PICAXE_18X.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_40X2" modelIndex="0" path="core/PICAXE_40X2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_20M" modelIndex="0" path="core/PICAXE_20M.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_40X2_3V" modelIndex="0" path="core/PICAXE_40X2_3V.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_20X2" modelIndex="0" path="core/PICAXE_20X2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28" modelIndex="0" path="core/PICAXE_28.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_PICAXE_28A" modelIndex="0" path="core/PICAXE_28A.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Others">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="jlpcb-089" modelIndex="0" path="core/jlpcb-089.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="jlpcb-104" modelIndex="0" path="core/jlpcb-104.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c4256c251d53ee723058f86aa6d016a2" modelIndex="0" path="core/gogoboard 4.0.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="346b613c666d64fc5ac622407ace7130" modelIndex="0" path="core/controller_mbed.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="288ea56ea458fbe4774256402d9b0e34" modelIndex="0" path="core/Teensy 2.0 ++.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="a0bc75e3536cc51ac28b344cead00745" modelIndex="0" path="core/Teensy 2.0.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="710CCDDF9B0340C2977584EE6F1F98F7" modelIndex="0" path="core/NetduinoPlus.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="42D46DE18C0F4AD2B55547E24C93125A" modelIndex="0" path="core/Netduino.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="37E5C8D507334A9E94A6DE1EBB3D272F" modelIndex="0" path="core/NetduinoMini.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c624c0ff7a2eb1ca7994123ee87f58fb" modelIndex="0" path="core/BASIC_Stamp_1.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="760832bc79fe1f34e99f420ad872a0b8" modelIndex="0" path="core/BASIC_Stamp_2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2d3cbb853835749c51cc0d6e4bfd2c90" modelIndex="0" path="core/BASIC_Stamp_2e.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="4d5dcc6408079f54cbda4d35e4d0b8fa" modelIndex="0" path="core/BASIC_Stamp_2p24.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="5f7b51547fafb902305f5b3cbb81bb74" modelIndex="0" path="core/BASIC_Stamp_2p40.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="f0d627984e1614e5c1c797471f529619" modelIndex="0" path="core/BASIC_Stamp_2pe.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="5cc9de9cdfa593d8e073514cde1c7c77" modelIndex="0" path="core/BASIC_Stamp_2px24.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="145b5412a0ffbe91a876166139419e15" modelIndex="0" path="core/BASIC_Stamp_2sx.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Adafruit_Atmega32u4_Breakout" modelIndex="0" path="core/Adafruit_Atmega32u4_Breakout.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Arduino Shields">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Wiring">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2c9d427b475ef8d07dc752a4362af0ae" modelIndex="0" path="core/controller_wiring.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="9801da71ed31be24b64d311bc9a1b0b0" modelIndex="0" path="core/controller_wiring_mini.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="b7c86ac27f1d86eafa64253206dff603" modelIndex="0" path="core/Wiring_S.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+  </instances>
+</module>

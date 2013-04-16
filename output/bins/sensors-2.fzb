@@ -1,327 +1,328 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
-<title>Sensors</title>
-<instances>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Time">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="asdfRevEd_DS1302" modelIndex="0" path="core/SMD_DS1302.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Real_Time_Clock_Module___DS1307_RTC_Breakout_Board" modelIndex="0" path="core/Real_Time_Clock_Module___DS1307_RTC_Breakout_Board.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="DeadOn RTC - DS3234 Breakout-v11" modelIndex="0" path="core/DeadOn RTC - DS3234 Breakout-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_DS1302" modelIndex="0" path="core/DS1302.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="RevEd_DS1307" modelIndex="0" path="core/DS1307.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Environment">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2012BCEC1FBThermistorModuleID" modelIndex="0" path="core/thermistor_300mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="TMP36_THT" modelIndex="0" path="core/tmp36.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="415c9d899a1e7de6c023ea0731bab117" modelIndex="0" path="core/microphone.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LM34_THT" modelIndex="0" path="core/lm34.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LM35_THT" modelIndex="0" path="core/lm35.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="beab33bd7feee277622ef76dd6e79e4d" modelIndex="0" path="core/infrared_proximity_sensor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="TEMT6000_Breakout-v12" modelIndex="0" path="core/TEMT6000_Breakout-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="TMP102_Breakout-v11" modelIndex="0" path="core/TMP102_Breakout-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="S1133" modelIndex="0" path="core/S1133_Si_Photodiode.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-Light Sensor-v13" modelIndex="0" path="core/LilyPad-Light Sensor-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LilyPad-Temp-v12" modelIndex="0" path="core/LilyPad-Temp-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2010BBCD20113" modelIndex="0" path="core/LDR_photocell_300mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Gas_Sensor_Breakout-v12" modelIndex="0" path="core/Gas_Sensor_Breakout-v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="HIH-4030_Breakout-v10" modelIndex="0" path="core/HIH-4030_Breakout-v10.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="bf73a00d2ecd04be25675ebfb2d130c0" modelIndex="0" path="core/Humidity_Sensor_SHT15.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Humidity_and_Temperature_Sensor_RHT03_6" modelIndex="0" path="core/Humidity_and_Temperature_Sensor_RHT03.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="BMP085 Breakout-v13" modelIndex="0" path="core/BMP085 Breakout-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ad901601e6d29266846fc9e4568504b6" modelIndex="0" path="core/Barometric Pressure Sensor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="17e42b0f30876b6ca457314cbd7e5847" modelIndex="0" path="core/Color_Sensor_Breakout_ADJD_S311.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="Amplified-Mic-Electret-v14" modelIndex="0" path="core/Amplified-Mic-Electret-v14.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Mechanical">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Location &amp;amp; Spacial">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LSM303 breakout board-v11" modelIndex="0" path="core/LSM303 breakout board-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ITG-3200-v11" modelIndex="0" path="core/ITG-3200-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="L3G4200D-Breakout-v10" modelIndex="0" path="core/L3G4200D-Breakout-v10.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="GPSShield-v15" modelIndex="0" path="core/GPSShield-v15.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="HMC5883L_Breakout-v11" modelIndex="0" path="core/HMC5883L_Breakout-v11.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="HMC6352-v18" modelIndex="0" path="core/HMC6352-v18.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="9DoF-Stick-v13" modelIndex="0" path="core/9DoF-Stick-v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ADXL335_v13" modelIndex="0" path="core/ADXL335_v13.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ArduPilotMega_v15" modelIndex="0" path="core/ArduPilotMega_v15.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3_Axis_Accelerometer_Breakout___MMA8452Q" modelIndex="0" path="core/3_Axis_Accelerometer_Breakout___MMA8452Q.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="5DOF-v25" modelIndex="0" path="core/5DOF-v25.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="6DOF-Digital-v10" modelIndex="0" path="core/6DOF-Digital-v10.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Electromagnetic">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ACS712 Low Current Sensor Board v12" modelIndex="0" path="core/ACS712 Low Current Sensor Board v12.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-</instances>
+<module blabla="whuaaat">
+  <title>Sensors</title>
+  <instances>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Time">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="asdfRevEd_DS1302" modelIndex="0" path="core/SMD_DS1302.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Real_Time_Clock_Module___DS1307_RTC_Breakout_Board" modelIndex="0" path="core/Real_Time_Clock_Module___DS1307_RTC_Breakout_Board.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="DeadOn RTC - DS3234 Breakout-v11" modelIndex="0" path="core/DeadOn RTC - DS3234 Breakout-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_DS1302" modelIndex="0" path="core/DS1302.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="RevEd_DS1307" modelIndex="0" path="core/DS1307.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Environment">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2012BCEC1FBThermistorModuleID" modelIndex="0" path="core/thermistor_300mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="TMP36_THT" modelIndex="0" path="core/tmp36.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="415c9d899a1e7de6c023ea0731bab117" modelIndex="0" path="core/microphone.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LM34_THT" modelIndex="0" path="core/lm34.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LM35_THT" modelIndex="0" path="core/lm35.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="beab33bd7feee277622ef76dd6e79e4d" modelIndex="0" path="core/infrared_proximity_sensor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="TEMT6000_Breakout-v12" modelIndex="0" path="core/TEMT6000_Breakout-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="TMP102_Breakout-v11" modelIndex="0" path="core/TMP102_Breakout-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="S1133" modelIndex="0" path="core/S1133_Si_Photodiode.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-Light Sensor-v13" modelIndex="0" path="core/LilyPad-Light Sensor-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LilyPad-Temp-v12" modelIndex="0" path="core/LilyPad-Temp-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2010BBCD20113" modelIndex="0" path="core/LDR_photocell_300mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Gas_Sensor_Breakout-v12" modelIndex="0" path="core/Gas_Sensor_Breakout-v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="HIH-4030_Breakout-v10" modelIndex="0" path="core/HIH-4030_Breakout-v10.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="bf73a00d2ecd04be25675ebfb2d130c0" modelIndex="0" path="core/Humidity_Sensor_SHT15.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Humidity_and_Temperature_Sensor_RHT03_6" modelIndex="0" path="core/Humidity_and_Temperature_Sensor_RHT03.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="BMP085 Breakout-v13" modelIndex="0" path="core/BMP085 Breakout-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ad901601e6d29266846fc9e4568504b6" modelIndex="0" path="core/Barometric Pressure Sensor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="17e42b0f30876b6ca457314cbd7e5847" modelIndex="0" path="core/Color_Sensor_Breakout_ADJD_S311.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="Amplified-Mic-Electret-v14" modelIndex="0" path="core/Amplified-Mic-Electret-v14.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Mechanical">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Location &amp;amp; Spacial">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LSM303 breakout board-v11" modelIndex="0" path="core/LSM303 breakout board-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ITG-3200-v11" modelIndex="0" path="core/ITG-3200-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="L3G4200D-Breakout-v10" modelIndex="0" path="core/L3G4200D-Breakout-v10.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="GPSShield-v15" modelIndex="0" path="core/GPSShield-v15.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="HMC5883L_Breakout-v11" modelIndex="0" path="core/HMC5883L_Breakout-v11.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="HMC6352-v18" modelIndex="0" path="core/HMC6352-v18.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="9DoF-Stick-v13" modelIndex="0" path="core/9DoF-Stick-v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ADXL335_v13" modelIndex="0" path="core/ADXL335_v13.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ArduPilotMega_v15" modelIndex="0" path="core/ArduPilotMega_v15.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3_Axis_Accelerometer_Breakout___MMA8452Q" modelIndex="0" path="core/3_Axis_Accelerometer_Breakout___MMA8452Q.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="5DOF-v25" modelIndex="0" path="core/5DOF-v25.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="6DOF-Digital-v10" modelIndex="0" path="core/6DOF-Digital-v10.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Electromagnetic">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ACS712 Low Current Sensor Board v12" modelIndex="0" path="core/ACS712 Low Current Sensor Board v12.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+  </instances>
+</module>

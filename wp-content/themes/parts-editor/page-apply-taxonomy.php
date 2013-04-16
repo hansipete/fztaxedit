@@ -1,5 +1,7 @@
 <?php /* Template Name: Apply Taxonomy */ ?>
 
+<input type="checkbox" name="lonely-only"> Show lonely families only
+
 <?php get_template_part('templates/page', 'header'); ?>
 
 <div id="families" class="row">
@@ -36,7 +38,7 @@
 		echo "<div class='span6 thumbnail family family-{$family_id}'>
 				<h4>$family <small>($part_count parts)</small></h4>
 				
-				<dl class='dl-horizontal'>
+				<dl class='dl-horizontal linked-parts'>
 				  <dt>Linked Parts</dt>";
 
 		// echo parts
@@ -44,28 +46,13 @@
 			$title = get_the_title($part_id);
 
 			echo "<dd>$title</dd>";
-		}		  
+		}
 
-		echo "	 <dt>Taxonomy</dt>";
+		echo "</dl>";
 
-		// get terms for current post
-    $terms = wp_get_object_terms( $part_id, 'fz_taxonomy2' );
-    // set vars
-    $top_parent_terms = array();
-    $r = "";
-    foreach ( $terms as $term ) {
-        //get top level parent
-        $top_parent = get_term_top_most_parent( $term->term_id, 'fz_taxonomy2' );
-        echo "<dd>{$top_parent->name} / {$term->name}</dd>";
-    }
-    // build output (the HTML is up to you)
-
-
-		echo "		</dl>
-
-				";
-
-			  echo "</div>";
+		the_applied_taxononmies($part_id);
+		
+		echo "</div>";
 	}
 
 	$total_terms = wp_count_terms($taxonomy);

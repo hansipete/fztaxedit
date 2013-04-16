@@ -1,5 +1,7 @@
 <?php /* Template Name: Show Properties */ ?>
 <?php get_template_part('templates/page', 'header'); ?>
+
+<div id="properties" class="row">
 <?php
 
 $original_bin = "core";
@@ -36,12 +38,18 @@ foreach( glob('/Users/Hansi/Sites/fz-parts/pdb/'.$original_bin.'/{*.fzp}', GLOB_
 }
 
 foreach( $properties as $name => $values){
-	echo "<h5>".$name."</h5>";
+	echo "<div class='property span2 well'><h5>".$name."</h5>";
 	echo "<ul class=\"inline\">";
 	foreach ($values as $value) {
 		echo "<li>$value</li>";
 	}
-	echo "</ul>";
+	echo "</ul></div>";
 }
 
 ?>
+</div>
+<script>
+	jQuery('#properties').masonry({
+  		itemSelector: '.property'
+	});
+</script>

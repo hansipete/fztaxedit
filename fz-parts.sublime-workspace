@@ -4,12 +4,116 @@
 		"selected_items":
 		[
 			[
-				"family",
-				"familyTaxonomy"
+				"part",
+				"part_term_id"
 			],
 			[
-				"part",
-				"part_families"
+				"new",
+				"new-part-title"
+			],
+			[
+				"fzp",
+				"fzp_ids"
+			],
+			[
+				"fz",
+				"fzp_ids"
+			],
+			[
+				"data",
+				"data-fzp-id"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"category",
+				"category_name"
+			],
+			[
+				"TERM",
+				"term_id"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"family",
+				"family_name_old"
+			],
+			[
+				"fam",
+				"family_name"
+			],
+			[
+				"child",
+				"child_term"
+			],
+			[
+				"fz_",
+				"fz_taxonomy_2013"
+			],
+			[
+				"fzpMod",
+				"fzpModuleIdArray"
+			],
+			[
+				"ori",
+				"original_bin"
+			],
+			[
+				"exis",
+				"existing_post"
+			],
+			[
+				"post",
+				"post_id"
+			],
+			[
+				"content",
+				"contentOnly"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"files",
+				"files_array"
+			],
+			[
+				"get",
+				"getId"
+			],
+			[
+				"famil",
+				"family_id"
+			],
+			[
+				"selec",
+				"selected_pos"
+			],
+			[
+				"selected_family",
+				"selected_family_item"
+			],
+			[
+				"get_meta",
+				"get_metadata"
 			],
 			[
 				"all",
@@ -24,36 +128,12 @@
 				"properties"
 			],
 			[
-				"ori",
-				"original_filename"
-			],
-			[
 				"origin",
 				"original_fzp"
 			],
 			[
-				"fzp",
-				"fzp_size"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
 				"cur",
 				"cursor"
-			],
-			[
-				"border",
-				"border"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"table",
@@ -70,10 +150,6 @@
 			[
 				"print",
 				"print_r"
-			],
-			[
-				"margin-",
-				"margin-right"
 			],
 			[
 				"z",
@@ -95,13 +171,53 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "wp-content/themes/parts-editor/front-page.php",
+			"settings":
+			{
+				"buffer_size": 4919,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/templates/sidebar-apply.php",
+			"settings":
+			{
+				"buffer_size": 4231,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/assets/css/app.less",
+			"settings":
+			{
+				"buffer_size": 3501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/lib/ajax.php",
+			"settings":
+			{
+				"buffer_size": 4917,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 107.0,
 		"selected_items":
 		[
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"codex",
+				"WordPress Codex: Search from Input"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -109,6 +225,10 @@
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
 			],
 			[
 				"packa",
@@ -136,23 +256,64 @@
 	},
 	"file_history":
 	[
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-generate-bins.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-bin-family-index.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/scripts.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/base.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/helpers.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/functions.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/head.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/ajax.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/front-page.php",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/B2FC4174-02AF-43A7-969B-A82B8418B91E/app.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-overview.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.less",
+		"/Users/Hansi/Desktop/sparkfun optical/Luxeon Rebel Wide Optic Lens.webloc",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/3090F202-644D-4500-94BA-41F3584E2B65/page-portfolio.php",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/51B9FEF9-6C57-4F7C-8DF1-1096A71927F9/.htaccess",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/F3F7A7ED-9A44-4198-905C-286C3A262119/single-project.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/config.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-bin-family-index.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-convert-families-to-taxonomy.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/custom.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-delete-empty-terms.php",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/0D1748E9-3EC1-440B-BE8E-F1CF0375A869/ta-compilation.js",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-import-pdb-core.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-import.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-apply-taxonomy.php",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/FF20D56A-2B4A-4853-A954-2D35E6751E8E/.htaccess",
+		"/Users/Hansi/Downloads/tonan_tonband_umzug.sql",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/overview.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/sidebar.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/header-top-navbar.php",
+		"/Users/Hansi/Sites/fz-parts/pdb/user/sparkfun-analogic-acs712-.fzp",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/post-types.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/apply-taxonomy.js",
+		"/Users/Hansi/Sites/fzp-2013/wp-config.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-generate-bins.php",
+		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/AC0C1B30-B158-4F82-A9CA-39F0FA3B7C97/app.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-import-export.php",
+		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue-2/style.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/header.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-show-properties.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/main.js",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-tools.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/page-header.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/searchform.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/actions.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/bootstrap.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/bootstrap-responsive.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-stats.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/plugins/meta-box/demo/all-custom-post-types.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/metaboxes.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-custom.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/activation.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/actions.php",
 		"/Users/Hansi/Sites/fritzing2/wp-content/themes/retlehs-roots/base.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-family-index.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-stats.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-generate-fzps.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-show-properties.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-import.php",
 		"/Users/Hansi/Sites/fz-parts/output/pdb/core/trimmer_3_4_p.fzp",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/ACEAFA9A-4BD2-4240-8E27-918DF8D584C3/site.php",
 		"/Users/Hansi/Downloads/september_www.sql",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/front-page.php",
 		"/Users/Hansi/Sites/fz-parts/fz-parts.sublime-project",
 		"/Users/Hansi/Sites/fz-parts/wp-config.php",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/templates/page-header.php",
@@ -228,6 +389,8 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"<project>",
+			"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor",
 			"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/assets/css/less"
 		]
 	},
@@ -236,6 +399,57 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-",
+			"remove_fzp_from_part",
+			"name",
+			"inputPassword",
+			"inputEmail",
+			"remove_fzp_from_part",
+			"term_id",
+			"popovers",
+			"\"",
+			"bottom",
+			"\"",
+			"2013",
+			"roots_sidebar_class",
+			"subcategory",
+			"subsubcategories",
+			"subcategory",
+			"category",
+			"subcategories",
+			"category",
+			"categories",
+			"subcategories",
+			"$path",
+			"tonangeber.ch/demo",
+			"demo",
+			"fz_taxonomy",
+			"\"fz_taxonomy\"",
+			"fz_taxonomy",
+			"$colors",
+			"fz_taxonomy2",
+			"Taxonomy2",
+			"fz_taxonomy2",
+			"taxonomy",
+			"first",
+			"top: ",
+			"ommissional",
+			"2",
+			"number",
+			"jQuery",
+			"post_id",
+			"tax_id",
+			"post",
+			"_post",
+			"direction",
+			"em",
+			"thumbnail",
+			"\"",
+			"dd>",
+			"<dd>",
+			"\\n",
+			"\"",
+			"YOUR_PREFIX",
 			"\"",
 			"'fz_original_family'",
 			"localhost/september",
@@ -272,19 +486,484 @@
 		"regex": false,
 		"replace_history":
 		[
+			"tonangeber.ch",
+			"fz_taxonomy_2013",
+			"ommissions",
 			"atelier-september.de"
 		],
 		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/parts-editor/front-page.php",
+					"settings":
+					{
+						"buffer_size": 4919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3501,
+								3082
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 782.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/parts-editor/templates/sidebar-apply.php",
+					"settings":
+					{
+						"buffer_size": 4231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1940,
+								1940
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/parts-editor/assets/css/app.less",
+					"settings":
+					{
+						"buffer_size": 3501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								555,
+								555
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/parts-editor/lib/ajax.php",
+					"settings":
+					{
+						"buffer_size": 4917,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								572,
+								572
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -329,6 +1008,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				".fzp",
+				"fz-parts/pdb/user/sparkfun-analogic-acs712-.fzp"
+			]
 		],
 		"width": 0.0
 	},

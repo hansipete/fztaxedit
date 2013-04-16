@@ -1,446 +1,489 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module fritzingVersion="0.1" moduleId="KeeneAhnung"/>
-<title>Basis</title>
-<instances>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Mikrocontroller Boards">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="81591c6c31ccf12f0f3ccec5f150df2d" modelIndex="0" path="core/usbadapter_wiring.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="jlpcb-128" modelIndex="0" path="core/jlpcb-128.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Mikrocontrollers &amp;amp; Processors">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_smd1VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_smd1.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Basic Components">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_3_4_pVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_4_p.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_smd2VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_smd2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_2_2VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_2.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_2_2_holeVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_2_hole.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_3_1_vVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_1_v.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_3_2_v_holeVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_2_v_hole.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_3_3_pVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_3_p.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2244EBEC10" modelIndex="0" path="core/transistor_signal_NPN_TO92.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="NPN_92_ECB" modelIndex="0" path="core/transistor_signal_NPN_TO92_ECB.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="2244EBEC21" modelIndex="0" path="core/transistor_signal_PNP_TO92.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="PNP_92_ECB" modelIndex="0" path="core/transistor_signal_PNP_TO92_ECB.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="trimmer_2_1VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_1.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="ResistorModuleID" modelIndex="0" path="core/resistor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="5BandResistorModuleID" modelIndex="0" path="core/resistor_5band.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="SmallElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_small.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="100milTantalumCapacitorModuleID" modelIndex="0" path="core/capacitor_tantalum_100mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="200milTantalumCapacitorModuleID" modelIndex="0" path="core/capacitor_tantalum_200mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1238DBDC00" modelIndex="0" path="core/basic_power_transistor_npn.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1237DBDC00" modelIndex="0" path="core/basic_power_transistor_pnp.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="100milCeramicCapacitorModuleID" modelIndex="0" path="core/capacitor_ceramic_100mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="200milCeramicCapacitorModuleID" modelIndex="0" path="core/capacitor_ceramic_200mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="LargeElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_large.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="MediumElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_medium.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="89068509-60af-45bf-a80d-a6a3b79f787fCapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_C_6032.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="788a4e21-da42-4423-b1af-fcd61c29b057CapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_D_7343.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="lijaeag5654yx6narfd346gnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_1206.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="fd80c64b-5cb0-4ae6-8254-6db49f6504ebCapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_A_3216.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="9cb1a483-254b-4e1b-840c-fa7afc0ed5f8CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0405.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="6c575724-27cc-446c-a1f0-febb6321a5c9CapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_B_3528.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="f80c6938-71e1-44a1-867e-442332a78ca8CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0605.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="e593865a-8a0f-4519-9b63-41a9c67e3b51CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0807.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="fb258071-7a2a-49cf-ba81-3dd52526a3aaCapacitorModuleID" modelIndex="0" path="core/SMD_elko_1010.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="a9b4194c-7731-4413-b04e-5c544638ef28CapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_0603.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="75f728f5-a5d6-435d-8790-d57fd4f5cafeCapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_0805.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1e1cbd15-a784-4e41-a3e7-fd0ce4380a2cCapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_1206.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="lijaenargnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_0603.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="lijae56546nar346gnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_0805.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="d91235e0-47e7-407c-ae93-15b2e2c482c8" modelIndex="0" path="core/SMD_BC847.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="d3c0d44a-0983-4dc2-8ac1-95b91148f82a" modelIndex="0" path="core/SMD_BC857.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Inputs">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="c0e65b2d0c9003507cf4a3222e995a45" modelIndex="0" path="core/reedSwitch_500mil.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3234DBDC00PotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_12mm.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="4244TPM6MMPotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_6mm.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3234DFDC00PotentiometerModuleID" modelIndex="0" path="core/pot_big.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="3b1a8578c21940dfe27253a7b57c81f5PotentiometerModuleID" modelIndex="0" path="core/pot-slider.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="cee49c7a6b94e1759bb995959b72f50cPotentiometerModuleID" modelIndex="0" path="core/pot-small.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="415c9d899a1e7de6c023ea0731bab117" modelIndex="0" path="core/microphone.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Outputs">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="7d0bc366bcac9395c747f3a92e2ff843leg" modelIndex="0" path="core/stepper_motor_bipolar.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="a22e371d3e8c77a58fdfe4dd2799c449leg" modelIndex="0" path="core/stepper_motor_unipolar.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="93d4585be720f3982141f4d032f44c8e" modelIndex="0" path="core/peltier element.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Sensors">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-  <instance moduleIdRef="__spacer__" modelIndex="0" path="Communication">
-    <views>
-      <iconView layer="icon">
-        <geometry z="-1" x="-1" y="-1"/>
-      </iconView>
-    </views>
-  </instance>
-</instances>
+<module blabla="whuaaat">
+  <title>Basis</title>
+  <instances>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Mikrocontroller Boards">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="81591c6c31ccf12f0f3ccec5f150df2d" modelIndex="0" path="core/usbadapter_wiring.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="jlpcb-128" modelIndex="0" path="core/jlpcb-128.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Mikrocontrollers">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_smd1VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_smd1.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Basic Components">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_3_4_pVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_4_p.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_smd2VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_smd2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_2_2VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_2.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_2_2_holeVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_2_hole.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_3_1_vVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_1_v.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_3_2_v_holeVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_2_v_hole.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_3_3_pVariableCapacitorModuleID" modelIndex="0" path="core/trimmer_3_3_p.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2244EBEC10" modelIndex="0" path="core/transistor_signal_NPN_TO92.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="NPN_92_ECB" modelIndex="0" path="core/transistor_signal_NPN_TO92_ECB.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="2244EBEC21" modelIndex="0" path="core/transistor_signal_PNP_TO92.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="PNP_92_ECB" modelIndex="0" path="core/transistor_signal_PNP_TO92_ECB.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="trimmer_2_1VariableCapacitorModuleID" modelIndex="0" path="core/trimmer_2_1.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="ResistorModuleID" modelIndex="0" path="core/resistor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="5BandResistorModuleID" modelIndex="0" path="core/resistor_5band.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="SmallElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_small.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="100milTantalumCapacitorModuleID" modelIndex="0" path="core/capacitor_tantalum_100mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="200milTantalumCapacitorModuleID" modelIndex="0" path="core/capacitor_tantalum_200mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1238DBDC00" modelIndex="0" path="core/basic_power_transistor_npn.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1237DBDC00" modelIndex="0" path="core/basic_power_transistor_pnp.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="100milCeramicCapacitorModuleID" modelIndex="0" path="core/capacitor_ceramic_100mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="200milCeramicCapacitorModuleID" modelIndex="0" path="core/capacitor_ceramic_200mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="LargeElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_large.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="MediumElectrolyticCapacitorModuleID" modelIndex="0" path="core/capacitor_electrolytic_medium.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="89068509-60af-45bf-a80d-a6a3b79f787fCapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_C_6032.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="788a4e21-da42-4423-b1af-fcd61c29b057CapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_D_7343.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="lijaeag5654yx6narfd346gnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_1206.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="fd80c64b-5cb0-4ae6-8254-6db49f6504ebCapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_A_3216.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="9cb1a483-254b-4e1b-840c-fa7afc0ed5f8CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0405.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="6c575724-27cc-446c-a1f0-febb6321a5c9CapacitorModuleID" modelIndex="0" path="core/SMD_tantalum_capacitor_B_3528.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="f80c6938-71e1-44a1-867e-442332a78ca8CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0605.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="e593865a-8a0f-4519-9b63-41a9c67e3b51CapacitorModuleID" modelIndex="0" path="core/SMD_elko_0807.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="fb258071-7a2a-49cf-ba81-3dd52526a3aaCapacitorModuleID" modelIndex="0" path="core/SMD_elko_1010.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="a9b4194c-7731-4413-b04e-5c544638ef28CapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_0603.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="75f728f5-a5d6-435d-8790-d57fd4f5cafeCapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_0805.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1e1cbd15-a784-4e41-a3e7-fd0ce4380a2cCapacitorModuleID" modelIndex="0" path="core/SMD_multilayer-capacitor_1206.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="lijaenargnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_0603.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="lijae56546nar346gnn-ResistorModuleID" modelIndex="0" path="core/SMD_resistor_0805.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="d91235e0-47e7-407c-ae93-15b2e2c482c8" modelIndex="0" path="core/SMD_BC847.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="d3c0d44a-0983-4dc2-8ac1-95b91148f82a" modelIndex="0" path="core/SMD_BC857.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Inputs">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="c0e65b2d0c9003507cf4a3222e995a45" modelIndex="0" path="core/reedSwitch_500mil.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3234DBDC00PotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_12mm.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="4244TPM6MMPotentiometerModuleID" modelIndex="0" path="core/pot_trimmer_6mm.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3234DFDC00PotentiometerModuleID" modelIndex="0" path="core/pot_big.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="3b1a8578c21940dfe27253a7b57c81f5PotentiometerModuleID" modelIndex="0" path="core/pot-slider.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="cee49c7a6b94e1759bb995959b72f50cPotentiometerModuleID" modelIndex="0" path="core/pot-small.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="415c9d899a1e7de6c023ea0731bab117" modelIndex="0" path="core/microphone.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="1000ABDD10011" modelIndex="0" path="core/basic_fsr.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="fa3e296736059e8c25d88ac262af999a" modelIndex="0" path="core/Basic Force Sensing Resistor (FSR).fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Outputs">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="7d0bc366bcac9395c747f3a92e2ff843leg" modelIndex="0" path="core/stepper_motor_bipolar.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="a22e371d3e8c77a58fdfe4dd2799c449leg" modelIndex="0" path="core/stepper_motor_unipolar.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="93d4585be720f3982141f4d032f44c8e" modelIndex="0" path="core/peltier element.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Sensors">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="8abf6496b5d466c7a1893c17a296a676" modelIndex="0" path="core/piezo sensor.fzp">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="Communication">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+    <instance moduleIdRef="__spacer__" modelIndex="0" path="">
+      <views>
+        <iconView layer="icon">
+          <geometry z="-1" x="-1" y="-1"/>
+        </iconView>
+      </views>
+    </instance>
+  </instances>
+</module>

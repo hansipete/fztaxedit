@@ -5,15 +5,15 @@
 	get_template_part('templates/page', 'header');
 
 	//taxonomy to use (there are a few to test different priorities)
-	$taxonomy = 'fz_taxonomy2';
+	$taxonomy = 'fz_taxonomy_2013';
 
 	//default vars
 	$output_path = ABSPATH . 'output/bins/';
 	$fritzingVersion = '0.1';
 	$moduleId = 'KeeneAhnung';
 
-	$header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-	$module = "<module fritzingVersion=\"$fritzingVersion\" moduleId=\"$moduleId\" />";
+	$header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><module blabla=\"whuaaat\"></module>";
+	//$module = "<module fritzingVersion=\"$fritzingVersion\">"; //19.03.13 removed  moduleId=\"$moduleId\" 
 
 
 	//get bins (= first level in taxonomy)
@@ -27,15 +27,17 @@
 		
 		//create fzb file
 		$dom = new DOMDocument();
-		$dom->loadXml( $header . $module );
+		$dom->preserveWhiteSpace = false;
+		$dom->formatOutput = true;
+		$dom->loadXml($header);
 
 		//create nodes
 		$title_node = $dom->createElement('title', $bin->name);
 		$instances_node = $dom->createElement('instances');
 
 		//append to root (module)
-		$dom->appendChild($title_node);
-		$dom->appendChild($instances_node);
+		$dom->documentElement->appendChild($title_node);
+		$dom->documentElement->appendChild($instances_node);
 
 		//get groups by bin_id
 		$groups = get_term_children( $bin->term_id, $taxonomy );
@@ -92,6 +94,9 @@
 				//append node
 				$instances_node->appendChild($instance_node);
 
+				//19.03. apply closing </module>
+				$instances_node->appendChild($instance_node);
+
 				//output 
 				echo "<tr>
 						<td>$package</td>
@@ -105,10 +110,6 @@
 				  </table>";
 
 		}
-
-		//make up output
-		$dom->preserveWhiteSpace = false;
-		$dom->formatOutput = true;
 
 		//save fzb
 		$dom->save( $output_path . $filename . '.fzb' );

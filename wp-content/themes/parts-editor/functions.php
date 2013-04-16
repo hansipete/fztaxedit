@@ -5,6 +5,8 @@
 
 if (!defined('__DIR__')) { define('__DIR__', dirname(__FILE__)); }
 
+require_once locate_template('/lib/helpers.php');           // helpers (external)
+
 require_once locate_template('/lib/utils.php');           // Utility functions
 require_once locate_template('/lib/config.php');          // Configuration and constants
 require_once locate_template('/lib/activation.php');      // Theme activation

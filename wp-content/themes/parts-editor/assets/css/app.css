@@ -1,8 +1,25 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+body {
+  margin-top: 40px;
+}
 .family-selected {
   background: yellow;
+}
+.dock {
+  border: 4px solid #f0f0f0;
+  margin-bottom: 8px;
+}
+.fzp-list {
+  min-height: 100px;
+}
+.fzp-list a {
+  color: #000;
+  font-size: 75%;
+  height: 18px;
+  width: 100%;
+  display: block;
 }
 /* =============================================================================
    Header
@@ -17,11 +34,27 @@ body.admin-bar .navbar-fixed-top {
 /* ==========================================================================
    Content
    ========================================================================== */
-.part {
-  background: #F0F0F0;
+.index-category {
+  padding: 5px;
 }
-.part .success {
-  background: #f9c9f9;
+.index-part {
+  width: 60px;
+  height: 60px;
+  background: #d0d0d0;
+  float: left;
+  margin: 0 0 10px 10px;
+  font-size: 10px;
+  line-height: 11px;
+}
+.index-part:first-child {
+  margin-left: 0;
+}
+.variant-thumb {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  float: left;
+  margin: 5px;
 }
 .selected,
 .selected-tag {
@@ -51,6 +84,9 @@ em.lab {
 /* ==========================================================================
    Primary Content
    ========================================================================== */
+.svg img {
+  width: 100%;
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */

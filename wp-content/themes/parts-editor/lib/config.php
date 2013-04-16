@@ -19,7 +19,7 @@ function roots_sidebar() {
 // #main CSS classes
 function roots_main_class() {
   if (roots_sidebar()) {
-    echo 'span6';
+    echo 'span8';
   } else {
     echo 'span12';
   }
@@ -27,7 +27,7 @@ function roots_main_class() {
 
 // #sidebar CSS classes
 function roots_sidebar_class() {
-  echo 'span6';
+  echo 'span4';
 }
 
 $get_theme_name = explode('/themes/', get_template_directory());

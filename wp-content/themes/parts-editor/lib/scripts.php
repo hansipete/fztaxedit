@@ -38,14 +38,16 @@ function roots_scripts() {
   }
 
   //hansis imports
-  wp_register_script('masonry', get_template_directory_uri() . '/assets/js/vendor/jquery.masonry.js', false, null, false);
-  wp_enqueue_script('masonry');
-
-
   wp_register_script('roots_plugins', get_template_directory_uri() . '/assets/js/plugins.js', false, null, false);
   wp_register_script('roots_main', get_template_directory_uri() . '/assets/js/main.js', false, null, false);
   wp_enqueue_script('roots_plugins');
   wp_enqueue_script('roots_main');
+  wp_enqueue_script('jquery-masonry');
+  wp_enqueue_script('jquery-ui-core');
+  wp_enqueue_script('jquery-ui-draggable');
+  wp_enqueue_script('jquery-ui-droppable');
+  wp_enqueue_script('jquery-ui-sortable');
+
 
   wp_localize_script( 'roots_main', 'wpajax', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
 

@@ -1,6 +1,68 @@
 <?php
 
-$colors = array('#ffad46', '#42d692', '#4986E7', '#fb4c2f', '#A81F5E','#F03826','#F2811D','#44A143','#3A5A64');
+$colors = array('#ffad46', '#42d692', '#4986E7', '#fb4c2f', '#A81F5E','#F03826','#F2811D','#44A143','#3A5A64','#ffad46', '#42d692', '#4986E7', '#fb4c2f', '#A81F5E','#F03826','#F2811D','#44A143','#3A5A64');
+
+
+function print_taxonomy_ranks( $terms = '' ){
+
+    $order = $family = $subfamily = '';
+
+    // check input
+    if ( empty( $terms ) || is_wp_error( $terms ) || ! is_array( $terms ) )
+        return;
+
+    // set id variables to 0 for easy check 
+    $order_id = $family_id = $subfamily_id = 0;
+
+    // get order
+    foreach ( $terms as $term ) {
+        if ( $order_id || $term->parent )
+            continue;
+        $order_id  = $term->term_id;
+        $order     = $term->name;
+    }
+
+    // get family
+    foreach ( $terms as $term ) { 
+        if ( $family_id || $order_id != $term->parent )
+            continue;
+        $family_id = $term->term_id;
+        $family    = $term->name;
+    }
+
+    // get subfamily
+    foreach ( $terms as $term ) { 
+        if ( $subfamily_id || $family_id != $term->parent ) 
+            continue;
+        $subfamily_id = $term->term_id;
+        $subfamily    = $term->name;
+    }
+
+    // output
+    echo "Order: $order, Family: $family, Sub-family: $subfamily";
+
+}
+
+function the_applied_taxononmies($part_id, $contentOnly=false){
+
+    echo (!$contentOnly) ? "<dl class='dl-horizontal applied-taxonomies'>" : "";
+
+    echo "<dt>Taxonomy</dt>";
+    
+    // get terms for current post
+    $terms = wp_get_object_terms( $part_id, 'fz_taxonomy_2013' );
+    // set vars
+    $top_parent_terms = array();
+    $r = "";
+    foreach ( $terms as $term ) {
+        //get top level parent
+        $top_parent = get_term_top_most_parent( $term->term_id, 'fz_taxonomy_2013' );
+        echo "<dd>{$top_parent->name} &rsaquo; {$term->name}</dd>";
+    }
+    // build output (the HTML is up to you)
+
+    echo (!$contentOnly) ? "</dl>" : "";
+}
 
 function getPartIdsByFamilyId( $_family_id ){
     
