@@ -10,14 +10,14 @@
         $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
         foreach ($categories as $category) {
             echo "<div class='span8 category' data-term-id='{$category->term_id}' style='background: {$bin->description};'>
-                  <h5>{$category->name} <a href='#delete-category'><small>Delete</small></a></h5>
+                  <h5>{$category->name}</h5>
                   <div class='row'>";
 
             // BINS > CATEGORIES > PART
             $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
             foreach ($parts as $part) {
                 echo "<div class='span2 part'>
-                       <i class='icon-book'></i> {$part->name} <small>({$part->count})</small>";
+                       {$part->name}";
                 
                 // BINS > CATEGORIES > PART > VARIANTS
                 $variants = new WP_Query( array(
@@ -32,7 +32,7 @@
 
                 echo "<ul class='fzp-list unstyled' data-part-term-id='{$part->term_id}'>";
                 while ( $variants->have_posts() ) : $variants->the_post();
-                    echo "<li><a href='{$post->guid}' data-fzp-id='{$post->ID}' data-toggle='tooltip' data-placement='top' data-original-title='{$post->post_content}'>{$post->post_title}</a></li>";
+                    echo "<li><i class='icon-file'></i> <a href='{$post->guid}' data-fzp-id='{$post->ID}' data-toggle='tooltip' data-placement='top' data-original-title='{$post->post_content}'>{$post->post_title}</a></li>";
                 endwhile;
                 echo "</ul>";
                 echo "</div>"; //part

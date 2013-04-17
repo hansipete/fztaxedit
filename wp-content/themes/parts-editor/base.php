@@ -10,6 +10,12 @@
     }
 ?>
 
+<!-- <div class="container">
+  <div class="row">
+    <?php //sinclude roots_template_path(); ?>
+  </div>
+</div> -->
+
 <div class="container">
   <div class="row">
     <div class="<?php roots_main_class(); ?>">
@@ -17,6 +23,7 @@
         <?php include roots_template_path(); ?>
       </div>
     </div>
+      
       <aside id="sidebar" class="<?php roots_sidebar_class(); ?>" role="complementary">
           <?php get_template_part('templates/sidebar', 'apply'); ?>
       </aside>
