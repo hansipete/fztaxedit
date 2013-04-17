@@ -1,7 +1,4 @@
-<?php 
-
-    //get_template_part('templates/page', 'header');
-
+<?php
     // BINS
     $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
     foreach ( $bins as $i => $bin) {
@@ -112,35 +109,22 @@
                 });               
 
             }
+            else {
+                $("#new-part-title").val( $fzp_a.text() );
+            }
 
         });        
 
-    });
 
-
-    
-
-    
     // tool tips
     var $tooltips = $("*[data-toggle]");
     $tooltips.tooltip();
 
-   
+});
 
-    $('.category2part').click(function(){
 
-        var term_id = $(this).data('term-id');
+    
 
-        $.ajax({
-            url: wpajax.url,
-            type: 'POST',
-            data: 'action=fz_create_part_from_category&term_id='+term_id,
-
-            success: function(data) {
-                console.log(data);
-            }
-        });
-        
-        return false;
-    });
+    
+    
 </script>
