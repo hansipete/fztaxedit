@@ -1,13 +1,56 @@
-function getId($dom){
+$(document).ready( function(){
 
-    var classes = $dom.attr('class'),
-        matches = classes.match("-\\d+"), //matches every score followed by a number
-        id;
 
-    if(matches){
-        id = matches[0];
-        id = id.substr(1); // remove the prepending score
-    }
 
-    return id;
-}
+	$fzp_filter_form = $('.fzp-filter-form');
+	$fzp_results = $('.fzp-results');
+
+	$fzp_filter_form.on('submit', function(e){
+
+		$.get( '/', $(this).serialize(), function( data ){
+
+            // Place the fetched results inside the #content element
+            $('.fzp-results').html( $(data).find('.fzp-results') );
+
+        });
+
+		return false;
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}); // document ready
