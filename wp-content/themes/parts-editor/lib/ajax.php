@@ -1,5 +1,13 @@
 <?php
 
+add_action('wp_ajax_nopriv_wpa56343_search', 'wpa56343_search'); // for not logged in users
+add_action('wp_ajax_wpa56343_search', 'wpa56343_search');
+function wpa56343_search()
+{
+    return "duudi";
+    die();
+}
+
 function fz_new_part(){
 
 	/*
