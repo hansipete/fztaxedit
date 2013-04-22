@@ -1,12 +1,24 @@
 <?php
 
-add_action('wp_ajax_nopriv_wpa56343_search', 'wpa56343_search'); // for not logged in users
-add_action('wp_ajax_wpa56343_search', 'wpa56343_search');
-function wpa56343_search()
-{
-    return "duudi";
-    die();
-}
+function fz_update_term_name(){
+
+	$taxonomy = 'fz_taxonomy_2013';
+
+	if( !empty($_POST['term_id']) && !empty($_POST['new_part_name']) ){
+
+		wp_update_term( $_POST['term_id'], $taxonomy, array('name' => $_POST['new_part_name']) );
+
+		$return['type'] = 'success';
+	}
+	else {
+		$return['type'] = 'error';
+	}
+
+	return $return; 
+	die();
+};
+add_action('wp_ajax_fz_update_term_name', 'fz_update_term_name');
+
 
 function fz_new_part(){
 

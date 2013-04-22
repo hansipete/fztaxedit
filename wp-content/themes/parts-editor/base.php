@@ -4,9 +4,9 @@
  <?php
     // Use Bootstrap's navbar if enabled in config.php
     if (current_theme_supports('bootstrap-top-navbar')) {
-      get_template_part('templates/header-top-navbar');
+      //get_template_part('templates/header-top-navbar');
     } else {
-      get_template_part('templates/header');
+      //get_template_part('templates/header');
     }
 
     //include roots_template_path();
@@ -14,7 +14,7 @@
 
 
 <div class="container-fluid">
-  <div class="row-fluid">
+  <div class="row">
     <div class="span4">
       <h2>Single FZP Files</h2>
   
@@ -30,6 +30,7 @@
     ?>
     <input type="text" name="s" class="input-medium">
     <button type="submit" class="btn">Filter</button>
+    <p class="info">W/S to navigate</p>
   </form> 
 
   <!-- CONTENT -->  
@@ -61,7 +62,8 @@
     query_posts( $args );
 
 
-    echo "<table id='sortable' class='table table-hover table-condensed fzp-results'>
+    echo "<div style='height: 300px; overflow-y: scroll;'>
+            <table id='sortable' class='table table-hover table-condensed fzp-results'>
               <!--<thead>
                 <tr>
                   <th>Name</th>
@@ -74,28 +76,112 @@
             while ( have_posts() ) : the_post();
                 $excerpt = strip_tags(the_excerpt_max_charlength(140));
                 echo "<tr data-post-id='{$post->ID}'>
-                        <td>{$post->post_title}</td>
+                        <td><strong>{$post->post_title}</strong></td>
                         <td>{$excerpt}</td>
                         <td>
-                            <a href='{$post->post_title}'>Detailsa</a>
+                            <a href='{$post->post_title}'>Info</a>
                         </td>
                       </tr>\n";
                 //echo "<li><a href='{$post->guid}' data-fzp-id='{$post->ID}' data-toggle='tooltip' data-placement='top' data-original-title='".htmlentities($post->post_content)."'>{$post->post_title}</a></li>";
             endwhile;
 
     echo "    </tbody>
-            </table>"; 
+            </table>
+          </div>
+
+          <div class='detail'>
+            DETAILS
+          </div>"; 
+
+
+
     ?> 
     </div>
     <div class="span8">
       <!--Body content-->
-      SPEASE THWA?
+      <h2>Taxonomy & Parts</h2>
+      <div class='row' id='taxonomy-index'>
+<?php
+      // BINS
+    $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
+    foreach ( $bins as $i => $bin) {
+        echo "<div class='span2 bin-container' data-term-id='{$bin->term_id}' id='bin-{$bin->term_id}'  style='border-color: {$bin->description};'>
+                <h4>{$bin->name}</h4>";        
+
+        // BINS > CATEGORIES
+        $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
+        foreach ($categories as $category) {
+            echo "<div class='category' data-term-id='{$category->term_id}'>
+                  <h6>{$category->name}</h6>";
+
+                      // BINS > CATEGORIES > PART
+                      $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
+                      foreach ($parts as $part) {
+                          echo "<div class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
+                                 <i class='icon-book'></i>&nbsp;<span class='name'>{$part->name}</span>
+                                 <small class='pull-right'>(0)</small>
+                                </div>";
+                      }
+
+                echo "</div>";
+        }
+
+        echo "</div>";
+    }
+?>
+      
+      </div>
     </div>
   </div>
 </div>
 
 <script>
 $(document).ready(function(){
+
+
+  // inline edit of parts
+  $(".part span.name").click( function(){
+    term_id = $(this).parent('.part').data('term-id');
+    part_name = $(this).text();
+
+
+    $(this).parent('.part').html('<input type="text" class="input-small inline-edit-input" name="'+term_id+'" placeholder="'+part_name+'">')
+    .find('input').focus();
+
+    return false;
+  });
+
+  // on submit…
+  $(".inline-edit-input").live("keypress", function(e) {
+
+    if (e.which == 13) {
+        e.preventDefault();       
+
+        var $part_div = $(this).parent('.part');
+        var new_part_name = $(this).val();
+        var term_id = $part_div.data('term-id');
+
+        $part_div.addClass('loading');
+        $part_div.html('<i class="icon-book"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="pull-right">(0)</small>');
+        
+        $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_update_term_name', term_id: term_id, new_part_name: new_part_name},
+
+            success:function(data){
+              $part_div.removeClass('loading');
+            }
+        });
+    }
+});
+
+  //mansonry for categories etc.
+  $('#taxonomy-index').masonry({
+      itemSelector: '.bin-container'
+  });
+
+  //query sidebar content
 
   var result_container = ".fzp-results";
 
@@ -139,13 +225,13 @@ $(document).ready(function(){
 
     if( (dir>0) && ($selected_tr.next('tr').length > 0) ){
         $selected_tr.removeClass('selected info').next().addClass('selected info');  
-    }   
+    }  
   }
 
   $(document).keydown( function(event){
       switch (event.keyCode) {
-              case 38: skip_selected(-1); break;
-              case 40: skip_selected(1); break;
+              case 87: skip_selected(-1); break;
+              case 83: skip_selected(1); break;
       }
   });
 

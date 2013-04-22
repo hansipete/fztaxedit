@@ -1,8 +1,28 @@
 /* ==========================================================================
    Base
    ========================================================================== */
+html,
 body {
-  margin-top: 40px;
+  height: 100%;
+}
+.inline-edit-input {
+  width: 92%;
+  margin: 4px 0 4px !important;
+}
+.loading {
+  opacity: 0.4;
+}
+.category h6 {
+  margin-bottom: 0px;
+}
+.part {
+  padding: 2px 4px;
+  margin-bottom: 4px;
+  background: #f0f0f0;
+  font-size: 11px;
+}
+div.detail {
+  height: 200px;
 }
 .loading {
   opacity: 0.7;
@@ -29,9 +49,6 @@ body {
 .fzp-list li:hover {
   cursor: pointer;
   background: #d0d0d0;
-}
-ul.part {
-  background: #f0f0f0;
 }
 .homeless-list {
   font-size: 12px;
