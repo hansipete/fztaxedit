@@ -22,38 +22,16 @@ add_action('wp_ajax_fz_update_term_name', 'fz_update_term_name');
 
 function fz_new_part(){
 
-	/*
-		cat:1010
-		new-part-title:asfasasf
-		fzp_ids[]:3159
-	*/
 
 	$taxonomy = 'fz_taxonomy_2013';
 
 	// use selected cat id as parent by default
 	$category = (int) $_POST['cat'];
+	$fzp_id = (int) $_POST['fzp_id'];
 
-	// if new-cat-title is set, use it and make it child of cat
-	if( !empty($_POST['new-category-title']) ){
-
-		echo "new cat title set: " . $_POST['new-category-title'] . "\n";
-
-		// new category
-		$cat = wp_insert_term(
-	        $_POST['new-category-title'],
-	        $taxonomy,
-	        array( 'parent'=> (int) $_POST['cat'] ) //cat is always set to a bin by jquery
-	    );
-
-		// newly created category id as parent
-		$category = $cat['term_id'];
-
-		echo "new category parent defined: $category";
-	} 		
-
-	// create new part form category name
+	// create new part
 	$part = wp_insert_term(
-        $_POST['new-part-title'],
+        $_POST['new_part_name'],
         $taxonomy, // the taxonomy
         array( 'parent'=> $category )
     );
@@ -64,10 +42,8 @@ function fz_new_part(){
     //need to have this (bug in wp?)
     delete_option("fz_taxonomy_2013_children");
 
-	//loop through fzps and apply term
-	foreach ($_POST['fzp_ids'] as $fzp_id) {
-	  	wp_set_post_terms( $fzp_id, $part['term_id'], $taxonomy);
-	}	
+	
+	wp_set_post_terms( $fzp_id, $part['term_id'], $taxonomy);
 
 	die();
 };

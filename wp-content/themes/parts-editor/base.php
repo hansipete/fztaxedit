@@ -63,7 +63,7 @@
 
 
     echo "<div>
-            <table class='table table-hover table-condensed fzp-results' style='width: 100%'>
+            <table class='table table-hover table-condensed fzp-results'>
               <!--<thead>
                 <tr>
                   <th>Name</th>
@@ -101,13 +101,13 @@
     $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
     foreach ( $bins as $i => $bin) {
         echo "<div class='span2 bin-container' data-term-id='{$bin->term_id}' id='bin-{$bin->term_id}'  style='border-color: {$bin->description};'>
-                <h4>{$bin->name}</h4>";        
+                <h4>{$bin->name}<a href='+category' title='Add category' class='add-button pull-right'><i class='icon-plus'></i></a></h4>";        
 
         // BINS > CATEGORIES
         $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
         foreach ($categories as $category) {
-            echo "<div class='category' data-term-id='{$category->term_id}'>
-                  <h6>{$category->name}</h6>";
+            echo "<div class='category' data-term-id='{$category->term_id}' data-category-color='{$bin->description}'>
+                  <h6>{$category->name}<a href='+part' title='Add part' class='add-button add-part-button pull-right'><i class='icon-plus'></i></a></h6>";
 
                       // BINS > CATEGORIES > PART
                       $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
@@ -132,6 +132,22 @@
 
 <script>
 $(document).ready(function(){
+
+  // click on add part button
+  $(".add-part-button").click( function(){
+
+    $selected_tr = $(".fzp-results tr.selected");
+    fzp_id = $selected_tr.data("post-id");
+    category_color = $(this).parents('.category').data('category-color');
+
+    $(this).parents('.category').append("<div class='part new-part' style='background: "+category_color+";'><input type='text' class='input-small inline-edit-input'></div>")
+    .find('input').focus();
+
+    return false;
+
+  });
+
+
 
   // append to part
   $(".part").click( function(){
@@ -185,10 +201,18 @@ $(document).ready(function(){
         $part_div.addClass('loading');
         $part_div.html('<i class="icon-pencil"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="pull-right">(0)</small>');
         
+        var data = {action: 'fz_update_term_name', term_id: term_id, new_part_name: new_part_name};
+
+        if( $part_div.hasClass('new-part') ){
+          var selected_fzp_id = $('.fzp-results tr.selected').data("post-id");
+          var cat_term_id = $part_div.parents('.category').data("term-id");
+          data = {action: 'fz_new_part', cat: cat_term_id, fzp_id: selected_fzp_id, new_part_name: new_part_name};
+        }
+
         $.ajax({
             type: "POST",
             url: wpajax.url,
-            data: {action: 'fz_update_term_name', term_id: term_id, new_part_name: new_part_name},
+            data: data,
 
             success:function(data){
               $part_div.removeClass('loading');
@@ -249,10 +273,15 @@ $(document).ready(function(){
     }  
   }
 
-  $(document).keydown( function(event){
-      switch (event.keyCode) {
-              case 87: skip_selected(-1); break;
-              case 83: skip_selected(1); break;
+  $(document).keydown( function(e){
+
+      var tag = e.target.tagName.toLowerCase();
+      
+      if ( tag != 'input' && tag != 'textarea'){
+        switch (e.keyCode) {
+          case 87: skip_selected(-1); break;
+          case 83: skip_selected(1); break;
+        }
       }
   });
 

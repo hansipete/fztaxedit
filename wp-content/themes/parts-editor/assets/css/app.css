@@ -8,6 +8,12 @@ body {
 .container {
   margin: 0 0 0 10px;
 }
+#taxonomy-index .add-button {
+  opacity: 0.2;
+}
+#taxonomy-index .add-button:hover {
+  opacity: 0.4;
+}
 .inline-edit-input {
   width: 92%;
   margin: 4px 0 4px !important;
