@@ -5,6 +5,9 @@ html,
 body {
   height: 100%;
 }
+.container {
+  margin: 0 0 0 10px;
+}
 .inline-edit-input {
   width: 92%;
   margin: 4px 0 4px !important;
@@ -20,6 +23,10 @@ body {
   margin-bottom: 4px;
   background: #f0f0f0;
   font-size: 11px;
+  cursor: pointer;
+}
+.part .icon-pencil {
+  cursor: pointer;
 }
 div.detail {
   height: 200px;

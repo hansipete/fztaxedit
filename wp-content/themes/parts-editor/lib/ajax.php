@@ -104,6 +104,10 @@ function fz_add_fzp_to_part(){
 
 	wp_set_object_terms( $fzp_id, (int) $part_term_id, $taxonomy, true); // append terms (when a part has multiple occurances)
 
+	$result['type'] = 'success';
+
+	return $result; 
+
     die();
 }
 add_action('wp_ajax_fz_add_fzp_to_part', 'fz_add_fzp_to_part');	

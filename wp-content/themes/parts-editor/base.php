@@ -13,13 +13,13 @@
 ?>
 
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="span4">
+    <div class="span4" data-spy="affix" data-offset-top="0">
+      <div class="sidebar">
       <h2>Single FZP Files</h2>
   
   <!-- FILTER -->
-
   <form class="form-search fzp-filter-form">
     <?php 
           wp_dropdown_categories( array(  'taxonomy'=>'fz_taxonomy_2013',
@@ -30,8 +30,8 @@
     ?>
     <input type="text" name="s" class="input-medium">
     <button type="submit" class="btn">Filter</button>
-    <p class="info">W/S to navigate</p>
-  </form> 
+    <p class="muted" style="margin-top: 6px;"><small>Help: keyboard navigation with [W] / [S] to navigate up/down.</small></p>
+  </form>
 
   <!-- CONTENT -->  
   <?php
@@ -62,8 +62,8 @@
     query_posts( $args );
 
 
-    echo "<div style='height: 300px; overflow-y: scroll;'>
-            <table id='sortable' class='table table-hover table-condensed fzp-results'>
+    echo "<div>
+            <table class='table table-hover table-condensed fzp-results' style='width: 100%'>
               <!--<thead>
                 <tr>
                   <th>Name</th>
@@ -87,17 +87,12 @@
 
     echo "    </tbody>
             </table>
-          </div>
-
-          <div class='detail'>
-            DETAILS
-          </div>"; 
-
-
-
+          </div>";
     ?> 
-    </div>
-    <div class="span8">
+      </div><!-- sidebar -->
+    </div><!-- span4 -->
+
+    <div class="offset4">
       <!--Body content-->
       <h2>Taxonomy & Parts</h2>
       <div class='row' id='taxonomy-index'>
@@ -118,7 +113,7 @@
                       $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
                       foreach ($parts as $part) {
                           echo "<div class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
-                                 <i class='icon-book'></i>&nbsp;<span class='name'>{$part->name}</span>
+                                 <i class='icon-pencil'></i>&nbsp;<span class='name'>{$part->name}</span>
                                  <small class='pull-right'>(0)</small>
                                 </div>";
                       }
@@ -138,9 +133,35 @@
 <script>
 $(document).ready(function(){
 
+  // append to part
+  $(".part").click( function(){
+    $selected_tr = $(".fzp-results tr.selected");
+
+    term_id = $(this).data("term-id");
+    fzp_id = $selected_tr.data("post-id");
+
+    $selected_tr.css('background', $(this).css('background'));    
+
+    $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_add_fzp_to_part', part_term_id: term_id, fzp_id: fzp_id},
+
+            success:function(data){
+              $selected_tr
+                .fadeOut('fast', function(){
+                  $(this).removeClass('selected info')
+                  .next('tr').addClass('selected info');
+                })
+            }
+    });
+    
+    return false;
+  });
+
 
   // inline edit of parts
-  $(".part span.name").click( function(){
+  $(".part i").click( function(){
     term_id = $(this).parent('.part').data('term-id');
     part_name = $(this).text();
 
@@ -162,7 +183,7 @@ $(document).ready(function(){
         var term_id = $part_div.data('term-id');
 
         $part_div.addClass('loading');
-        $part_div.html('<i class="icon-book"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="pull-right">(0)</small>');
+        $part_div.html('<i class="icon-pencil"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="pull-right">(0)</small>');
         
         $.ajax({
             type: "POST",
@@ -239,7 +260,6 @@ $(document).ready(function(){
     $(this).addClass('selected info').siblings('tr').removeClass('selected info');
     return false;
   });
-
 
 });
 </script>
