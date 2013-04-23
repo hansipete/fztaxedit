@@ -101,7 +101,7 @@
     $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
     foreach ( $bins as $i => $bin) {
         echo "<div class='span2 bin-container' data-term-id='{$bin->term_id}' id='bin-{$bin->term_id}'  style='border-color: {$bin->description};'>
-                <h4>{$bin->name}<a href='+category' title='Add category' class='add-button pull-right'><i class='icon-plus'></i></a></h4>";        
+                <h4>{$bin->name}<a href='+category' title='Add category' class='add-button add-category-button pull-right'><i class='icon-plus'></i></a></h4>";        
 
         // BINS > CATEGORIES
         $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
@@ -114,7 +114,7 @@
                       foreach ($parts as $part) {
                           echo "<div class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
                                  <i class='icon-pencil'></i>&nbsp;<span class='name'>{$part->name}</span>
-                                 <small class='pull-right'>(0)</small>
+                                 <small class='pull-right'>0</small>
                                 </div>";
                       }
 
@@ -133,15 +133,32 @@
 <script>
 $(document).ready(function(){
 
+  // click on add category button
+  $(".add-category-button").live('click', function(){
+
+    $category_dom = "<div class='category'><input type='text' class='input-small inline-edit-input inline-edit-category-input'></div>"
+
+    $(this).parents('.bin-container').append($category_dom)
+    .find('input').focus();
+
+    $('#taxonomy-index').masonry('reload');
+
+    return false;
+
+  });
+
   // click on add part button
-  $(".add-part-button").click( function(){
+  $(".add-part-button").live('click', function(){
 
     $selected_tr = $(".fzp-results tr.selected");
+    fzp_name = $selected_tr.find('strong').text();
     fzp_id = $selected_tr.data("post-id");
     category_color = $(this).parents('.category').data('category-color');
 
-    $(this).parents('.category').append("<div class='part new-part' style='background: "+category_color+";'><input type='text' class='input-small inline-edit-input'></div>")
+    $(this).parents('.category').append("<div class='part new-part' style='background: "+category_color+";'><input type='text' value='"+fzp_name+"' class='input-small inline-edit-input' onFocus='this.select()'></div>")
     .find('input').focus();
+
+    $('#taxonomy-index').masonry('reload');
 
     return false;
 
@@ -150,7 +167,7 @@ $(document).ready(function(){
 
 
   // append to part
-  $(".part").click( function(){
+  $(".part").live('click', function(){
     $selected_tr = $(".fzp-results tr.selected");
 
     term_id = $(this).data("term-id");
@@ -177,9 +194,9 @@ $(document).ready(function(){
 
 
   // inline edit of parts
-  $(".part i").click( function(){
+  $(".part i").live('click', function(){
     term_id = $(this).parent('.part').data('term-id');
-    part_name = $(this).text();
+    part_name = $(this).find('.name').text();
 
 
     $(this).parent('.part').html('<input type="text" class="input-small inline-edit-input" name="'+term_id+'" placeholder="'+part_name+'">')
@@ -191,15 +208,19 @@ $(document).ready(function(){
   // on submit…
   $(".inline-edit-input").live("keypress", function(e) {
 
-    if (e.which == 13) {
-        e.preventDefault();       
+    if (e.which == 13 ) {
+
+      e.preventDefault();
+
+      // if part is edited…
+      if( !$(e.currentTarget).hasClass("inline-edit-category-input") ){
 
         var $part_div = $(this).parent('.part');
         var new_part_name = $(this).val();
         var term_id = $part_div.data('term-id');
 
         $part_div.addClass('loading');
-        $part_div.html('<i class="icon-pencil"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="pull-right">(0)</small>');
+        $part_div.html('<i class="icon-pencil"></i>&nbsp;<span class="name">'+new_part_name+'</span><small class="part-count pull-right">0</small>');
         
         var data = {action: 'fz_update_term_name', term_id: term_id, new_part_name: new_part_name};
 
@@ -215,9 +236,33 @@ $(document).ready(function(){
             data: data,
 
             success:function(data){
-              $part_div.removeClass('loading');
+              $part_div.removeClass('loading new-part');
+              $part_div.data('term-id', data);
             }
         });
+
+      }
+      // if category is edited
+      else {
+        var bin_term_id = $(this).parents('.bin-container').data('term-id');
+        var category_name = $(this).val();
+        var $category_dom = $(this).parents('.category');
+
+        $category_dom.addClass('loading');
+
+        $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: { action: 'fz_new_category_in_bin', term_id: bin_term_id, category_name: category_name },
+
+            success:function(data){
+              $category_dom.html("<h6>"+category_name+"<a href='+part' title='Add part' class='add-button add-part-button pull-right'><i class='icon-plus'></i></a></h6>");
+              $category_dom.data("term-id", data)
+              $category_dom.removeClass('loading');
+            }
+        });
+
+      }
     }
 });
 

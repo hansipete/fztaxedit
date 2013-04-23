@@ -36,14 +36,12 @@ function fz_new_part(){
         array( 'parent'=> $category )
     );
 
-    echo "part created: \n";
-    print_r($part);
-
     //need to have this (bug in wp?)
     delete_option("fz_taxonomy_2013_children");
 
-	
 	wp_set_post_terms( $fzp_id, $part['term_id'], $taxonomy);
+
+	echo $part['term_id'];
 
 	die();
 };
@@ -105,6 +103,10 @@ function fz_new_category_in_bin(){
 
     //need to have this (bug in wp?)
     delete_option("fz_taxonomy_2013_children");
+
+    
+
+    echo $category_id['term_id'];
 
     die();
 }
