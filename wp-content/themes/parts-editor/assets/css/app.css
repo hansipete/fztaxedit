@@ -14,6 +14,12 @@ body {
 #taxonomy-index .add-button:hover {
   opacity: 0.4;
 }
+.fzp-results {
+  display: block;
+  overflow-y: scroll;
+  height: 600px;
+  font-size: 11px;
+}
 .inline-edit-input {
   width: 92%;
   margin: 4px 0 4px !important;
