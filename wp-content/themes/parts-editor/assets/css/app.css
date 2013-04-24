@@ -7,6 +7,7 @@ body {
 }
 .container {
   margin: 0 0 0 10px;
+  width: 100%;
 }
 .tooltip-graphic {
   width: 60px;
@@ -16,6 +17,9 @@ a.graphic-popover-link {
   width: 40px;
   height: 40px;
 }
+tr td.title {
+  width: 100px;
+}
 #taxonomy-index .add-button {
   opacity: 0.2;
 }
@@ -23,7 +27,6 @@ a.graphic-popover-link {
   opacity: 0.4;
 }
 .fzp-results {
-  display: block;
   overflow-y: scroll;
   height: 600px;
   font-size: 11px;

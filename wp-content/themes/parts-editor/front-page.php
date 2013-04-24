@@ -62,10 +62,10 @@
                 $tooltip_url = WP_BASE . '/' . THEME_PATH . '/fzp-tooltip-content.php?fzp_id=' . $post->ID;
 
                 echo "<tr data-post-id='{$post->ID}'>
-                        <td><strong>{$post->post_title}</strong></td>
-                        <td>{$excerpt}</td>
-                        <td>
-                            <a href='#' class='btn part-graphics-popover-link' data-toggle='popover' data-placement='right' title='{$post->post_title}' data-content-url='{$tooltip_url}'>More</a>
+                        <td class='title'><strong>{$post->post_title}</strong></td>
+                        <td class='excerpt'>{$excerpt}</td>
+                        <td class='more-info'>
+                            <a class='btn part-graphics-popover-link' data-toggle='popover' data-placement='bottom' title='{$post->post_title}' data-content-url='{$tooltip_url}'>More</a>
                         </td>
                       </tr>\n";
             endwhile;
@@ -77,7 +77,7 @@
       </div><!-- sidebar -->
     </div><!-- span4 -->
 
-    <div class="offset4">
+    <div class="offset5">
       <!--Body content-->
       <h2>Taxonomy & Parts</h2>
       <div class='row' id='taxonomy-index'>
