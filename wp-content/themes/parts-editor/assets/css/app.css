@@ -8,6 +8,14 @@ body {
 .container {
   margin: 0 0 0 10px;
 }
+.tooltip-graphic {
+  width: 60px;
+}
+a.graphic-popover-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
 #taxonomy-index .add-button {
   opacity: 0.2;
 }

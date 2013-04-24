@@ -1,13 +1,6 @@
-<?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-    <header>
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-    </header>
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div>
+<?php 
 
-<?php
+  while (have_posts()) : the_post(); 
 
     $fz_abspath = ABSPATH . 'fritzing/';
     $fz_url = get_bloginfo('wpurl') . '/fritzing/';
@@ -33,12 +26,12 @@
     $pcb_src        = get_svg_img( current( $fzp->views->pcbView->layers['image'] ) );
     
     echo "
-            <div class='svg span3'><img src='{$breadboard_src}' title='{$breadboard_src}'></div>
-            <div class='svg span3'><img src='{$schematic_src}' title='{$schematic_src}'></div>
-            <div class='svg span2'><img src='{$pcb_src}' title='{$pcb_src}'></div>
+            <img src='{$breadboard_src}' title='{$breadboard_src}' style='width: 100px;'><br>
+            <img src='{$schematic_src}' title='{$schematic_src}' style='width: 100px;'><br>
+            <img src='{$pcb_src}' title='{$pcb_src}' style='width: 100px;'>
           \n";
   
-?>
 
-  </article>
-<?php endwhile; ?>
+  endwhile; 
+
+?>

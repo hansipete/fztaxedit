@@ -28,7 +28,7 @@
 
     $args = array(
                     'post_type' => 'fz_fzp',
-                    'posts_per_page' => 20,
+                    'posts_per_page' => 100,
                     's' => $s,
                     'tax_query' => array(
                                             array(
@@ -59,14 +59,15 @@
 
             while ( have_posts() ) : the_post();
                 $excerpt = strip_tags(the_excerpt_max_charlength(140));
+                $tooltip_url = WP_BASE . '/' . THEME_PATH . '/fzp-tooltip-content.php?fzp_id=' . $post->ID;
+
                 echo "<tr data-post-id='{$post->ID}'>
                         <td><strong>{$post->post_title}</strong></td>
                         <td>{$excerpt}</td>
                         <td>
-                            <a href='{$post->guid}'>Info</a>
+                            <a href='#' class='btn part-graphics-popover-link' data-toggle='popover' data-placement='right' title='{$post->post_title}' data-content-url='{$tooltip_url}'>More</a>
                         </td>
                       </tr>\n";
-                //echo "<li><a href='{$post->guid}' data-fzp-id='{$post->ID}' data-toggle='tooltip' data-placement='top' data-original-title='".htmlentities($post->post_content)."'>{$post->post_title}</a></li>";
             endwhile;
 
     echo "    </tbody>
@@ -141,6 +142,7 @@ $(document).ready(function(){
     fzp_name = $selected_tr.find('strong').text();
     fzp_id = $selected_tr.data("post-id");
     category_color = $(this).parents('.category').data('category-color');
+
 
     $(this).parents('.category').append("<div class='part new-part' style='background: "+category_color+";'><input type='text' value='"+fzp_name+"' class='input-small inline-edit-input' onFocus='this.select()'></div>")
     .find('input').focus();
@@ -223,6 +225,13 @@ $(document).ready(function(){
             data: data,
 
             success:function(data){
+              if( $part_div.hasClass('new-part') ){
+                $(".fzp-results tr.selected")
+                .fadeOut('fast', function(){
+                  $(this).removeClass('selected info')
+                  .next('tr').addClass('selected info');
+                });
+              }
               $part_div.removeClass('loading new-part');
               $part_div.data('term-id', data);
             }
@@ -317,10 +326,18 @@ $(document).ready(function(){
       }
   });
 
-  $(result_container).find('tr').click( function(e){
-    $(this).addClass('selected info').siblings('tr').removeClass('selected info');
+  $(result_container).find('tr td:not(:last-child)').click( function(e){
+    $(this).parents('tr').addClass('selected info').siblings('tr').removeClass('selected info');
     return false;
   });
+
+  $('.part-graphics-popover-link').live('hover', function(){
+    var t = $(this);
+    t.unbind('hover');
+    $.get(t.data('content-url'), function(d) {
+        t.popover({content: d});
+    });  
+  });  
 
 });
 </script>
