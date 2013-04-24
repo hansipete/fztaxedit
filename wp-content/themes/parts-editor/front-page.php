@@ -65,7 +65,7 @@
                         <td class='title'><strong>{$post->post_title}</strong></td>
                         <td class='excerpt'>{$excerpt}</td>
                         <td class='more-info'>
-                            <a class='btn part-graphics-popover-link' data-toggle='popover' data-placement='bottom' title='{$post->post_title}' data-content-url='{$tooltip_url}'>More</a>
+                            <a class='btn part-graphics-popover-link' data-toggle='popover' data-placement='right' title='{$post->post_title}' data-content-url='{$tooltip_url}'>More</a>
                         </td>
                       </tr>\n";
             endwhile;

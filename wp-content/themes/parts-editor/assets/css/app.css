@@ -9,8 +9,11 @@ body {
   margin: 0 0 0 10px;
   width: 100%;
 }
+.popover {
+  width: 640px;
+}
 .tooltip-graphic {
-  width: 60px;
+  width: 200px;
 }
 a.graphic-popover-link {
   display: block;
@@ -28,7 +31,7 @@ tr td.title {
 }
 .fzp-results {
   overflow-y: scroll;
-  height: 600px;
+  height: 800px;
   font-size: 11px;
 }
 .inline-edit-input {
@@ -157,9 +160,6 @@ em.lab {
 /* ==========================================================================
    Primary Content
    ========================================================================== */
-.svg img {
-  width: 100%;
-}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
