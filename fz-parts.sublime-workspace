@@ -4,6 +4,82 @@
 		"selected_items":
 		[
 			[
+				"show",
+				"show_popover"
+			],
+			[
+				"fz_",
+				"fzp_file"
+			],
+			[
+				"fzp",
+				"fzp_id"
+			],
+			[
+				"fz",
+				"fz_taxonomy_2013"
+			],
+			[
+				"category",
+				"category_dom"
+			],
+			[
+				"bin",
+				"bin_term_id"
+			],
+			[
+				"inline",
+				"inline-edit-category-input"
+			],
+			[
+				"cate",
+				"data-category-color"
+			],
+			[
+				"add-",
+				"add-button"
+			],
+			[
+				"taxonomy",
+				"taxonomy-index"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"selected",
+				"selected_tr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"sele",
+				"selected_tr"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"img",
+				"img_src"
+			],
+			[
+				"bre",
+				"breadboard_svg"
+			],
+			[
 				"part",
 				"part_term_id"
 			],
@@ -12,32 +88,12 @@
 				"new-part-title"
 			],
 			[
-				"fzp",
-				"fzp_ids"
-			],
-			[
-				"fz",
-				"fzp_ids"
-			],
-			[
 				"data",
 				"data-fzp-id"
 			],
 			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"border",
-				"border"
-			],
-			[
 				"margin-",
 				"margin-bottom"
-			],
-			[
-				"category",
-				"category_name"
 			],
 			[
 				"TERM",
@@ -58,10 +114,6 @@
 			[
 				"child",
 				"child_term"
-			],
-			[
-				"fz_",
-				"fz_taxonomy_2013"
 			],
 			[
 				"fzpMod",
@@ -104,10 +156,6 @@
 				"family_id"
 			],
 			[
-				"selec",
-				"selected_pos"
-			],
-			[
 				"selected_family",
 				"selected_family_item"
 			],
@@ -144,10 +192,6 @@
 				"text-transform"
 			],
 			[
-				"inline",
-				"inline-block"
-			],
-			[
 				"print",
 				"print_r"
 			],
@@ -172,44 +216,45 @@
 	"buffers":
 	[
 		{
-			"file": "wp-content/themes/parts-editor/front-page.php",
+			"file": "/Users/Hansi/Sites/scook/index.html",
 			"settings":
 			{
-				"buffer_size": 4919,
+				"buffer_size": 648,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "wp-content/themes/parts-editor/templates/sidebar-apply.php",
+			"file": "/Users/Hansi/Sites/scook/css/app.less",
 			"settings":
 			{
-				"buffer_size": 4231,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/parts-editor/assets/css/app.less",
-			"settings":
-			{
-				"buffer_size": 3501,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/parts-editor/lib/ajax.php",
-			"settings":
-			{
-				"buffer_size": 4917,
-				"line_ending": "Unix"
+				"buffer_size": 8,
+				"line_ending": "Unix",
+				"name": "body {"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 107.0,
+		"height": 147.0,
 		"selected_items":
 		[
+			[
+				"syntax java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
 			[
 				"fold",
 				"Code Folding: Fold Tag Attributes"
@@ -217,14 +262,6 @@
 			[
 				"codex",
 				"WordPress Codex: Search from Input"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"javasc",
@@ -256,16 +293,33 @@
 	},
 	"file_history":
 	[
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/scripts.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/fzp-tooltip-content.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/front-page.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/ajax.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/base.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.less",
+		"/Users/Hansi/Sites/fz-parts/.git/hooks/post-merge",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/content-tooltip.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/custom.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/apply-taxonomy.js",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/main.js",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/post-types.php",
+		"/Users/Hansi/Library/Caches/Coda 2/56466E4E-1144-4666-B6FE-A4B90CA1C3A3/page-about.php",
+		"/Users/Hansi/Library/Caches/Coda 2/CC686A56-89DC-4E93-8C00-3A8FE046BEA7/app.css",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/sidebar-apply.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/scripts.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/less/variables.less",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-alternative-view.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/content-single.php",
+		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/single.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/helpers.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/functions.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/head.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/ajax.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/front-page.php",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/B2FC4174-02AF-43A7-969B-A82B8418B91E/app.css",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-overview.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.less",
 		"/Users/Hansi/Desktop/sparkfun optical/Luxeon Rebel Wide Optic Lens.webloc",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/3090F202-644D-4500-94BA-41F3584E2B65/page-portfolio.php",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/51B9FEF9-6C57-4F7C-8DF1-1096A71927F9/.htaccess",
@@ -273,7 +327,6 @@
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/config.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-bin-family-index.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-convert-families-to-taxonomy.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/custom.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-delete-empty-terms.php",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/0D1748E9-3EC1-440B-BE8E-F1CF0375A869/ta-compilation.js",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-import-pdb-core.php",
@@ -285,8 +338,6 @@
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/sidebar.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/header-top-navbar.php",
 		"/Users/Hansi/Sites/fz-parts/pdb/user/sparkfun-analogic-acs712-.fzp",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/post-types.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/apply-taxonomy.js",
 		"/Users/Hansi/Sites/fzp-2013/wp-config.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-generate-bins.php",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/AC0C1B30-B158-4F82-A9CA-39F0FA3B7C97/app.css",
@@ -294,7 +345,6 @@
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue-2/style.css",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/header.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-show-properties.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/js/main.js",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-tools.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/page-header.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/searchform.php",
@@ -362,8 +412,6 @@
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/lib/custom.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/lib/scripts.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/page-category.php",
-		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/home.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/font-page.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/page-work.php",
@@ -372,13 +420,7 @@
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/base.php.backup.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/base.php.offset-test-02-01.php",
 		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-		"/Users/Hansi/Sites/september/.htaccess",
-		"/Users/Hansi/Sites/september/.htaccesstest.php",
-		"/Users/Hansi/Sites/september/coming-soon.gif",
-		"/Users/Hansi/Sites/september/september.sublime-project",
-		"/Volumes/BACKUP 2012/Software/PSP Vintage Warmer/ASSiGN.nfo",
-		"/Users/Hansi/Sites/phpmyadmin/config.inc.php",
-		"/etc/apache2/httpd.conf"
+		"/Users/Hansi/Sites/september/.htaccess"
 	],
 	"find":
 	{
@@ -399,6 +441,46 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mousenter",
+			"d",
+			"data",
+			"$(this)",
+			"'",
+			"\"",
+			"e",
+			"style",
+			".click",
+			"tr",
+			"hover",
+			"search",
+			"click",
+			"fzp-results",
+			"$(this)",
+			"ccc",
+			"\"",
+			"'p",
+			"'",
+			"10px",
+			"0",
+			"sortable",
+			"$(this).parent('.part')",
+			"'",
+			"row-fluid",
+			"part",
+			".text",
+			"#about",
+			":",
+			"$uncategorized->",
+			"\"",
+			"echo",
+			"uncateg",
+			"'s'",
+			"$s",
+			"s",
+			"S",
+			"s",
+			"\"",
+			"svg",
 			"-",
 			"remove_fzp_from_part",
 			"name",
@@ -500,349 +582,28 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "wp-content/themes/parts-editor/front-page.php",
+					"file": "/Users/Hansi/Sites/scook/index.html",
 					"settings":
 					{
-						"buffer_size": 4919,
+						"buffer_size": 648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3501,
-								3082
+								471,
+								471
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 782.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/parts-editor/templates/sidebar-apply.php",
-					"settings":
-					{
-						"buffer_size": 4231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1940,
-								1940
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 220.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "wp-content/themes/parts-editor/assets/css/app.less",
-					"settings":
-					{
-						"buffer_size": 3501,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								555,
-								555
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -851,112 +612,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "wp-content/themes/parts-editor/lib/ajax.php",
+					"buffer": 1,
+					"file": "/Users/Hansi/Sites/scook/css/app.less",
 					"settings":
 					{
-						"buffer_size": 4917,
+						"buffer_size": 8,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								572,
-								572
+								8,
+								8
 							]
 						],
 						"settings":
 						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"auto_name": "body {",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -998,6 +672,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.stino_log":
+	{
+		"height": 0.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -1027,6 +705,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 277.0,
 	"status_bar_visible": true
 }
