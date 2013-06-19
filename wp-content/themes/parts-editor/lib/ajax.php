@@ -1,5 +1,41 @@
 <?php
 
+function fz_inline_editing(){
+	
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$type = $_POST['type'];
+    $id = $_POST['id'];
+    $value = $_POST['value'];
+
+    /*
+     Check submitted value
+    */
+    if(!empty($value)) {
+
+    	if( $type == 'part' ){
+
+    		wp_update_term( $id, $taxonomy, array('name' => $value) );
+
+        }
+
+    } else {
+        /* 
+        In case of incorrect value or error you should return HTTP status != 200. 
+        Response body will be shown as error message in editable form.
+        */
+
+        header('HTTP 400 Bad Request', true, 400);
+        echo "Empty titles not allowed! :-)";
+    }
+
+    die();
+}
+
+add_action('wp_ajax_fz_inline_editing', 'fz_inline_editing');
+
+
+
 function fz_update_term_name(){
 
 	$taxonomy = 'fz_taxonomy_2013';

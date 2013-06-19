@@ -2,6 +2,15 @@
    Base
    ========================================================================== */
 
+@media all {
+  .page-break { display: none; }
+}
+
+@media print {
+  .page-break { display: block; page-break-before: always; }
+  .icon-pencil { display: none; }
+}
+
 html, body {
   height: 100%;
 }
