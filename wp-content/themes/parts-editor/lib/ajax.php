@@ -1,5 +1,55 @@
 <?php
 
+function fz_merge_parts(){
+	
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$target_term_id = $_POST['target_term_id']; 
+	$term_id = $_POST['term_id'];
+
+	// get term_id post ids
+	// post ids: set new term on them
+	// delete old unused term
+
+    if(!empty($target_term_id)) {
+
+    	// get all fzp linked with original term
+		$args = array(
+						'post_type' => 'fz_fzp',
+						'tax_query' => array(
+							array(
+								'taxonomy' => $taxonomy,
+								'field' => 'id',
+								'terms' => $term_id
+							)
+						)
+		);
+		
+		$fzps = get_posts( $args );
+
+		// inject new term_id
+		foreach($fzps as $fzp){
+			wp_set_post_terms( $fzp->ID, $target_term_id, $taxonomy);
+		}
+
+		// clear old term
+		wp_delete_term($term_id, $taxonomy);
+
+    } else {
+        /* 
+        In case of incorrect value or error you should return HTTP status != 200. 
+        Response body will be shown as error message in editable form.
+        */
+
+        header('HTTP 400 Bad Request', true, 400);
+        echo "Empty titles not allowed! :-)";
+    }
+
+    die();
+}
+
+add_action('wp_ajax_fz_merge_parts', 'fz_merge_parts');
+
 function fz_inline_editing(){
 	
 	$taxonomy = 'fz_taxonomy_2013';

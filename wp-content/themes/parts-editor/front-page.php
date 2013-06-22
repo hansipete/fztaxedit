@@ -15,14 +15,14 @@
             echo "<div class='span2 category' data-term-id='{$category->term_id}' data-category-color='{$bin->description}'>
                   <h6><a href='#' data-term-id='{$category->term_id}' class='inline-editing' data-inline-edit-type='category' data-original-title='New category name'>{$category->name}</a></h6>
                   <a href='#' data-inline-edit-type='part-delete' data-term-id='{$category->term_id}' class='pull-right inline-editing-delete' data-original-title='Delete'>X</a>
-                  <ul class='unstyled'>";
+                  <ul class='unstyled partslist'>";
 
                       // BINS > CATEGORIES > PART
                       $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
                       foreach ($parts as $part) {
                           
                           $term = get_term( $part->term_id, 'fz_taxonomy_2013' );
-$count = $term->count;
+                          $count = $term->count;
 
                           echo "<li class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
                                  <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' data-original-title='New part name'>{$part->name}</a>
@@ -44,7 +44,27 @@ $count = $term->count;
 <script>
 $(document).ready(function(){
 
+  $(".part").draggable({
+    revert: true,
+    cursor: "move",
+    opacity: 0.7
+  });
 
+  $(".part").droppable({
+      accept: ".part",
+      hoverClass: "ui-state-hover",
+      drop: function(ev, ui) {
+          ui.draggable.remove();
+          var target_term_id = $(this).data('term-id');
+          var term_id = ui.draggable.data('term-id');
+
+          $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_merge_parts', target_term_id: target_term_id, term_id: term_id},
+          }); 
+      }
+  });
 
   $('.inline-editing-delete').editable({
     type: 'checklist',
@@ -86,77 +106,7 @@ $(document).ready(function(){
       itemSelector: '.bin-container'
   });
 
-  //query sidebar content
-
-  var result_container = ".fzp-results";
-
-  $('.fzp-filter-form').submit( function(e){
-    
-        e.preventDefault();
-        
-        var s = $(this).find("input[name='s']").val();
-        
-        $.ajax({
-            type: "POST",
-            url: "<?php bloginfo('wpurl'); ?>/search/"+s,
-            data: $(this).serialize(),
-
-            success:function(data){
-              // get results dom
-              result = $(result_container, data).html();
-
-              // update container
-              $(result_container).html(result);
-
-              //highlight first tr
-              $(result_container).find('tr:first').addClass('selected info');
-            }
-        });   
-
-  });
-
-
-  // select active (key up down)
-
-  // initial
-  $(result_container).find('tr:first').addClass('selected info');
-
-  function skip_selected(dir){
-    var $selected_tr = $(result_container).find('tr.selected');
-
-    if( (dir<0) && ($selected_tr.prev('tr').length > 0) ){
-        $selected_tr.removeClass('selected info').prev().addClass('selected info');  
-    } 
-
-    if( (dir>0) && ($selected_tr.next('tr').length > 0) ){
-        $selected_tr.removeClass('selected info').next().addClass('selected info');  
-    }  
-  }
-
-  $(document).keydown( function(e){
-
-      var tag = e.target.tagName.toLowerCase();
-      
-      if ( tag != 'input' && tag != 'textarea'){
-        switch (e.keyCode) {
-          case 87: skip_selected(-1); break;
-          case 83: skip_selected(1); break;
-        }
-      }
-  });
-
-  $(result_container).find('tr td:not(:last-child)').click( function(e){
-    $(this).parents('tr').addClass('selected info').siblings('tr').removeClass('selected info');
-    return false;
-  });
-
-  $('.part-graphics-popover-link').live('hover', function(){
-    var t = $(this);
-    t.unbind('hover');
-    $.get(t.data('content-url'), function(d) {
-        t.popover({content: d});
-    });  
-  });  
+  
 
 });
 </script>

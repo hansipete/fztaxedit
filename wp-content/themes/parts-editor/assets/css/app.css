@@ -15,6 +15,9 @@
     display: none;
   }
 }
+.ui-state-hover {
+  background: #bbb !important;
+}
 html,
 body {
   height: 100%;
@@ -65,7 +68,7 @@ tr td.title {
   margin-bottom: 4px;
   background: #f0f0f0;
   font-size: 11px;
-  cursor: pointer;
+  cursor: move;
 }
 .part .icon-pencil {
   cursor: pointer;
