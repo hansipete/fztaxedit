@@ -18,6 +18,11 @@ function fz_inline_editing(){
     		wp_update_term( $id, $taxonomy, array('name' => $value) );
 
         }
+        else if( $type == 'category'){
+
+        	wp_update_term( $id, $taxonomy, array('name' => $value) );
+
+        }
 
     } else {
         /* 

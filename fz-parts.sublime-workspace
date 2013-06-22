@@ -216,20 +216,27 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/Hansi/Sites/scook/index.html",
+			"file": "wp-content/themes/parts-editor/front-page.php",
 			"settings":
 			{
-				"buffer_size": 648,
+				"buffer_size": 5143,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/Hansi/Sites/scook/css/app.less",
+			"file": "wp-content/themes/parts-editor/templates/head.php",
 			"settings":
 			{
-				"buffer_size": 8,
-				"line_ending": "Unix",
-				"name": "body {"
+				"buffer_size": 1364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/lib/ajax.php",
+			"settings":
+			{
+				"buffer_size": 6127,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -293,11 +300,20 @@
 	},
 	"file_history":
 	[
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/fzp-tooltip-content.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/front-page.php",
+		"/Users/Hansi/Sites/fz-parts/fz-parts.sublime-project",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/assets/css/app.less",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/front-page.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.less",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/page.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/page-home.php",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/assets/css/app.css",
+		"//<",
+		"/Users/Hansi/Sites/scook/index.html",
+		"/Users/Hansi/Sites/scook/css/app.less",
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/fzp-tooltip-content.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/ajax.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/base.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/assets/css/app.less",
 		"/Users/Hansi/Sites/fz-parts/.git/hooks/post-merge",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/content-tooltip.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/custom.php",
@@ -364,7 +380,6 @@
 		"/Users/Hansi/Sites/fz-parts/output/pdb/core/trimmer_3_4_p.fzp",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/ACEAFA9A-4BD2-4240-8E27-918DF8D584C3/site.php",
 		"/Users/Hansi/Downloads/september_www.sql",
-		"/Users/Hansi/Sites/fz-parts/fz-parts.sublime-project",
 		"/Users/Hansi/Sites/fz-parts/wp-config.php",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/templates/page-header.php",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/templates/content-page.php",
@@ -375,7 +390,6 @@
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/templates/content.php",
 		"/Library/Internet Plug-Ins/torrc",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/templates/content-single.backup.php",
-		"//<",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/lib/custom.php",
 		"/Users/Hansi/Sites/circle/demo-04.htm",
 		"/Users/Hansi/Sites/tonangeber/wp-content/themes/vinyl-fondue/lib/init.php",
@@ -413,14 +427,7 @@
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/lib/scripts.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/page-category.php",
 		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/home.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/font-page.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/page-work.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/templates/content-page.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/page-custom.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/base.php.backup.php",
-		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/base.php.offset-test-02-01.php",
-		"/Users/Hansi/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-		"/Users/Hansi/Sites/september/.htaccess"
+		"/Users/Hansi/Sites/september/wp-content/themes/autumn-leaves/font-page.php"
 	],
 	"find":
 	{
@@ -441,6 +448,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fz_update_term_name",
+			"\"",
+			"as",
 			"mousenter",
 			"d",
 			"data",
@@ -587,23 +597,53 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/Hansi/Sites/scook/index.html",
+					"file": "wp-content/themes/parts-editor/front-page.php",
 					"settings":
 					{
-						"buffer_size": 648,
+						"buffer_size": 5143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								471,
-								471
+								2285,
+								2285
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 125.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/parts-editor/templates/head.php",
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1356,
+								1356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -612,25 +652,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/Users/Hansi/Sites/scook/css/app.less",
+					"buffer": 2,
+					"file": "wp-content/themes/parts-editor/lib/ajax.php",
 					"settings":
 					{
-						"buffer_size": 8,
+						"buffer_size": 6127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8,
-								8
+								432,
+								432
 							]
 						],
 						"settings":
 						{
-							"auto_name": "body {",
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -695,11 +734,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Users/Hansi/Sites/kurhaus/untitled.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": false,

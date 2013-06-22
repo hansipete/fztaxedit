@@ -7,14 +7,15 @@
     foreach ( $bins as $i => $bin) {
         echo "<div class='page-break'></div>";
         echo "<div class='row' data-term-id='{$bin->term_id}' id='bin-{$bin->term_id}'  style='border-color: {$bin->description};'>
-                <h4>{$bin->name}<a href='+category' title='Add category' class='add-button add-category-button pull-right'><i class='icon-plus'></i></a></h4>";        
+                <h4>{$bin->name}</h4>";        
 
         // BINS > CATEGORIES
         $categories = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $bin->term_id, 'hide_empty' => 0 ) );
         foreach ($categories as $category) {
             echo "<div class='span2 category' data-term-id='{$category->term_id}' data-category-color='{$bin->description}'>
-                  <h6><a href='#' class='inline-editing' data-original-title='New category name'>{$category->name}</a><a href='+part' title='Add part' class='add-button add-part-button pull-right'><i class='icon-plus'></i></a></h6>
-                  <ul>";
+                  <h6><a href='#' data-term-id='{$category->term_id}' class='inline-editing' data-inline-edit-type='category' data-original-title='New category name'>{$category->name}</a></h6>
+                  <a href='#' data-inline-edit-type='part-delete' data-term-id='{$category->term_id}' class='pull-right inline-editing-delete' data-original-title='Delete'>X</a>
+                  <ul class='unstyled'>";
 
                       // BINS > CATEGORIES > PART
                       $parts = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => $category->term_id, 'hide_empty' => 0 ) );
@@ -24,7 +25,7 @@
 $count = $term->count;
 
                           echo "<li class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
-                                 <i class='icon-pencil'></i>&nbsp;<a href='#' data-inline-edit-type='part' data-part-id='{$part->term_id}' class='name inline-editing' data-original-title='New part name'>{$part->name}</a>
+                                 <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' data-original-title='New part name'>{$part->name}</a>
                                  <small class='pull-right'>{$count}</small>
                                 </li>";
                       }
@@ -43,6 +44,14 @@ $count = $term->count;
 <script>
 $(document).ready(function(){
 
+
+
+  $('.inline-editing-delete').editable({
+    type: 'checklist',
+    source: {'1': 'enabled'},
+    emptytext: 'disabled'
+  });
+
   $('.inline-editing').editable({
     type: 'text',
     pk: 1,
@@ -50,7 +59,7 @@ $(document).ready(function(){
     //params: { action: 'fz_inline-editing' }
     params: function(params){
       params.type = $(this).data('inline-edit-type');
-      params.id = $(this).data('part-id');
+      params.id = $(this).data('term-id');
       params.action = 'fz_inline_editing';
       return params;
     }
