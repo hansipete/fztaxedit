@@ -1,6 +1,8 @@
-      <!--Body content-->
-      <h2>Taxonomy & Parts</h2>
-      <div class='row' style="margin: 0">
+
+<?php for($column=0; $column<2; $column++){ ?>
+
+<div style="width: 48%; height: 100%; float: left; overflow-y: scroll;">
+
 <?php
       // BINS
     $bins = get_categories( array( 'taxonomy' => 'fz_taxonomy_2013', 'parent' => 0, 'hide_empty' => 0 ) );
@@ -14,7 +16,6 @@
         foreach ($categories as $category) {
             echo "<div class='span2 category' data-term-id='{$category->term_id}' data-category-color='{$bin->description}'>
                   <h6><a href='#' data-term-id='{$category->term_id}' class='inline-editing' data-inline-edit-type='category' data-original-title='New category name'>{$category->name}</a></h6>
-                  <a href='#' data-inline-edit-type='part-delete' data-term-id='{$category->term_id}' class='pull-right inline-editing-delete' data-original-title='Delete'>X</a>
                   <ul class='unstyled partslist'>";
 
                       // BINS > CATEGORIES > PART
@@ -23,30 +24,37 @@
                           
                           $term = get_term( $part->term_id, 'fz_taxonomy_2013' );
                           $count = $term->count;
+                          $checked = get_option("part_{$part->term_id}_checked", "");                          
 
                           echo "<li class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
-                                 <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' title='Mufuck' data-original-title='New part name'>{$part->name}</a>
-                                 <small class='pull-right'>{$count}</small>
+                                  <input class='checkpart' type='checkbox' {$checked}> <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' title='Mufuck' data-original-title='New part name'>{$part->name}</a>
+                                  <i class='icon-download-alt merge-part'></i> <small class='pull-right'>{$count}</small>
                                 </li>";
                       }
 
-                echo "</ul>
-                    </div>";
+                echo "  <li>&nbsp;</li>
+                      </ul>
+                    </div>"; //provide empty li at the end for sortables snap ins with new cats
         }
 
         echo "</div>";
 
-        break;   /////DEEEEEBUGGGGGGG!
+        //break;   /////DEEEEEBUGGGGGGG!
     }
 ?>
-      
-      </div>
+
+</div>
+
+<?php } ?>
 
 <script>
 
 
 $(document).ready(function(){
 
+  // FZP POPUVER
+
+  /*
   $('body').delegate('.part','hover',function(event){
     if (event.type === 'mouseenter') {
         var el=$(this);
@@ -58,14 +66,52 @@ $(document).ready(function(){
             data: {action: 'fz_popover_fzps', term_id: term_id},
         })
         .done(function( msg ) {
-          el.unbind('hover').popover({content: msg}).popover('show');
+          el.unbind('hover').popover({title: 'Linked FZPs', content: msg}).popover('show');
         }); 
     }  else {
         $(this).popover('hide');
     }
 
+  });
+  */
+
+
+// AJAX CHECK PARTS
+
+  $('.checkpart').click( function(){
+    var el = $(this);
+    var checked = el.prop('checked') ? 'checked' : '';
+    var term_id = el.parents('li').data('term-id');
+
+    $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_check_part', term_id: term_id, checked: checked},
+    }); 
+  });
+
+
+// PARTS SORTABLE  
+$(".partslist").sortable({
+  connectWith: '.partslist',
+  receive: function( event, ui ) {
+    // DROP LI ITEM IN OTHER LIST (UL) - not in the same ul
+    var part_term_id = $(event.srcElement).data('term-id');
+    var cat_term_id = $(event.target).parents('.category').data('term-id');
+
+    console.log("droppped");
+
+    $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_change_part_category', cat_term_id: cat_term_id, part_term_id: part_term_id},
+    }); 
+  }
 });
 
+// PARTS MERGE
+
+/*
   $(".part").draggable({
     revert: true,
     cursor: "move",
@@ -87,6 +133,10 @@ $(document).ready(function(){
           }); 
       }
   });
+*/
+
+
+// INLINE EDIT  
 
   $('.inline-editing-delete').editable({
     type: 'checklist',
@@ -98,7 +148,6 @@ $(document).ready(function(){
     type: 'text',
     pk: 1,
     url: wpajax.url,
-    //params: { action: 'fz_inline-editing' }
     params: function(params){
       params.type = $(this).data('inline-edit-type');
       params.id = $(this).data('term-id');

@@ -1,5 +1,59 @@
 <?php
 
+function fz_change_part_category(){
+
+	// change term -> parent to new category id
+
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$cat_term_id = $_POST['cat_term_id'];
+	$part_term_id = $_POST['part_term_id'];
+
+    if(!empty($cat_term_id)) {
+
+    	wp_update_term($part_term_id, $taxonomy, array('parent' => $cat_term_id));
+
+    } else {
+        /* 
+        In case of incorrect value or error you should return HTTP status != 200. 
+        Response body will be shown as error message in editable form.
+        */
+
+        header('HTTP 400 Bad Request', true, 400);
+        echo "Empty titles not allowed! :-)";
+    }
+
+    die();
+}
+add_action('wp_ajax_fz_change_part_category', 'fz_change_part_category');
+
+
+function fz_check_part(){
+	
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$term_id = $_POST['term_id'];
+	$checked = $_POST['checked'];
+
+    if(!empty($term_id)) {
+
+    	update_option( "part_{$term_id}_checked", $checked );
+
+    } else {
+        /* 
+        In case of incorrect value or error you should return HTTP status != 200. 
+        Response body will be shown as error message in editable form.
+        */
+
+        header('HTTP 400 Bad Request', true, 400);
+        echo "Empty titles not allowed! :-)";
+    }
+
+    die();
+}
+
+add_action('wp_ajax_fz_check_part', 'fz_check_part');
+
 function fz_popover_fzps(){
 	
 	$taxonomy = 'fz_taxonomy_2013';
@@ -27,12 +81,17 @@ function fz_popover_fzps(){
 			$package = get_post_meta($fzp->ID, 'package', true);
 			$terms = wp_get_post_terms($fzp->ID, 'fz_original_bin');
 			$bin = current($terms);
+			if(!is_object($bin)){
+				$bin->slug = 'ERROR';
+			}
 			$svg_url = get_bloginfo('wpurl') . '/fritzing/parts/svg/user/breadboard/' . 'sparkfun-' . $bin->slug . '_' . $package . '_breadboard.svg';
+      		$excerpt = substr ($fzp->post_content, 0, 150 );
 
-			echo "<li class='span2'>
+			echo "<li class='span1'>
     				<div class='thumbnail'>
       					<img data-src='$svg_url' src='$svg_url' alt=''>
       					<h3 style='font-size: 10px; line-height: 12px;'>{$fzp->post_title}</h3>
+      					<p style='font-size: 9px; line-height: 10px;'>{$excerpt}</p>
     				</div>
   				</li>";
 		}
@@ -117,16 +176,23 @@ function fz_inline_editing(){
     /*
      Check submitted value
     */
-    if(!empty($value)) {
+    if(!empty($id)) {
 
     	if( $type == 'part' ){
 
-    		wp_update_term( $id, $taxonomy, array('name' => $value) );
+    		if(!empty($value))
+    			wp_update_term( $id, $taxonomy, array('name' => $value) );
+    		else
+    			wp_delete_term( $id, $taxonomy); //delete part term if value is empty…
+    			
 
         }
         else if( $type == 'category'){
 
-        	wp_update_term( $id, $taxonomy, array('name' => $value) );
+        	if(!empty($value))
+        		wp_update_term( $id, $taxonomy, array('name' => $value) );
+        	else
+        		wp_delete_term( $id, $taxonomy); //delete category if value is empty…
 
         }
 
