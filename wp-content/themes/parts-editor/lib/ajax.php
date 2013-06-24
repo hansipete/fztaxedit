@@ -1,5 +1,61 @@
 <?php
 
+function fz_popover_fzps(){
+	
+	$taxonomy = 'fz_taxonomy_2013';
+
+	$term_id = $_POST['term_id'];
+
+    if(!empty($term_id)) {
+
+    	$args = array(
+						'post_type' => 'fz_fzp',
+						'tax_query' => array(
+							array(
+								'taxonomy' => $taxonomy,
+								'field' => 'id',
+								'terms' => $term_id
+							)
+						)
+		);
+		
+		$fzps = get_posts( $args );
+
+		echo "<ul class='thumbnails'>";
+  				
+		foreach($fzps as $fzp){
+			$package = get_post_meta($fzp->ID, 'package', true);
+			$terms = wp_get_post_terms($fzp->ID, 'fz_original_bin');
+			$bin = current($terms);
+			$svg_url = get_bloginfo('wpurl') . '/fritzing/parts/svg/user/breadboard/' . 'sparkfun-' . $bin->slug . '_' . $package . '_breadboard.svg';
+
+			echo "<li class='span2'>
+    				<div class='thumbnail'>
+      					<img data-src='$svg_url' src='$svg_url' alt=''>
+      					<h3 style='font-size: 10px; line-height: 12px;'>{$fzp->post_title}</h3>
+    				</div>
+  				</li>";
+		}
+
+		echo "</ul>";
+
+    } else {
+        /* 
+        In case of incorrect value or error you should return HTTP status != 200. 
+        Response body will be shown as error message in editable form.
+        */
+
+        header('HTTP 400 Bad Request', true, 400);
+        echo "Empty titles not allowed! :-)";
+    }
+
+    die();
+}
+
+add_action('wp_ajax_fz_popover_fzps', 'fz_popover_fzps');
+
+
+
 function fz_merge_parts(){
 	
 	$taxonomy = 'fz_taxonomy_2013';

@@ -22,6 +22,10 @@ html,
 body {
   height: 100%;
 }
+.editable {
+  color: black;
+  border-color: black;
+}
 .container {
   margin: 0 0 0 10px;
   width: 100%;

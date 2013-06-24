@@ -25,12 +25,13 @@
                           $count = $term->count;
 
                           echo "<li class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
-                                 <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' data-original-title='New part name'>{$part->name}</a>
+                                 <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' title='Mufuck' data-original-title='New part name'>{$part->name}</a>
                                  <small class='pull-right'>{$count}</small>
                                 </li>";
                       }
 
-                echo "</ul></div>";
+                echo "</ul>
+                    </div>";
         }
 
         echo "</div>";
@@ -42,7 +43,28 @@
       </div>
 
 <script>
+
+
 $(document).ready(function(){
+
+  $('body').delegate('.part','hover',function(event){
+    if (event.type === 'mouseenter') {
+        var el=$(this);
+        var term_id = el.data('term-id');
+
+        $.ajax({
+            type: "POST",
+            url: wpajax.url,
+            data: {action: 'fz_popover_fzps', term_id: term_id},
+        })
+        .done(function( msg ) {
+          el.unbind('hover').popover({content: msg}).popover('show');
+        }); 
+    }  else {
+        $(this).popover('hide');
+    }
+
+});
 
   $(".part").draggable({
     revert: true,
