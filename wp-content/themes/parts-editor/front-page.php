@@ -28,7 +28,7 @@
 
                           echo "<li class='part' data-term-id='{$part->term_id}' style='background: {$bin->description};'>
                                   <input class='checkpart' type='checkbox' {$checked}> <a href='#' data-inline-edit-type='part' data-term-id='{$part->term_id}' class='name inline-editing' title='Mufuck' data-original-title='New part name'>{$part->name}</a>
-                                  <i class='icon-download-alt merge-part'></i> <small class='pull-right'>{$count}</small>
+                                  <i class='icon-list-alt part-info pull-right'></i> <small class='pull-right'>{$count}</small>
                                 </li>";
                       }
 
@@ -54,11 +54,10 @@ $(document).ready(function(){
 
   // FZP POPUVER
 
-  /*
-  $('body').delegate('.part','hover',function(event){
+  $('body').delegate('.part-info','hover',function(event){
     if (event.type === 'mouseenter') {
-        var el=$(this);
-        var term_id = el.data('term-id');
+        var $el = $(this)
+        var term_id = $el.parents('.part').data('term-id');
 
         $.ajax({
             type: "POST",
@@ -66,14 +65,13 @@ $(document).ready(function(){
             data: {action: 'fz_popover_fzps', term_id: term_id},
         })
         .done(function( msg ) {
-          el.unbind('hover').popover({title: 'Linked FZPs', content: msg}).popover('show');
+          $el.unbind('hover').popover({title: 'Linked FZPs', content: msg}).popover('show');
         }); 
     }  else {
-        $(this).popover('hide');
+        $el.popover('hide');
     }
 
   });
-  */
 
 
 // AJAX CHECK PARTS

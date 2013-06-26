@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
+				"famil",
+				"family_node"
+			],
+			[
+				"author",
+				"authors"
+			],
+			[
+				"part",
+				"part_term"
+			],
+			[
+				"fzp",
+				"fzps"
+			],
+			[
+				"cat",
+				"cat_term_id"
+			],
+			[
+				"term",
+				"term_id"
+			],
+			[
+				"taxo",
+				"taxonomy"
+			],
+			[
+				"wp_set_post",
+				"wp_set_post_terms"
+			],
+			[
+				"taxonomy",
+				"fz_taxonomy_2013"
+			],
+			[
+				"tax",
+				"taxonomy"
+			],
+			[
+				"target",
+				"target_term_id"
+			],
+			[
 				"show",
 				"show_popover"
 			],
 			[
 				"fz_",
 				"fzp_file"
-			],
-			[
-				"fzp",
-				"fzp_id"
 			],
 			[
 				"fz",
@@ -38,10 +78,6 @@
 			[
 				"add-",
 				"add-button"
-			],
-			[
-				"taxonomy",
-				"taxonomy-index"
 			],
 			[
 				"selec",
@@ -78,10 +114,6 @@
 			[
 				"bre",
 				"breadboard_svg"
-			],
-			[
-				"part",
-				"part_term_id"
 			],
 			[
 				"new",
@@ -152,10 +184,6 @@
 				"getId"
 			],
 			[
-				"famil",
-				"family_id"
-			],
-			[
 				"selected_family",
 				"selected_family_item"
 			],
@@ -219,15 +247,7 @@
 			"file": "wp-content/themes/parts-editor/front-page.php",
 			"settings":
 			{
-				"buffer_size": 5143,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "wp-content/themes/parts-editor/templates/head.php",
-			"settings":
-			{
-				"buffer_size": 1364,
+				"buffer_size": 5422,
 				"line_ending": "Unix"
 			}
 		},
@@ -235,17 +255,45 @@
 			"file": "wp-content/themes/parts-editor/lib/ajax.php",
 			"settings":
 			{
-				"buffer_size": 6127,
+				"buffer_size": 10246,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/assets/css/app.less",
+			"settings":
+			{
+				"buffer_size": 4987,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/parts-editor/page-generate-fzps.php",
+			"settings":
+			{
+				"buffer_size": 1888,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "fritzing/pdb/user/sparkfun-analogic-74hc4051_mux-.fzp",
+			"settings":
+			{
+				"buffer_size": 7082,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 147.0,
+		"height": 327.0,
 		"selected_items":
 		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
 			[
 				"syntax java",
 				"Set Syntax: JavaScript"
@@ -300,6 +348,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/head.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/front-page.php",
 		"/Users/Hansi/Sites/fz-parts/fz-parts.sublime-project",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor-3/assets/css/app.less",
@@ -333,7 +382,6 @@
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/single.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/lib/helpers.php",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/functions.php",
-		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/templates/head.php",
 		"/Users/Hansi/Library/Caches/Cleanup At Startup/Transmit/B2FC4174-02AF-43A7-969B-A82B8418B91E/app.css",
 		"/Users/Hansi/Sites/fz-parts/wp-content/themes/parts-editor/page-overview.php",
 		"/Users/Hansi/Desktop/sparkfun optical/Luxeon Rebel Wide Optic Lens.webloc",
@@ -448,6 +496,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$dom",
+			"dom",
+			"i",
+			"fz_check_part",
+			"fz_popover_fzps",
+			"\"",
+			"fz_merge_parts",
+			"\"",
+			"fz_inline_editing",
 			"fz_update_term_name",
 			"\"",
 			"as",
@@ -566,11 +623,7 @@
 			"super+alt+6",
 			"6",
 			"super+alt",
-			"super+alt+6",
-			"ident",
-			"5",
-			"asd",
-			"\n"
+			"super+alt+6"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -592,7 +645,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -600,43 +653,15 @@
 					"file": "wp-content/themes/parts-editor/front-page.php",
 					"settings":
 					{
-						"buffer_size": 5143,
+						"buffer_size": 5422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2285,
-								2285
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 125.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "wp-content/themes/parts-editor/templates/head.php",
-					"settings":
-					{
-						"buffer_size": 1364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1356,
-								1356
+								2204,
+								2204
 							]
 						],
 						"settings":
@@ -652,24 +677,111 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "wp-content/themes/parts-editor/lib/ajax.php",
 					"settings":
 					{
-						"buffer_size": 6127,
+						"buffer_size": 10246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								432,
-								432
+								3095,
+								3103
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1296.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/parts-editor/assets/css/app.less",
+					"settings":
+					{
+						"buffer_size": 4987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/parts-editor/page-generate-fzps.php",
+					"settings":
+					{
+						"buffer_size": 1888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1510,
+								1510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 168.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "fritzing/pdb/user/sparkfun-analogic-74hc4051_mux-.fzp",
+					"settings":
+					{
+						"buffer_size": 7082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -697,11 +809,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
