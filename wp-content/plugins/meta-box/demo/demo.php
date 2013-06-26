@@ -31,7 +31,7 @@ $meta_boxes[] = array(
 	'id' => 'standard',
 
 	// Meta box title - Will appear at the drag and drop handle bar. Required.
-	'title' => 'Standard Fields',
+	'title' => __( 'Standard Fields', 'rwmb' ),
 
 	// Post types, accept custom post types as well - DEFAULT is array('post'). Optional.
 	'pages' => array( 'post', 'page' ),
@@ -42,25 +42,28 @@ $meta_boxes[] = array(
 	// Order of meta box: high (default), low. Optional.
 	'priority' => 'high',
 
+	// Auto save: true, false (default). Optional.
+	'autosave' => true,
+
 	// List of meta fields
 	'fields' => array(
 		// TEXT
 		array(
 			// Field name - Will be used as label
-			'name'  => 'Text',
+			'name'  => __( 'Text', 'rwmb' ),
 			// Field ID, i.e. the meta key
 			'id'    => "{$prefix}text",
 			// Field description (optional)
-			'desc'  => 'Text description',
+			'desc'  => __( 'Text description', 'rwmb' ),
 			'type'  => 'text',
 			// Default value (optional)
-			'std'   => 'Default text value',
+			'std'   => __( 'Default text value', 'rwmb' ),
 			// CLONES: Add to make the field cloneable (i.e. have multiple value)
 			'clone' => true,
 		),
 		// CHECKBOX
 		array(
-			'name' => 'Checkbox',
+			'name' => __( 'Checkbox', 'rwmb' ),
 			'id'   => "{$prefix}checkbox",
 			'type' => 'checkbox',
 			// Value can be 0 or 1
@@ -68,50 +71,51 @@ $meta_boxes[] = array(
 		),
 		// RADIO BUTTONS
 		array(
-			'name'    => 'Radio',
+			'name'    => __( 'Radio', 'rwmb' ),
 			'id'      => "{$prefix}radio",
 			'type'    => 'radio',
 			// Array of 'value' => 'Label' pairs for radio options.
 			// Note: the 'value' is stored in meta field, not the 'Label'
 			'options' => array(
-				'value1' => 'Label1',
-				'value2' => 'Label2',
+				'value1' => __( 'Label1', 'rwmb' ),
+				'value2' => __( 'Label2', 'rwmb' ),
 			),
 		),
 		// SELECT BOX
 		array(
-			'name'     => 'Select',
+			'name'     => __( 'Select', 'rwmb' ),
 			'id'       => "{$prefix}select",
 			'type'     => 'select',
 			// Array of 'value' => 'Label' pairs for select box
 			'options'  => array(
-				'value1' => 'Label1',
-				'value2' => 'Label2',
+				'value1' => __( 'Label1', 'rwmb' ),
+				'value2' => __( 'Label2', 'rwmb' ),
 			),
 			// Select multiple values, optional. Default is false.
 			'multiple' => false,
+			'std'	=> __( 'Select an Item', 'rwmb' ),
 		),
 		// HIDDEN
 		array(
 			'id'   => "{$prefix}hidden",
 			'type' => 'hidden',
 			// Hidden field must have predefined value
-			'std'  => 'Hidden value',
+			'std'  => __( 'Hidden value', 'rwmb' ),
 		),
 		// PASSWORD
 		array(
-			'name' => 'Password',
+			'name' => __( 'Password', 'rwmb' ),
 			'id'   => "{$prefix}password",
 			'type' => 'password',
 		),
 		// TEXTAREA
 		array(
-			'name' => 'Textarea',
-			'desc' => 'Textarea description',
+			'name' => __( 'Textarea', 'rwmb' ),
+			'desc' => __( 'Textarea description', 'rwmb' ),
 			'id'   => "{$prefix}textarea",
 			'type' => 'textarea',
-			'cols' => '20',
-			'rows' => '3',
+			'cols' => 20,
+			'rows' => 3,
 		),
 	),
 	'validation' => array(
@@ -124,8 +128,8 @@ $meta_boxes[] = array(
 		// optional override of default jquery.validate messages
 		'messages' => array(
 			"{$prefix}password" => array(
-				'required'  => 'Password is required',
-				'minlength' => 'Password must be at least 7 characters',
+				'required'  => __( 'Password is required', 'rwmb' ),
+				'minlength' => __( 'Password must be at least 7 characters', 'rwmb' ),
 			),
 		)
 	)
@@ -133,12 +137,35 @@ $meta_boxes[] = array(
 
 // 2nd meta box
 $meta_boxes[] = array(
-	'title' => 'Advanced Fields',
+	'title' => __( 'Advanced Fields', 'rwmb' ),
 
 	'fields' => array(
+		// HEADING
+		array(
+			'type' => 'heading',
+			'name' => __( 'Heading', 'rwmb' ),
+			'id'   => 'fake_id', // Not used but needed for plugin
+		),
+		// SLIDER
+		array(
+			'name' => __( 'Slider', 'rwmb' ),
+			'id'   => "{$prefix}slider",
+			'type' => 'slider',
+
+			// Text labels displayed before and after value
+			'prefix' => __( '$', 'rwmb' ),
+			'suffix' => __( ' USD', 'rwmb' ),
+
+			// jQuery UI slider options. See here http://api.jqueryui.com/slider/
+			'js_options' => array(
+				'min'   => 10,
+				'max'   => 255,
+				'step'  => 5,
+			),
+		),
 		// NUMBER
 		array(
-			'name' => 'Number',
+			'name' => __( 'Number', 'rwmb' ),
 			'id'   => "{$prefix}number",
 			'type' => 'number',
 
@@ -147,14 +174,14 @@ $meta_boxes[] = array(
 		),
 		// DATE
 		array(
-			'name' => 'Date picker',
+			'name' => __( 'Date picker', 'rwmb' ),
 			'id'   => "{$prefix}date",
 			'type' => 'date',
 
-			// jQuery date picker options. See here http://jqueryui.com/demos/datepicker
+			// jQuery date picker options. See here http://api.jqueryui.com/datepicker
 			'js_options' => array(
-				'appendText'      => '(yyyy-mm-dd)',
-				'dateFormat'      => 'yy-mm-dd',
+				'appendText'      => __( '(yyyy-mm-dd)', 'rwmb' ),
+				'dateFormat'      => __( 'yy-mm-dd', 'rwmb' ),
 				'changeMonth'     => true,
 				'changeYear'      => true,
 				'showButtonPanel' => true,
@@ -162,11 +189,13 @@ $meta_boxes[] = array(
 		),
 		// DATETIME
 		array(
-			'name' => 'Datetime picker',
+			'name' => __( 'Datetime picker', 'rwmb' ),
 			'id'   => $prefix . 'datetime',
 			'type' => 'datetime',
 
-			// jQuery datetime picker options. See here http://trentrichardson.com/examples/timepicker/
+			// jQuery datetime picker options.
+			// For date options, see here http://api.jqueryui.com/datepicker
+			// For time options, see here http://trentrichardson.com/examples/timepicker/
 			'js_options' => array(
 				'stepMinute'     => 15,
 				'showTimepicker' => true,
@@ -174,11 +203,13 @@ $meta_boxes[] = array(
 		),
 		// TIME
 		array(
-			'name' => 'Time picker',
+			'name' => __( 'Time picker', 'rwmb' ),
 			'id'   => $prefix . 'time',
 			'type' => 'time',
 
-			// jQuery datetime picker options. See here http://trentrichardson.com/examples/timepicker/
+			// jQuery datetime picker options.
+			// For date options, see here http://api.jqueryui.com/datepicker
+			// For time options, see here http://trentrichardson.com/examples/timepicker/
 			'js_options' => array(
 				'stepMinute' => 5,
 				'showSecond' => true,
@@ -187,24 +218,58 @@ $meta_boxes[] = array(
 		),
 		// COLOR
 		array(
-			'name' => 'Color picker',
+			'name' => __( 'Color picker', 'rwmb' ),
 			'id'   => "{$prefix}color",
 			'type' => 'color',
 		),
 		// CHECKBOX LIST
 		array(
-			'name' => 'Checkbox list',
+			'name' => __( 'Checkbox list', 'rwmb' ),
 			'id'   => "{$prefix}checkbox_list",
 			'type' => 'checkbox_list',
 			// Options of checkboxes, in format 'value' => 'Label'
 			'options' => array(
-				'value1' => 'Label1',
-				'value2' => 'Label2',
+				'value1' => __( 'Label1', 'rwmb' ),
+				'value2' => __( 'Label2', 'rwmb' ),
 			),
+		),
+		// EMAIL
+		array(
+			'name'  => __( 'Email', 'rwmb' ),
+			'id'    => "{$prefix}email",
+			'desc'  => __( 'Email description', 'rwmb' ),
+			'type'  => 'email',
+			'std'   => 'name@email.com',
+		),
+		// RANGE
+		array(
+			'name'  => __( 'Range', 'rwmb' ),
+			'id'    => "{$prefix}range",
+			'desc'  => __( 'Range description', 'rwmb' ),
+			'type'  => 'range',
+			'min'   => 0,
+			'max'   => 100,
+			'step'  => 5,
+			'std'   => 0,
+		),
+		// URL
+		array(
+			'name'  => __( 'URL', 'rwmb' ),
+			'id'    => "{$prefix}url",
+			'desc'  => __( 'URL description', 'rwmb' ),
+			'type'  => 'url',
+			'std'   => 'http://google.com',
+		),
+		// OEMBED
+		array(
+			'name'  => __( 'oEmbed', 'rwmb' ),
+			'id'    => "{$prefix}oembed",
+			'desc'  => __( 'oEmbed description', 'rwmb' ),
+			'type'  => 'oembed',
 		),
 		// TAXONOMY
 		array(
-			'name'    => 'Taxonomy',
+			'name'    => __( 'Taxonomy', 'rwmb' ),
 			'id'      => "{$prefix}taxonomy",
 			'type'    => 'taxonomy',
 			'options' => array(
@@ -216,12 +281,30 @@ $meta_boxes[] = array(
 				'args' => array()
 			),
 		),
+		// POST
+		array(
+			'name'    => __( 'Posts (Pages)', 'rwmb' ),
+			'id'      => "{$prefix}pages",
+			'type'    => 'post',
+
+			// Post type
+			'post_type' => 'page',
+			// Field type, either 'select' or 'select_advanced' (default)
+			'field_type' => 'select_advanced',
+			// Query arguments (optional). No settings means get all published posts
+			'query_args' => array(
+				'post_status' => 'publish',
+				'posts_per_page' => '-1',
+			)
+		),
 		// WYSIWYG/RICH TEXT EDITOR
 		array(
-			'name' => 'WYSIWYG / Rich Text Editor',
+			'name' => __( 'WYSIWYG / Rich Text Editor', 'rwmb' ),
 			'id'   => "{$prefix}wysiwyg",
 			'type' => 'wysiwyg',
-			'std'  => 'WYSIWYG default value',
+			// Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+			'raw'  => false,
+			'std'  => __( 'WYSIWYG default value', 'rwmb' ),
 
 			// Editor settings, see wp_editor() function: look4wp.com/wp_editor
 			'options' => array(
@@ -230,31 +313,58 @@ $meta_boxes[] = array(
 				'media_buttons' => false,
 			),
 		),
+		// DIVIDER
+		array(
+			'type' => 'divider',
+			'id'   => 'fake_divider_id', // Not used, but needed
+		),
 		// FILE UPLOAD
 		array(
-			'name' => 'File Upload',
+			'name' => __( 'File Upload', 'rwmb' ),
 			'id'   => "{$prefix}file",
 			'type' => 'file',
 		),
+		// FILE ADVANCED (WP 3.5+)
+		array(
+			'name' => __( 'File Advanced Upload', 'rwmb' ),
+			'id'   => "{$prefix}file_advanced",
+			'type' => 'file_advanced',
+			'max_file_uploads' => 4,
+			'mime_type' => 'application,audio,video', // Leave blank for all file types
+		),
 		// IMAGE UPLOAD
 		array(
-			'name' => 'Image Upload',
+			'name' => __( 'Image Upload', 'rwmb' ),
 			'id'   => "{$prefix}image",
 			'type' => 'image',
 		),
 		// THICKBOX IMAGE UPLOAD (WP 3.3+)
 		array(
-			'name' => 'Thichbox Image Upload',
+			'name' => __( 'Thickbox Image Upload', 'rwmb' ),
 			'id'   => "{$prefix}thickbox",
 			'type' => 'thickbox_image',
 		),
 		// PLUPLOAD IMAGE UPLOAD (WP 3.3+)
 		array(
-			'name'             => 'Plupload Image Upload',
+			'name'             => __( 'Plupload Image Upload', 'rwmb' ),
 			'id'               => "{$prefix}plupload",
 			'type'             => 'plupload_image',
 			'max_file_uploads' => 4,
 		),
+		// IMAGE ADVANCED (WP 3.5+)
+		array(
+			'name'             => __( 'Image Advanced Upload', 'rwmb' ),
+			'id'               => "{$prefix}imgadv",
+			'type'             => 'image_advanced',
+			'max_file_uploads' => 4,
+		),
+		// BUTTON
+		array(
+			'id'   => "{$prefix}button",
+			'type' => 'button',
+			'name' => ' ', // Empty name will "align" the button to all field inputs
+		),
+
 	)
 );
 

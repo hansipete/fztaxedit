@@ -28,22 +28,15 @@ if ( !class_exists( 'RWMB_Select_Field' ) )
 		static function html( $html, $meta, $field )
 		{
 			$html = sprintf(
-				'<select class="rwmb-select" name="%s" id="%s"%s>',
+				'<select class="rwmb-select" name="%s" id="%s" size="%s"%s>',
 				$field['field_name'],
 				$field['id'],
+				$field['size'],
 				$field['multiple'] ? ' multiple="multiple"' : ''
 			);
-			$option = '<option value="%s" %s>%s</option>';
-
-			foreach ( $field['options'] as $value => $label )
-			{
-				$html .= sprintf(
-					$option,
-					$value,
-					selected( in_array( $value, $meta ), true, false ),
-					$label
-				);
-			}
+			
+			$html .= self::options_html( $field, $meta );
+			
 			$html .= '</select>';
 
 			return $html;
@@ -111,10 +104,40 @@ if ( !class_exists( 'RWMB_Select_Field' ) )
 		 */
 		static function normalize_field( $field )
 		{
-			$field['field_name'] = $field['id'];
+			$field = wp_parse_args( $field, array(
+				'desc'=> '',
+				'name' => $field['id'],
+				'size' => $field['multiple'] ? 5 : 0,
+			) );
 			if ( !$field['clone'] && $field['multiple'] )
 				$field['field_name'] .= '[]';
 			return $field;
+		}
+		
+		/**
+		 * Creates html for options
+		 *
+		 * @param array $field
+		 *
+		 * @return array
+		 */
+		static function options_html( $field, $meta )
+		{
+			$html = "<option value=''>{$field['std']}</option>";
+			
+			$option = '<option value="%s" %s>%s</option>';
+			
+			foreach ( $field['options'] as $value => $label )
+			{
+				$html .= sprintf(
+					$option,
+					$value,
+					selected( in_array( $value, (array)$meta ), true, false ),
+					$label
+				);
+			}
+			
+			return $html;
 		}
 	}
 }

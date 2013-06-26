@@ -35,26 +35,16 @@ if ( !class_exists( 'RWMB_Select_Advanced_Field' ) )
 		static function html( $html, $meta, $field )
 		{
 			$html = sprintf(
-				'<select class="rwmb-select-advanced" name="%s" id="%s"%s data-options="%s">',
+				'<select class="rwmb-select-advanced" name="%s" id="%s" size="%s"%s data-options="%s">',
 				$field['field_name'],
 				$field['id'],
+				$field['size'],
 				$field['multiple'] ? ' multiple="multiple"' : '',
 				esc_attr( json_encode( $field['js_options'] ) )
 			);
-			if ( !empty( $field['js_options']['placeholder'] ) )
-				$html .= '<option></option>';
 
-			$option = '<option value="%s" %s>%s</option>';
+			$html .= self::options_html( $field, $meta );
 
-			foreach ( $field['options'] as $value => $label )
-			{
-				$html .= sprintf(
-					$option,
-					$value,
-					selected( in_array( $value, $meta ), true, false ),
-					$label
-				);
-			}
 			$html .= '</select>';
 
 			return $html;
@@ -70,7 +60,7 @@ if ( !class_exists( 'RWMB_Select_Advanced_Field' ) )
 		static function normalize_field( $field )
 		{
 			$field = parent::normalize_field( $field );
-
+			
 			$field = wp_parse_args( $field, array(
 				'js_options' => array(),
 			) );
@@ -78,8 +68,10 @@ if ( !class_exists( 'RWMB_Select_Advanced_Field' ) )
 			$field['js_options'] = wp_parse_args( $field['js_options'], array(
 				'allowClear'  => true,
 				'width'       => 'resolve',
-				'placeholder' => __( 'Select a value', 'rwmb' )
+				'placeholder' => empty( $field['std'] ) ? __( 'Select a value', 'rwmb' ) : $field['std']
 			) );
+			
+			$field['std'] = '';
 
 			return $field;
 		}
